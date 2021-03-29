@@ -1,0 +1,3128 @@
+2020.03.13 12:03:18 812 INFO    1 ==============================================================
+2020.03.13 12:03:18 917 INFO    1 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2020.03.13 12:03:18 917 INFO    1 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2020.03.13 12:03:18 918 INFO    1 =  read the license.txt file that was included in the SMPPSim distribution
+2020.03.13 12:03:18 918 INFO    1 =  This is free software, and you are welcome to redistribute it under
+2020.03.13 12:03:18 918 INFO    1 =  certain conditions; Again, see license.txt for details or read the GNU
+2020.03.13 12:03:18 918 INFO    1 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2020.03.13 12:03:18 925 INFO    1 =  ...... end of legal stuff ......
+2020.03.13 12:03:18 925 INFO    1 ==============================================================
+2020.03.13 12:03:18 926 INFO    1 =  
+2020.03.13 12:03:18 926 INFO    1 =  com.seleniumsoftware.SMPPSim 2.6.11
+2020.03.13 12:03:18 926 INFO    1 =  by Martin Woolley (martin@seleniumsoftware.com)
+2020.03.13 12:03:18 926 INFO    1 =  http://www.seleniumsoftware.com
+2020.03.13 12:03:18 927 INFO    1 =  Running with the following parameters:
+2020.03.13 12:03:18 927 INFO    1 =  SMPP_PORT                               :2775
+2020.03.13 12:03:18 927 INFO    1 =  SMPP_CONNECTION_HANDLERS                :50
+2020.03.13 12:03:18 927 INFO    1 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2020.03.13 12:03:18 927 INFO    1 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.StandardProtocolHandler
+2020.03.13 12:03:18 928 INFO    1 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2020.03.13 12:03:18 928 INFO    1 =  SMPP_CONNECTION_HANDLERS                :50
+2020.03.13 12:03:18 928 INFO    1 =  INBOUND_QUEUE_CAPACITY                  :1000
+2020.03.13 12:03:18 928 INFO    1 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2020.03.13 12:03:18 928 INFO    1 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2020.03.13 12:03:18 929 INFO    1 =  MAX_TIME_ENROUTE                        :10000
+2020.03.13 12:03:18 929 INFO    1 =  PERCENTAGE_THAT_TRANSITION              :75
+2020.03.13 12:03:18 929 INFO    1 =  PERCENTAGE_DELIVERED                    :25
+2020.03.13 12:03:18 929 INFO    1 =  PERCENTAGE_UNDELIVERABLE                :25
+2020.03.13 12:03:18 929 INFO    1 =  PERCENTAGE_ACCEPTED                     :25
+2020.03.13 12:03:18 929 INFO    1 =  PERCENTAGE_REJECTED                     :25
+2020.03.13 12:03:18 930 INFO    1 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2020.03.13 12:03:18 930 INFO    1 =  OUTBIND_ENABLED                         :false
+2020.03.13 12:03:18 930 INFO    1 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2020.03.13 12:03:18 930 INFO    1 =  OUTBIND_ESME_PORT		                :0
+2020.03.13 12:03:18 930 INFO    1 =  OUTBIND_ESME_PASSWORD                   :password
+2020.03.13 12:03:18 931 INFO    1 =  HTTP_PORT                               :8080
+2020.03.13 12:03:18 931 INFO    1 =  HTTP_THREADS                            :10
+2020.03.13 12:03:18 931 INFO    1 =  DOCROOT                                 :www
+2020.03.13 12:03:18 931 INFO    1 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2020.03.13 12:03:18 931 INFO    1 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2020.03.13 12:03:18 931 INFO    1 =  SMSCID                                  :SMPPSim
+2020.03.13 12:03:18 931 INFO    1 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2020.03.13 12:03:18 932 INFO    1 =  DELIVER_MESSAGES_FILE                   :N/A
+2020.03.13 12:03:18 932 INFO    1 =  LOOPBACK                                :false
+2020.03.13 12:03:18 932 INFO    1 =  CAPTURE_REQUESTS_BINARY                 :false
+2020.03.13 12:03:18 932 INFO    1 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2020.03.13 12:03:18 932 INFO    1 =  CAPTURE_RESPONSES_BINARY                :false
+2020.03.13 12:03:18 932 INFO    1 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2020.03.13 12:03:18 933 INFO    1 =  CAPTURE_REQUESTS_DECODED                :false
+2020.03.13 12:03:18 933 INFO    1 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2020.03.13 12:03:18 933 INFO    1 =  CAPTURE_RESPONSES_DECODED               :false
+2020.03.13 12:03:18 933 INFO    1 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2020.03.13 12:03:18 934 INFO    1 =  CALLBACK                                :false
+2020.03.13 12:03:18 935 INFO    1 = Delivery receipts will always have optional parameter with TLV=5123/10/34343132333435363738
+2020.03.13 12:03:18 935 INFO    1 = Delivery receipts will include standard optional parameters if client supports 3.4 or later
+2020.03.13 12:03:18 935 INFO    1 =  
+2020.03.13 12:03:18 935 INFO    1 ==============================================================
+2020.03.13 12:03:18 946 INFO    9 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 946 INFO    11 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 946 INFO    10 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 946 INFO    12 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 946 INFO    13 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 947 INFO    15 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 946 INFO    14 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 947 INFO    16 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 947 INFO    17 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 947 INFO    19 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 948 INFO    21 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 947 INFO    18 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 948 INFO    20 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 951 INFO    22 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 951 INFO    23 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 954 INFO    25 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 954 INFO    24 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 955 INFO    26 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 956 INFO    27 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 956 INFO    28 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 956 INFO    29 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 957 INFO    31 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 956 INFO    30 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 958 INFO    32 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 958 INFO    33 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 958 INFO    34 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 958 INFO    35 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 959 INFO    36 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 959 INFO    37 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 959 INFO    38 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 959 INFO    39 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 959 INFO    40 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 960 INFO    42 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 960 INFO    41 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 960 INFO    43 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 960 INFO    44 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 960 INFO    45 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 961 INFO    46 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 961 INFO    47 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 961 INFO    48 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 962 INFO    50 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 962 INFO    51 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 962 INFO    52 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 961 INFO    49 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 962 INFO    53 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 963 INFO    54 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 963 INFO    55 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 965 INFO    56 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 966 INFO    57 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 966 INFO    58 StandardConnectionHandler waiting for connection
+2020.03.13 12:03:18 966 INFO    59 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 966 INFO    60 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 966 INFO    61 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 966 INFO    62 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 966 INFO    63 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 967 INFO    64 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 967 INFO    65 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 967 INFO    66 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 967 INFO    67 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 967 INFO    69 Starting InboundQueue service....
+2020.03.13 12:03:18 967 INFO    68 Starting HttpHandler thread. Listening on port 8080 for connections
+2020.03.13 12:03:18 968 INFO    70 Starting Lifecycle Service (OutboundQueue)
+2020.03.13 12:03:18 968 INFO    70 Lifecycle Service: OutboundQueue is empty  - waiting
+2020.03.13 12:03:18 969 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:03:18 969 INFO    72 Starting DelayedInboundQueue service....
+2020.03.13 12:03:21 475 INFO    11 StandardConnectionHandler accepted a connection
+2020.03.13 12:03:21 499 INFO    11 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:03:21 500 INFO    11 : BIND_TRANSCEIVER:
+2020.03.13 12:03:21 500 INFO    11 Hex dump (35) bytes:
+2020.03.13 12:03:21 501 INFO    11 00000023:00000009:00000000:00000001:
+2020.03.13 12:03:21 501 INFO    11 55504652:45450055:50465245:45000034:
+2020.03.13 12:03:21 501 INFO    11 030000
+2020.03.13 12:03:21 502 INFO    11 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:03:21 502 INFO    11 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:03:21 502 INFO    11  
+2020.03.13 12:03:21 502 INFO    11 StandardProtocolHandler: setting address range to 
+2020.03.13 12:03:21 503 INFO    11 New transceiver session bound to SMPPSim
+2020.03.13 12:03:21 503 INFO    11 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:03:21 503 INFO    11 Hex dump (24) bytes:
+2020.03.13 12:03:21 503 INFO    11 00000018:80000009:00000000:00000001:
+2020.03.13 12:03:21 503 INFO    11 534D5050:53696D00:
+2020.03.13 12:03:21 504 INFO    11 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:03:21 504 INFO    11  
+2020.03.13 12:03:21 504 INFO    11 1 receivers connected and bound
+2020.03.13 12:03:21 504 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:03:21 635 INFO    58 StandardConnectionHandler accepted a connection
+2020.03.13 12:03:21 635 INFO    58 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:03:21 635 INFO    58 : BIND_TRANSCEIVER:
+2020.03.13 12:03:21 635 INFO    58 Hex dump (35) bytes:
+2020.03.13 12:03:21 635 INFO    58 00000023:00000009:00000000:00000001:
+2020.03.13 12:03:21 635 INFO    58 55504652:45450055:50465245:45000034:
+2020.03.13 12:03:21 636 INFO    58 030000
+2020.03.13 12:03:21 636 INFO    58 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:03:21 636 INFO    58 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:03:21 636 INFO    58  
+2020.03.13 12:03:21 636 INFO    58 StandardProtocolHandler: setting address range to 
+2020.03.13 12:03:21 636 INFO    58 New transceiver session bound to SMPPSim
+2020.03.13 12:03:21 636 INFO    58 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:03:21 636 INFO    58 Hex dump (24) bytes:
+2020.03.13 12:03:21 636 INFO    58 00000018:80000009:00000000:00000001:
+2020.03.13 12:03:21 636 INFO    58 534D5050:53696D00:
+2020.03.13 12:03:21 636 INFO    58 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:03:21 636 INFO    58  
+2020.03.13 12:03:21 637 INFO    58 2 receivers connected and bound
+2020.03.13 12:03:21 637 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:03:21 656 INFO    57 StandardConnectionHandler accepted a connection
+2020.03.13 12:03:21 656 INFO    57 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:03:21 657 INFO    57 : BIND_TRANSCEIVER:
+2020.03.13 12:03:21 657 INFO    57 Hex dump (35) bytes:
+2020.03.13 12:03:21 657 INFO    57 00000023:00000009:00000000:00000001:
+2020.03.13 12:03:21 657 INFO    57 55504652:45450055:50465245:45000034:
+2020.03.13 12:03:21 657 INFO    57 030000
+2020.03.13 12:03:21 657 INFO    57 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:03:21 657 INFO    57 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:03:21 657 INFO    57  
+2020.03.13 12:03:21 657 INFO    57 StandardProtocolHandler: setting address range to 
+2020.03.13 12:03:21 658 INFO    57 New transceiver session bound to SMPPSim
+2020.03.13 12:03:21 658 INFO    57 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:03:21 658 INFO    57 Hex dump (24) bytes:
+2020.03.13 12:03:21 658 INFO    57 00000018:80000009:00000000:00000001:
+2020.03.13 12:03:21 658 INFO    57 534D5050:53696D00:
+2020.03.13 12:03:21 658 INFO    57 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:03:21 658 INFO    57  
+2020.03.13 12:03:21 658 INFO    57 3 receivers connected and bound
+2020.03.13 12:03:21 658 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:03:21 682 INFO    56 StandardConnectionHandler accepted a connection
+2020.03.13 12:03:21 683 INFO    56 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:03:21 683 INFO    56 : BIND_TRANSCEIVER:
+2020.03.13 12:03:21 683 INFO    56 Hex dump (35) bytes:
+2020.03.13 12:03:21 683 INFO    56 00000023:00000009:00000000:00000001:
+2020.03.13 12:03:21 683 INFO    56 55504652:45450055:50465245:45000034:
+2020.03.13 12:03:21 683 INFO    56 030000
+2020.03.13 12:03:21 683 INFO    56 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:03:21 684 INFO    56 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:03:21 684 INFO    56  
+2020.03.13 12:03:21 684 INFO    56 StandardProtocolHandler: setting address range to 
+2020.03.13 12:03:21 684 INFO    56 New transceiver session bound to SMPPSim
+2020.03.13 12:03:21 684 INFO    56 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:03:21 684 INFO    56 Hex dump (24) bytes:
+2020.03.13 12:03:21 684 INFO    56 00000018:80000009:00000000:00000001:
+2020.03.13 12:03:21 684 INFO    56 534D5050:53696D00:
+2020.03.13 12:03:21 684 INFO    56 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:03:21 685 INFO    56  
+2020.03.13 12:03:21 685 INFO    56 4 receivers connected and bound
+2020.03.13 12:03:21 685 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:03:51 530 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:03:51 531 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:03:51 531 INFO    11 00000010:00000015:00000000:00000002:
+2020.03.13 12:03:51 531 INFO    11 
+2020.03.13 12:03:51 531 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 531 INFO    11  
+2020.03.13 12:03:51 532 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:03:51 532 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:03:51 532 INFO    11 00000010:80000015:00000000:00000002:
+2020.03.13 12:03:51 532 INFO    11 
+2020.03.13 12:03:51 532 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 532 INFO    11  
+2020.03.13 12:03:51 685 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:03:51 686 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:03:51 686 INFO    58 00000010:00000015:00000000:00000002:
+2020.03.13 12:03:51 686 INFO    58 
+2020.03.13 12:03:51 687 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 687 INFO    58  
+2020.03.13 12:03:51 687 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:03:51 687 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:03:51 688 INFO    58 00000010:80000015:00000000:00000002:
+2020.03.13 12:03:51 688 INFO    58 
+2020.03.13 12:03:51 688 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 688 INFO    58  
+2020.03.13 12:03:51 714 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:03:51 714 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:03:51 715 INFO    57 00000010:00000015:00000000:00000002:
+2020.03.13 12:03:51 715 INFO    57 
+2020.03.13 12:03:51 715 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 716 INFO    57  
+2020.03.13 12:03:51 716 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:03:51 716 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:03:51 716 INFO    57 00000010:80000015:00000000:00000002:
+2020.03.13 12:03:51 716 INFO    57 
+2020.03.13 12:03:51 717 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 717 INFO    57  
+2020.03.13 12:03:51 746 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:03:51 746 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:03:51 746 INFO    56 00000010:00000015:00000000:00000002:
+2020.03.13 12:03:51 746 INFO    56 
+2020.03.13 12:03:51 746 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 746 INFO    56  
+2020.03.13 12:03:51 746 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:03:51 746 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:03:51 746 INFO    56 00000010:80000015:00000000:00000002:
+2020.03.13 12:03:51 746 INFO    56 
+2020.03.13 12:03:51 746 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:03:51 746 INFO    56  
+2020.03.13 12:04:18 969 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:04:21 564 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:04:21 564 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:04:21 564 INFO    11 00000010:00000015:00000000:00000003:
+2020.03.13 12:04:21 564 INFO    11 
+2020.03.13 12:04:21 565 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 565 INFO    11  
+2020.03.13 12:04:21 565 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:21 565 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:04:21 565 INFO    11 00000010:80000015:00000000:00000003:
+2020.03.13 12:04:21 565 INFO    11 
+2020.03.13 12:04:21 565 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 565 INFO    11  
+2020.03.13 12:04:21 713 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:04:21 713 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:04:21 713 INFO    58 00000010:00000015:00000000:00000003:
+2020.03.13 12:04:21 714 INFO    58 
+2020.03.13 12:04:21 714 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 714 INFO    58  
+2020.03.13 12:04:21 714 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:21 714 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:04:21 714 INFO    58 00000010:80000015:00000000:00000003:
+2020.03.13 12:04:21 714 INFO    58 
+2020.03.13 12:04:21 714 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 714 INFO    58  
+2020.03.13 12:04:21 748 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:04:21 749 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:04:21 749 INFO    57 00000010:00000015:00000000:00000003:
+2020.03.13 12:04:21 749 INFO    57 
+2020.03.13 12:04:21 749 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 749 INFO    57  
+2020.03.13 12:04:21 749 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:21 749 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:04:21 750 INFO    57 00000010:80000015:00000000:00000003:
+2020.03.13 12:04:21 750 INFO    57 
+2020.03.13 12:04:21 750 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 750 INFO    57  
+2020.03.13 12:04:21 761 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:04:21 761 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:04:21 761 INFO    56 00000010:00000015:00000000:00000003:
+2020.03.13 12:04:21 761 INFO    56 
+2020.03.13 12:04:21 762 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 762 INFO    56  
+2020.03.13 12:04:21 762 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:21 762 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:04:21 762 INFO    56 00000010:80000015:00000000:00000003:
+2020.03.13 12:04:21 762 INFO    56 
+2020.03.13 12:04:21 762 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:04:21 762 INFO    56  
+2020.03.13 12:04:51 586 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:04:51 587 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:04:51 587 INFO    11 00000010:00000015:00000000:00000004:
+2020.03.13 12:04:51 587 INFO    11 
+2020.03.13 12:04:51 587 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 587 INFO    11  
+2020.03.13 12:04:51 587 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:51 587 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:04:51 588 INFO    11 00000010:80000015:00000000:00000004:
+2020.03.13 12:04:51 588 INFO    11 
+2020.03.13 12:04:51 588 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 588 INFO    11  
+2020.03.13 12:04:51 745 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:04:51 745 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:04:51 745 INFO    58 00000010:00000015:00000000:00000004:
+2020.03.13 12:04:51 745 INFO    58 
+2020.03.13 12:04:51 745 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 746 INFO    58  
+2020.03.13 12:04:51 746 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:51 746 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:04:51 746 INFO    58 00000010:80000015:00000000:00000004:
+2020.03.13 12:04:51 746 INFO    58 
+2020.03.13 12:04:51 746 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 747 INFO    58  
+2020.03.13 12:04:51 771 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:04:51 771 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:04:51 772 INFO    57 00000010:00000015:00000000:00000004:
+2020.03.13 12:04:51 772 INFO    57 
+2020.03.13 12:04:51 772 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 772 INFO    57  
+2020.03.13 12:04:51 772 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:51 772 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:04:51 772 INFO    57 00000010:80000015:00000000:00000004:
+2020.03.13 12:04:51 772 INFO    57 
+2020.03.13 12:04:51 773 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 773 INFO    57  
+2020.03.13 12:04:51 792 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:04:51 792 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:04:51 792 INFO    56 00000010:00000015:00000000:00000004:
+2020.03.13 12:04:51 792 INFO    56 
+2020.03.13 12:04:51 793 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 793 INFO    56  
+2020.03.13 12:04:51 793 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:04:51 793 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:04:51 793 INFO    56 00000010:80000015:00000000:00000004:
+2020.03.13 12:04:51 793 INFO    56 
+2020.03.13 12:04:51 793 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:04:51 793 INFO    56  
+2020.03.13 12:05:18 969 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:05:21 602 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:05:21 602 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:05:21 602 INFO    11 00000010:00000015:00000000:00000005:
+2020.03.13 12:05:21 602 INFO    11 
+2020.03.13 12:05:21 602 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 602 INFO    11  
+2020.03.13 12:05:21 602 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:21 603 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:05:21 603 INFO    11 00000010:80000015:00000000:00000005:
+2020.03.13 12:05:21 603 INFO    11 
+2020.03.13 12:05:21 603 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 603 INFO    11  
+2020.03.13 12:05:21 772 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:05:21 772 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:05:21 772 INFO    58 00000010:00000015:00000000:00000005:
+2020.03.13 12:05:21 772 INFO    58 
+2020.03.13 12:05:21 772 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 772 INFO    58  
+2020.03.13 12:05:21 773 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:21 773 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:05:21 773 INFO    58 00000010:80000015:00000000:00000005:
+2020.03.13 12:05:21 773 INFO    58 
+2020.03.13 12:05:21 773 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 773 INFO    58  
+2020.03.13 12:05:21 804 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:05:21 804 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:05:21 804 INFO    57 00000010:00000015:00000000:00000005:
+2020.03.13 12:05:21 804 INFO    57 
+2020.03.13 12:05:21 805 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 805 INFO    57  
+2020.03.13 12:05:21 805 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:21 805 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:05:21 805 INFO    57 00000010:80000015:00000000:00000005:
+2020.03.13 12:05:21 805 INFO    57 
+2020.03.13 12:05:21 805 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 805 INFO    57  
+2020.03.13 12:05:21 826 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:05:21 826 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:05:21 826 INFO    56 00000010:00000015:00000000:00000005:
+2020.03.13 12:05:21 826 INFO    56 
+2020.03.13 12:05:21 826 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 826 INFO    56  
+2020.03.13 12:05:21 826 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:21 826 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:05:21 826 INFO    56 00000010:80000015:00000000:00000005:
+2020.03.13 12:05:21 827 INFO    56 
+2020.03.13 12:05:21 827 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:05:21 827 INFO    56  
+2020.03.13 12:05:51 635 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:05:51 636 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:05:51 636 INFO    11 00000010:00000015:00000000:00000006:
+2020.03.13 12:05:51 636 INFO    11 
+2020.03.13 12:05:51 636 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 637 INFO    11  
+2020.03.13 12:05:51 637 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:51 637 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:05:51 637 INFO    11 00000010:80000015:00000000:00000006:
+2020.03.13 12:05:51 637 INFO    11 
+2020.03.13 12:05:51 637 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 638 INFO    11  
+2020.03.13 12:05:51 802 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:05:51 803 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:05:51 803 INFO    58 00000010:00000015:00000000:00000006:
+2020.03.13 12:05:51 803 INFO    58 
+2020.03.13 12:05:51 803 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 803 INFO    58  
+2020.03.13 12:05:51 803 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:51 803 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:05:51 804 INFO    58 00000010:80000015:00000000:00000006:
+2020.03.13 12:05:51 804 INFO    58 
+2020.03.13 12:05:51 804 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 804 INFO    58  
+2020.03.13 12:05:51 825 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:05:51 826 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:05:51 826 INFO    57 00000010:00000015:00000000:00000006:
+2020.03.13 12:05:51 826 INFO    57 
+2020.03.13 12:05:51 826 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 826 INFO    57  
+2020.03.13 12:05:51 827 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:51 827 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:05:51 827 INFO    57 00000010:80000015:00000000:00000006:
+2020.03.13 12:05:51 827 INFO    57 
+2020.03.13 12:05:51 827 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 827 INFO    57  
+2020.03.13 12:05:51 849 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:05:51 849 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:05:51 849 INFO    56 00000010:00000015:00000000:00000006:
+2020.03.13 12:05:51 849 INFO    56 
+2020.03.13 12:05:51 849 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 849 INFO    56  
+2020.03.13 12:05:51 849 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:05:51 849 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:05:51 849 INFO    56 00000010:80000015:00000000:00000006:
+2020.03.13 12:05:51 850 INFO    56 
+2020.03.13 12:05:51 850 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:05:51 850 INFO    56  
+2020.03.13 12:06:18 969 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:06:21 668 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:06:21 668 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:06:21 668 INFO    11 00000010:00000015:00000000:00000007:
+2020.03.13 12:06:21 668 INFO    11 
+2020.03.13 12:06:21 668 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 668 INFO    11  
+2020.03.13 12:06:21 668 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:21 669 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:06:21 669 INFO    11 00000010:80000015:00000000:00000007:
+2020.03.13 12:06:21 669 INFO    11 
+2020.03.13 12:06:21 669 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 669 INFO    11  
+2020.03.13 12:06:21 835 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:06:21 835 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:06:21 836 INFO    58 00000010:00000015:00000000:00000007:
+2020.03.13 12:06:21 836 INFO    58 
+2020.03.13 12:06:21 836 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 836 INFO    58  
+2020.03.13 12:06:21 837 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:21 837 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:06:21 837 INFO    58 00000010:80000015:00000000:00000007:
+2020.03.13 12:06:21 837 INFO    58 
+2020.03.13 12:06:21 838 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 838 INFO    58  
+2020.03.13 12:06:21 860 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:06:21 860 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:06:21 860 INFO    57 00000010:00000015:00000000:00000007:
+2020.03.13 12:06:21 861 INFO    57 
+2020.03.13 12:06:21 861 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 861 INFO    57  
+2020.03.13 12:06:21 861 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:21 861 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:06:21 861 INFO    57 00000010:80000015:00000000:00000007:
+2020.03.13 12:06:21 861 INFO    57 
+2020.03.13 12:06:21 861 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 862 INFO    57  
+2020.03.13 12:06:21 875 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:06:21 876 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:06:21 876 INFO    56 00000010:00000015:00000000:00000007:
+2020.03.13 12:06:21 876 INFO    56 
+2020.03.13 12:06:21 876 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 876 INFO    56  
+2020.03.13 12:06:21 876 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:21 876 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:06:21 876 INFO    56 00000010:80000015:00000000:00000007:
+2020.03.13 12:06:21 876 INFO    56 
+2020.03.13 12:06:21 876 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:06:21 876 INFO    56  
+2020.03.13 12:06:51 696 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:06:51 696 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:06:51 696 INFO    11 00000010:00000015:00000000:00000008:
+2020.03.13 12:06:51 696 INFO    11 
+2020.03.13 12:06:51 696 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 696 INFO    11  
+2020.03.13 12:06:51 696 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:51 696 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:06:51 696 INFO    11 00000010:80000015:00000000:00000008:
+2020.03.13 12:06:51 696 INFO    11 
+2020.03.13 12:06:51 696 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 697 INFO    11  
+2020.03.13 12:06:51 862 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:06:51 862 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:06:51 862 INFO    58 00000010:00000015:00000000:00000008:
+2020.03.13 12:06:51 862 INFO    58 
+2020.03.13 12:06:51 862 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 862 INFO    58  
+2020.03.13 12:06:51 862 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:51 862 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:06:51 862 INFO    58 00000010:80000015:00000000:00000008:
+2020.03.13 12:06:51 862 INFO    58 
+2020.03.13 12:06:51 862 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 863 INFO    58  
+2020.03.13 12:06:51 888 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:06:51 888 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:06:51 888 INFO    57 00000010:00000015:00000000:00000008:
+2020.03.13 12:06:51 888 INFO    57 
+2020.03.13 12:06:51 888 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 888 INFO    57  
+2020.03.13 12:06:51 888 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:51 888 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:06:51 888 INFO    57 00000010:80000015:00000000:00000008:
+2020.03.13 12:06:51 888 INFO    57 
+2020.03.13 12:06:51 889 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 889 INFO    57  
+2020.03.13 12:06:51 907 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:06:51 908 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:06:51 908 INFO    56 00000010:00000015:00000000:00000008:
+2020.03.13 12:06:51 908 INFO    56 
+2020.03.13 12:06:51 908 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 908 INFO    56  
+2020.03.13 12:06:51 908 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:06:51 908 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:06:51 909 INFO    56 00000010:80000015:00000000:00000008:
+2020.03.13 12:06:51 909 INFO    56 
+2020.03.13 12:06:51 909 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:06:51 909 INFO    56  
+2020.03.13 12:07:18 970 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:07:21 727 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:07:21 727 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:07:21 727 INFO    11 00000010:00000015:00000000:00000009:
+2020.03.13 12:07:21 727 INFO    11 
+2020.03.13 12:07:21 727 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 727 INFO    11  
+2020.03.13 12:07:21 727 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:21 728 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:07:21 728 INFO    11 00000010:80000015:00000000:00000009:
+2020.03.13 12:07:21 728 INFO    11 
+2020.03.13 12:07:21 728 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 728 INFO    11  
+2020.03.13 12:07:21 894 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:07:21 895 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:07:21 895 INFO    58 00000010:00000015:00000000:00000009:
+2020.03.13 12:07:21 895 INFO    58 
+2020.03.13 12:07:21 895 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 895 INFO    58  
+2020.03.13 12:07:21 895 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:21 895 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:07:21 895 INFO    58 00000010:80000015:00000000:00000009:
+2020.03.13 12:07:21 895 INFO    58 
+2020.03.13 12:07:21 896 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 896 INFO    58  
+2020.03.13 12:07:21 913 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:07:21 913 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:07:21 913 INFO    56 00000010:00000015:00000000:00000009:
+2020.03.13 12:07:21 913 INFO    56 
+2020.03.13 12:07:21 914 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 914 INFO    56  
+2020.03.13 12:07:21 914 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:21 914 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:07:21 914 INFO    56 00000010:80000015:00000000:00000009:
+2020.03.13 12:07:21 914 INFO    56 
+2020.03.13 12:07:21 914 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 914 INFO    56  
+2020.03.13 12:07:21 921 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:07:21 921 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:07:21 921 INFO    57 00000010:00000015:00000000:00000009:
+2020.03.13 12:07:21 922 INFO    57 
+2020.03.13 12:07:21 922 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 922 INFO    57  
+2020.03.13 12:07:21 922 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:21 922 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:07:21 922 INFO    57 00000010:80000015:00000000:00000009:
+2020.03.13 12:07:21 922 INFO    57 
+2020.03.13 12:07:21 922 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:07:21 922 INFO    57  
+2020.03.13 12:07:51 759 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:07:51 760 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:07:51 760 INFO    11 00000010:00000015:00000000:0000000A:
+2020.03.13 12:07:51 760 INFO    11 
+2020.03.13 12:07:51 760 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 760 INFO    11  
+2020.03.13 12:07:51 760 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:51 760 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:07:51 760 INFO    11 00000010:80000015:00000000:0000000A:
+2020.03.13 12:07:51 760 INFO    11 
+2020.03.13 12:07:51 760 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 760 INFO    11  
+2020.03.13 12:07:51 927 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:07:51 927 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:07:51 928 INFO    58 00000010:00000015:00000000:0000000A:
+2020.03.13 12:07:51 928 INFO    58 
+2020.03.13 12:07:51 928 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 928 INFO    58  
+2020.03.13 12:07:51 928 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:51 928 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:07:51 928 INFO    58 00000010:80000015:00000000:0000000A:
+2020.03.13 12:07:51 928 INFO    58 
+2020.03.13 12:07:51 928 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 928 INFO    58  
+2020.03.13 12:07:51 937 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:07:51 937 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:07:51 937 INFO    56 00000010:00000015:00000000:0000000A:
+2020.03.13 12:07:51 937 INFO    56 
+2020.03.13 12:07:51 937 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 938 INFO    56  
+2020.03.13 12:07:51 938 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:51 938 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:07:51 938 INFO    56 00000010:80000015:00000000:0000000A:
+2020.03.13 12:07:51 938 INFO    56 
+2020.03.13 12:07:51 939 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 939 INFO    56  
+2020.03.13 12:07:51 946 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:07:51 947 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:07:51 947 INFO    57 00000010:00000015:00000000:0000000A:
+2020.03.13 12:07:51 947 INFO    57 
+2020.03.13 12:07:51 947 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 947 INFO    57  
+2020.03.13 12:07:51 947 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:07:51 948 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:07:51 948 INFO    57 00000010:80000015:00000000:0000000A:
+2020.03.13 12:07:51 948 INFO    57 
+2020.03.13 12:07:51 948 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:07:51 948 INFO    57  
+2020.03.13 12:08:18 971 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:08:21 782 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:08:21 782 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:08:21 782 INFO    11 00000010:00000015:00000000:0000000B:
+2020.03.13 12:08:21 782 INFO    11 
+2020.03.13 12:08:21 782 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 783 INFO    11  
+2020.03.13 12:08:21 783 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:21 783 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:08:21 783 INFO    11 00000010:80000015:00000000:0000000B:
+2020.03.13 12:08:21 783 INFO    11 
+2020.03.13 12:08:21 784 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 784 INFO    11  
+2020.03.13 12:08:21 961 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:08:21 962 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:08:21 962 INFO    58 00000010:00000015:00000000:0000000B:
+2020.03.13 12:08:21 962 INFO    58 
+2020.03.13 12:08:21 962 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 962 INFO    58  
+2020.03.13 12:08:21 962 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:21 963 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:08:21 963 INFO    58 00000010:80000015:00000000:0000000B:
+2020.03.13 12:08:21 963 INFO    58 
+2020.03.13 12:08:21 963 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 963 INFO    58  
+2020.03.13 12:08:21 964 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:08:21 964 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:08:21 964 INFO    57 00000010:00000015:00000000:0000000B:
+2020.03.13 12:08:21 964 INFO    57 
+2020.03.13 12:08:21 965 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 965 INFO    57  
+2020.03.13 12:08:21 965 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:21 965 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:08:21 965 INFO    57 00000010:80000015:00000000:0000000B:
+2020.03.13 12:08:21 966 INFO    57 
+2020.03.13 12:08:21 966 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 966 INFO    57  
+2020.03.13 12:08:21 966 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:08:21 967 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:08:21 967 INFO    56 00000010:00000015:00000000:0000000B:
+2020.03.13 12:08:21 967 INFO    56 
+2020.03.13 12:08:21 967 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 967 INFO    56  
+2020.03.13 12:08:21 968 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:21 968 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:08:21 968 INFO    56 00000010:80000015:00000000:0000000B:
+2020.03.13 12:08:21 968 INFO    56 
+2020.03.13 12:08:21 969 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:08:21 969 INFO    56  
+2020.03.13 12:08:51 816 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:08:51 816 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:08:51 816 INFO    11 00000010:00000015:00000000:0000000C:
+2020.03.13 12:08:51 816 INFO    11 
+2020.03.13 12:08:51 816 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 816 INFO    11  
+2020.03.13 12:08:51 816 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:51 816 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:08:51 816 INFO    11 00000010:80000015:00000000:0000000C:
+2020.03.13 12:08:51 816 INFO    11 
+2020.03.13 12:08:51 817 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 817 INFO    11  
+2020.03.13 12:08:51 983 INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:08:51 983 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:08:51 983 INFO    56 00000010:00000015:00000000:0000000C:
+2020.03.13 12:08:51 983 INFO    56 
+2020.03.13 12:08:51 984 INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 984 INFO    56  
+2020.03.13 12:08:51 984 INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:51 984 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:08:51 984 INFO    56 00000010:80000015:00000000:0000000C:
+2020.03.13 12:08:51 984 INFO    56 
+2020.03.13 12:08:51 984 INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 984 INFO    56  
+2020.03.13 12:08:51 994 INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:08:51 994 INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:08:51 994 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:08:51 994 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:08:51 995 INFO    58 00000010:00000015:00000000:0000000C:
+2020.03.13 12:08:51 995 INFO    57 00000010:00000015:00000000:0000000C:
+2020.03.13 12:08:51 995 INFO    58 
+2020.03.13 12:08:51 995 INFO    57 
+2020.03.13 12:08:51 995 INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 995 INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 995 INFO    58  
+2020.03.13 12:08:51 995 INFO    57  
+2020.03.13 12:08:51 996 INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:51 996 INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:08:51 996 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:08:51 996 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:08:51 996 INFO    58 00000010:80000015:00000000:0000000C:
+2020.03.13 12:08:51 996 INFO    57 00000010:80000015:00000000:0000000C:
+2020.03.13 12:08:51 996 INFO    58 
+2020.03.13 12:08:51 996 INFO    57 
+2020.03.13 12:08:51 996 INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 996 INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:08:51 996 INFO    58  
+2020.03.13 12:08:51 996 INFO    57  
+2020.03.13 12:09:18 972 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:09:21 839 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:09:21 840 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:09:21 840 INFO    11 00000010:00000015:00000000:0000000D:
+2020.03.13 12:09:21 840 INFO    11 
+2020.03.13 12:09:21 840 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:09:21 840 INFO    11  
+2020.03.13 12:09:21 840 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:21 840 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:09:21 840 INFO    11 00000010:80000015:00000000:0000000D:
+2020.03.13 12:09:21 840 INFO    11 
+2020.03.13 12:09:21 840 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:09:21 840 INFO    11  
+2020.03.13 12:09:22 12  INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:09:22 13  INFO    58 Hex dump (16) bytes:
+2020.03.13 12:09:22 13  INFO    58 00000010:00000015:00000000:0000000D:
+2020.03.13 12:09:22 12  INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:09:22 13  INFO    58 
+2020.03.13 12:09:22 14  INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:09:22 14  INFO    56 Hex dump (16) bytes:
+2020.03.13 12:09:22 14  INFO    58  
+2020.03.13 12:09:22 14  INFO    56 00000010:00000015:00000000:0000000D:
+2020.03.13 12:09:22 14  INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:22 14  INFO    56 
+2020.03.13 12:09:22 14  INFO    58 Hex dump (16) bytes:
+2020.03.13 12:09:22 14  INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:09:22 14  INFO    58 00000010:80000015:00000000:0000000D:
+2020.03.13 12:09:22 14  INFO    56  
+2020.03.13 12:09:22 14  INFO    58 
+2020.03.13 12:09:22 14  INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:22 14  INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:09:22 14  INFO    56 Hex dump (16) bytes:
+2020.03.13 12:09:22 14  INFO    58  
+2020.03.13 12:09:22 14  INFO    56 00000010:80000015:00000000:0000000D:
+2020.03.13 12:09:22 14  INFO    56 
+2020.03.13 12:09:22 14  INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:09:22 15  INFO    56  
+2020.03.13 12:09:22 15  INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:09:22 15  INFO    57 Hex dump (16) bytes:
+2020.03.13 12:09:22 15  INFO    57 00000010:00000015:00000000:0000000D:
+2020.03.13 12:09:22 15  INFO    57 
+2020.03.13 12:09:22 15  INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:09:22 15  INFO    57  
+2020.03.13 12:09:22 15  INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:22 15  INFO    57 Hex dump (16) bytes:
+2020.03.13 12:09:22 15  INFO    57 00000010:80000015:00000000:0000000D:
+2020.03.13 12:09:22 15  INFO    57 
+2020.03.13 12:09:22 15  INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:09:22 15  INFO    57  
+2020.03.13 12:09:51 867 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:09:51 867 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:09:51 867 INFO    11 00000010:00000015:00000000:0000000E:
+2020.03.13 12:09:51 867 INFO    11 
+2020.03.13 12:09:51 867 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:09:51 867 INFO    11  
+2020.03.13 12:09:51 867 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:51 868 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:09:51 868 INFO    11 00000010:80000015:00000000:0000000E:
+2020.03.13 12:09:51 868 INFO    11 
+2020.03.13 12:09:51 868 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:09:51 868 INFO    11  
+2020.03.13 12:09:52 44  INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:09:52 44  INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:09:52 44  INFO    58 Hex dump (16) bytes:
+2020.03.13 12:09:52 44  INFO    56 Hex dump (16) bytes:
+2020.03.13 12:09:52 49  INFO    58 00000010:00000015:00000000:0000000E:
+2020.03.13 12:09:52 49  INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:09:52 49  INFO    56 00000010:00000015:00000000:0000000E:
+2020.03.13 12:09:52 49  INFO    57 Hex dump (16) bytes:
+2020.03.13 12:09:52 49  INFO    56 
+2020.03.13 12:09:52 49  INFO    57 00000010:00000015:00000000:0000000E:
+2020.03.13 12:09:52 49  INFO    58 
+2020.03.13 12:09:52 49  INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:09:52 49  INFO    56  
+2020.03.13 12:09:52 49  INFO    57 
+2020.03.13 12:09:52 49  INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:52 49  INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:09:52 49  INFO    57  
+2020.03.13 12:09:52 49  INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:09:52 49  INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:52 49  INFO    58  
+2020.03.13 12:09:52 49  INFO    56 Hex dump (16) bytes:
+2020.03.13 12:09:52 49  INFO    57 Hex dump (16) bytes:
+2020.03.13 12:09:52 49  INFO    56 00000010:80000015:00000000:0000000E:
+2020.03.13 12:09:52 49  INFO    57 00000010:80000015:00000000:0000000E:
+2020.03.13 12:09:52 49  INFO    56 
+2020.03.13 12:09:52 49  INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:09:52 49  INFO    57 
+2020.03.13 12:09:52 50  INFO    58 Hex dump (16) bytes:
+2020.03.13 12:09:52 50  INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:09:52 50  INFO    58 00000010:80000015:00000000:0000000E:
+2020.03.13 12:09:52 50  INFO    57  
+2020.03.13 12:09:52 50  INFO    58 
+2020.03.13 12:09:52 49  INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:09:52 50  INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:09:52 50  INFO    56  
+2020.03.13 12:09:52 50  INFO    58  
+2020.03.13 12:10:18 973 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:10:21 889 INFO    11 : ENQUIRE_LINK:
+2020.03.13 12:10:21 889 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:10:21 889 INFO    11 00000010:00000015:00000000:0000000F:
+2020.03.13 12:10:21 889 INFO    11 
+2020.03.13 12:10:21 890 INFO    11 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:10:21 890 INFO    11  
+2020.03.13 12:10:21 890 INFO    11 :ENQUIRE_LINK_RESP:
+2020.03.13 12:10:21 890 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:10:21 890 INFO    11 00000010:80000015:00000000:0000000F:
+2020.03.13 12:10:21 890 INFO    11 
+2020.03.13 12:10:21 890 INFO    11 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:10:21 890 INFO    11  
+2020.03.13 12:10:22 80  INFO    57 : ENQUIRE_LINK:
+2020.03.13 12:10:22 80  INFO    57 Hex dump (16) bytes:
+2020.03.13 12:10:22 80  INFO    57 00000010:00000015:00000000:0000000F:
+2020.03.13 12:10:22 80  INFO    57 
+2020.03.13 12:10:22 80  INFO    58 : ENQUIRE_LINK:
+2020.03.13 12:10:22 80  INFO    57 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:10:22 80  INFO    58 Hex dump (16) bytes:
+2020.03.13 12:10:22 80  INFO    57  
+2020.03.13 12:10:22 80  INFO    58 00000010:00000015:00000000:0000000F:
+2020.03.13 12:10:22 80  INFO    57 :ENQUIRE_LINK_RESP:
+2020.03.13 12:10:22 80  INFO    58 
+2020.03.13 12:10:22 80  INFO    57 Hex dump (16) bytes:
+2020.03.13 12:10:22 80  INFO    58 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:10:22 80  INFO    57 00000010:80000015:00000000:0000000F:
+2020.03.13 12:10:22 80  INFO    58  
+2020.03.13 12:10:22 80  INFO    57 
+2020.03.13 12:10:22 80  INFO    58 :ENQUIRE_LINK_RESP:
+2020.03.13 12:10:22 81  INFO    58 Hex dump (16) bytes:
+2020.03.13 12:10:22 81  INFO    58 00000010:80000015:00000000:0000000F:
+2020.03.13 12:10:22 81  INFO    56 : ENQUIRE_LINK:
+2020.03.13 12:10:22 81  INFO    57 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:10:22 81  INFO    56 Hex dump (16) bytes:
+2020.03.13 12:10:22 81  INFO    58 
+2020.03.13 12:10:22 81  INFO    56 00000010:00000015:00000000:0000000F:
+2020.03.13 12:10:22 81  INFO    57  
+2020.03.13 12:10:22 81  INFO    56 
+2020.03.13 12:10:22 81  INFO    58 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:10:22 81  INFO    56 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:10:22 81  INFO    58  
+2020.03.13 12:10:22 81  INFO    56  
+2020.03.13 12:10:22 81  INFO    56 :ENQUIRE_LINK_RESP:
+2020.03.13 12:10:22 81  INFO    56 Hex dump (16) bytes:
+2020.03.13 12:10:22 81  INFO    56 00000010:80000015:00000000:0000000F:
+2020.03.13 12:10:22 81  INFO    56 
+2020.03.13 12:10:22 82  INFO    56 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:10:22 82  INFO    56  
+2020.03.13 12:10:32 666 INFO    57 : UNBIND:
+2020.03.13 12:10:32 666 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:10:32 666 INFO    57 00000010:00000006:00000000:00000010:
+2020.03.13 12:10:32 666 INFO    57 
+2020.03.13 12:10:32 666 INFO    57 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 666 INFO    57  
+2020.03.13 12:10:32 667 INFO    57 3 receivers connected and bound
+2020.03.13 12:10:32 667 INFO    57 : UNBIND_RESP
+2020.03.13 12:10:32 667 INFO    57 Hex dump (16) bytes:
+2020.03.13 12:10:32 667 INFO    57 00000010:80000006:00000000:00000010:
+2020.03.13 12:10:32 667 INFO    57 
+2020.03.13 12:10:32 667 INFO    57 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 667 INFO    57  
+2020.03.13 12:10:32 667 INFO    57 StandardConnectionHandler waiting for connection
+2020.03.13 12:10:32 681 INFO    11 : UNBIND:
+2020.03.13 12:10:32 681 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:10:32 681 INFO    11 00000010:00000006:00000000:00000010:
+2020.03.13 12:10:32 681 INFO    11 
+2020.03.13 12:10:32 682 INFO    11 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 682 INFO    11  
+2020.03.13 12:10:32 682 INFO    11 2 receivers connected and bound
+2020.03.13 12:10:32 682 INFO    11 : UNBIND_RESP
+2020.03.13 12:10:32 682 INFO    11 Hex dump (16) bytes:
+2020.03.13 12:10:32 682 INFO    11 00000010:80000006:00000000:00000010:
+2020.03.13 12:10:32 682 INFO    11 
+2020.03.13 12:10:32 682 INFO    11 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 682 INFO    11  
+2020.03.13 12:10:32 682 INFO    11 StandardConnectionHandler waiting for connection
+2020.03.13 12:10:32 686 INFO    56 : UNBIND:
+2020.03.13 12:10:32 686 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:10:32 686 INFO    56 00000010:00000006:00000000:00000010:
+2020.03.13 12:10:32 686 INFO    56 
+2020.03.13 12:10:32 686 INFO    56 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 686 INFO    56  
+2020.03.13 12:10:32 686 INFO    56 1 receivers connected and bound
+2020.03.13 12:10:32 686 INFO    56 : UNBIND_RESP
+2020.03.13 12:10:32 686 INFO    56 Hex dump (16) bytes:
+2020.03.13 12:10:32 686 INFO    56 00000010:80000006:00000000:00000010:
+2020.03.13 12:10:32 686 INFO    56 
+2020.03.13 12:10:32 686 INFO    56 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 686 INFO    56  
+2020.03.13 12:10:32 686 INFO    56 StandardConnectionHandler waiting for connection
+2020.03.13 12:10:32 690 INFO    58 : UNBIND:
+2020.03.13 12:10:32 690 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:10:32 690 INFO    58 00000010:00000006:00000000:00000010:
+2020.03.13 12:10:32 690 INFO    58 
+2020.03.13 12:10:32 690 INFO    58 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 690 INFO    58  
+2020.03.13 12:10:32 690 INFO    58 0 receivers connected and bound
+2020.03.13 12:10:32 690 INFO    58 : UNBIND_RESP
+2020.03.13 12:10:32 690 INFO    58 Hex dump (16) bytes:
+2020.03.13 12:10:32 690 INFO    58 00000010:80000006:00000000:00000010:
+2020.03.13 12:10:32 690 INFO    58 
+2020.03.13 12:10:32 690 INFO    58 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=16
+2020.03.13 12:10:32 690 INFO    58  
+2020.03.13 12:10:32 690 INFO    58 StandardConnectionHandler waiting for connection
+2020.03.13 12:10:50 8   INFO    55 StandardConnectionHandler accepted a connection
+2020.03.13 12:10:50 8   INFO    55 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:10:50 26  INFO    55 : BIND_TRANSCEIVER:
+2020.03.13 12:10:50 26  INFO    55 Hex dump (35) bytes:
+2020.03.13 12:10:50 26  INFO    55 00000023:00000009:00000000:00000001:
+2020.03.13 12:10:50 26  INFO    55 55504652:45450055:50465245:45000034:
+2020.03.13 12:10:50 26  INFO    55 030000
+2020.03.13 12:10:50 26  INFO    55 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:10:50 26  INFO    55 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:10:50 26  INFO    55  
+2020.03.13 12:10:50 26  INFO    55 StandardProtocolHandler: setting address range to 
+2020.03.13 12:10:50 26  INFO    55 New transceiver session bound to SMPPSim
+2020.03.13 12:10:50 26  INFO    55 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:10:50 26  INFO    55 Hex dump (24) bytes:
+2020.03.13 12:10:50 26  INFO    55 00000018:80000009:00000000:00000001:
+2020.03.13 12:10:50 26  INFO    55 534D5050:53696D00:
+2020.03.13 12:10:50 26  INFO    55 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:10:50 26  INFO    55  
+2020.03.13 12:10:50 26  INFO    55 1 receivers connected and bound
+2020.03.13 12:10:50 27  INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:10:50 87  INFO    54 StandardConnectionHandler accepted a connection
+2020.03.13 12:10:50 87  INFO    54 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:10:50 92  INFO    54 : BIND_TRANSCEIVER:
+2020.03.13 12:10:50 92  INFO    54 Hex dump (35) bytes:
+2020.03.13 12:10:50 92  INFO    54 00000023:00000009:00000000:00000001:
+2020.03.13 12:10:50 92  INFO    54 55504652:45450055:50465245:45000034:
+2020.03.13 12:10:50 92  INFO    54 030000
+2020.03.13 12:10:50 93  INFO    54 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:10:50 93  INFO    54 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:10:50 93  INFO    54  
+2020.03.13 12:10:50 93  INFO    54 StandardProtocolHandler: setting address range to 
+2020.03.13 12:10:50 93  INFO    54 New transceiver session bound to SMPPSim
+2020.03.13 12:10:50 93  INFO    54 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:10:50 93  INFO    54 Hex dump (24) bytes:
+2020.03.13 12:10:50 93  INFO    54 00000018:80000009:00000000:00000001:
+2020.03.13 12:10:50 93  INFO    54 534D5050:53696D00:
+2020.03.13 12:10:50 93  INFO    54 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:10:50 93  INFO    54  
+2020.03.13 12:10:50 94  INFO    54 2 receivers connected and bound
+2020.03.13 12:10:50 94  INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:10:50 110 INFO    53 StandardConnectionHandler accepted a connection
+2020.03.13 12:10:50 110 INFO    53 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:10:50 112 INFO    53 : BIND_TRANSCEIVER:
+2020.03.13 12:10:50 112 INFO    53 Hex dump (35) bytes:
+2020.03.13 12:10:50 112 INFO    53 00000023:00000009:00000000:00000001:
+2020.03.13 12:10:50 112 INFO    53 55504652:45450055:50465245:45000034:
+2020.03.13 12:10:50 112 INFO    53 030000
+2020.03.13 12:10:50 112 INFO    53 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:10:50 112 INFO    53 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:10:50 113 INFO    53  
+2020.03.13 12:10:50 113 INFO    53 StandardProtocolHandler: setting address range to 
+2020.03.13 12:10:50 113 INFO    53 New transceiver session bound to SMPPSim
+2020.03.13 12:10:50 113 INFO    53 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:10:50 113 INFO    53 Hex dump (24) bytes:
+2020.03.13 12:10:50 113 INFO    53 00000018:80000009:00000000:00000001:
+2020.03.13 12:10:50 113 INFO    53 534D5050:53696D00:
+2020.03.13 12:10:50 113 INFO    53 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:10:50 113 INFO    53  
+2020.03.13 12:10:50 113 INFO    53 3 receivers connected and bound
+2020.03.13 12:10:50 113 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:10:50 118 INFO    49 StandardConnectionHandler accepted a connection
+2020.03.13 12:10:50 118 INFO    49 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:10:50 119 INFO    49 : BIND_TRANSCEIVER:
+2020.03.13 12:10:50 119 INFO    49 Hex dump (35) bytes:
+2020.03.13 12:10:50 119 INFO    49 00000023:00000009:00000000:00000001:
+2020.03.13 12:10:50 119 INFO    49 55504652:45450055:50465245:45000034:
+2020.03.13 12:10:50 119 INFO    49 030000
+2020.03.13 12:10:50 119 INFO    49 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:10:50 119 INFO    49 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:10:50 119 INFO    49  
+2020.03.13 12:10:50 119 INFO    49 StandardProtocolHandler: setting address range to 
+2020.03.13 12:10:50 119 INFO    49 New transceiver session bound to SMPPSim
+2020.03.13 12:10:50 120 INFO    49 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:10:50 120 INFO    49 Hex dump (24) bytes:
+2020.03.13 12:10:50 120 INFO    49 00000018:80000009:00000000:00000001:
+2020.03.13 12:10:50 120 INFO    49 534D5050:53696D00:
+2020.03.13 12:10:50 120 INFO    49 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:10:50 120 INFO    49  
+2020.03.13 12:10:50 120 INFO    49 4 receivers connected and bound
+2020.03.13 12:10:50 120 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:11:07 49  INFO    69 addressIsServicedByReceiver(5321)
+2020.03.13 12:11:07 49  INFO    69 DELIVER_SM:
+2020.03.13 12:11:07 49  INFO    69 Hex dump (53) bytes:
+2020.03.13 12:11:07 49  INFO    69 00000035:00000005:00000000:00000001:
+2020.03.13 12:11:07 49  INFO    69 00000030:30303030:30303030:30000000:
+2020.03.13 12:11:07 49  INFO    69 35333231:00000000:00000000:00000654:
+2020.03.13 12:11:07 49  INFO    69 6573745F:32
+2020.03.13 12:11:07 49  INFO    69 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=1,service_type=,source_addr_ton=0
+2020.03.13 12:11:07 49  INFO    69 source_addr_npi=0,source_addr=0000000000,dest_addr_ton=0,dest_addr_npi=0
+2020.03.13 12:11:07 49  INFO    69 destination_addr=5321,esm_class=0,protocol_ID=0,priority_flag=0
+2020.03.13 12:11:07 49  INFO    69 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2020.03.13 12:11:07 49  INFO    69 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=6
+2020.03.13 12:11:07 49  INFO    69 short_message=Test_2
+2020.03.13 12:11:07 49  INFO    69  
+2020.03.13 12:11:07 49  INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:11:07 405 INFO    49 : DELIVER_SM_RESP:
+2020.03.13 12:11:07 406 INFO    49 Hex dump (17) bytes:
+2020.03.13 12:11:07 406 INFO    49 00000011:80000005:00000000:00000001:
+2020.03.13 12:11:07 406 INFO    49 00
+2020.03.13 12:11:07 406 INFO    49 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=1,system_id= 
+2020.03.13 12:11:07 406 INFO    49  
+2020.03.13 12:11:18 974 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:11:20 96  INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:11:20 96  INFO    55 Hex dump (16) bytes:
+2020.03.13 12:11:20 96  INFO    55 00000010:00000015:00000000:00000002:
+2020.03.13 12:11:20 96  INFO    55 
+2020.03.13 12:11:20 96  INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:11:20 97  INFO    55  
+2020.03.13 12:11:20 97  INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:20 97  INFO    55 Hex dump (16) bytes:
+2020.03.13 12:11:20 97  INFO    55 00000010:80000015:00000000:00000002:
+2020.03.13 12:11:20 97  INFO    55 
+2020.03.13 12:11:20 97  INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:11:20 97  INFO    55  
+2020.03.13 12:11:20 152 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:11:20 153 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:11:20 153 INFO    54 00000010:00000015:00000000:00000002:
+2020.03.13 12:11:20 153 INFO    54 
+2020.03.13 12:11:20 153 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:11:20 153 INFO    54  
+2020.03.13 12:11:20 153 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:20 153 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:11:20 153 INFO    54 00000010:80000015:00000000:00000002:
+2020.03.13 12:11:20 153 INFO    54 
+2020.03.13 12:11:20 153 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:11:20 153 INFO    54  
+2020.03.13 12:11:20 173 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:11:20 173 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:11:20 173 INFO    53 00000010:00000015:00000000:00000002:
+2020.03.13 12:11:20 173 INFO    53 
+2020.03.13 12:11:20 173 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:11:20 173 INFO    53  
+2020.03.13 12:11:20 173 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:20 173 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:11:20 173 INFO    53 00000010:80000015:00000000:00000002:
+2020.03.13 12:11:20 174 INFO    53 
+2020.03.13 12:11:20 174 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:11:20 174 INFO    53  
+2020.03.13 12:11:37 90  INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:11:37 91  INFO    49 Hex dump (16) bytes:
+2020.03.13 12:11:37 91  INFO    49 00000010:00000015:00000000:00000002:
+2020.03.13 12:11:37 91  INFO    49 
+2020.03.13 12:11:37 91  INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:11:37 91  INFO    49  
+2020.03.13 12:11:37 91  INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:37 91  INFO    49 Hex dump (16) bytes:
+2020.03.13 12:11:37 91  INFO    49 00000010:80000015:00000000:00000002:
+2020.03.13 12:11:37 91  INFO    49 
+2020.03.13 12:11:37 91  INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:11:37 91  INFO    49  
+2020.03.13 12:11:50 130 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:11:50 130 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:11:50 130 INFO    55 00000010:00000015:00000000:00000003:
+2020.03.13 12:11:50 131 INFO    55 
+2020.03.13 12:11:50 131 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:11:50 131 INFO    55  
+2020.03.13 12:11:50 131 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:50 131 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:11:50 131 INFO    55 00000010:80000015:00000000:00000003:
+2020.03.13 12:11:50 131 INFO    55 
+2020.03.13 12:11:50 131 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:11:50 131 INFO    55  
+2020.03.13 12:11:50 198 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:11:50 198 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:11:50 198 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:11:50 198 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:11:50 198 INFO    53 00000010:00000015:00000000:00000003:
+2020.03.13 12:11:50 198 INFO    53 
+2020.03.13 12:11:50 198 INFO    54 00000010:00000015:00000000:00000003:
+2020.03.13 12:11:50 198 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:11:50 198 INFO    53  
+2020.03.13 12:11:50 198 INFO    54 
+2020.03.13 12:11:50 198 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:50 198 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:11:50 198 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:11:50 198 INFO    53 00000010:80000015:00000000:00000003:
+2020.03.13 12:11:50 198 INFO    53 
+2020.03.13 12:11:50 198 INFO    54  
+2020.03.13 12:11:50 198 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:11:50 198 INFO    53  
+2020.03.13 12:11:50 198 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:11:50 198 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:11:50 198 INFO    54 00000010:80000015:00000000:00000003:
+2020.03.13 12:11:50 198 INFO    54 
+2020.03.13 12:11:50 198 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:11:50 198 INFO    54  
+2020.03.13 12:12:07 122 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:12:07 123 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:12:07 123 INFO    49 00000010:00000015:00000000:00000003:
+2020.03.13 12:12:07 123 INFO    49 
+2020.03.13 12:12:07 123 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:12:07 123 INFO    49  
+2020.03.13 12:12:07 123 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:07 123 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:12:07 123 INFO    49 00000010:80000015:00000000:00000003:
+2020.03.13 12:12:07 124 INFO    49 
+2020.03.13 12:12:07 124 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:12:07 124 INFO    49  
+2020.03.13 12:12:18 976 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:12:20 160 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:12:20 160 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:12:20 160 INFO    55 00000010:00000015:00000000:00000004:
+2020.03.13 12:12:20 161 INFO    55 
+2020.03.13 12:12:20 161 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:12:20 161 INFO    55  
+2020.03.13 12:12:20 161 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:20 161 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:12:20 161 INFO    55 00000010:80000015:00000000:00000004:
+2020.03.13 12:12:20 161 INFO    55 
+2020.03.13 12:12:20 161 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:12:20 161 INFO    55  
+2020.03.13 12:12:20 225 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:12:20 225 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:12:20 225 INFO    53 00000010:00000015:00000000:00000004:
+2020.03.13 12:12:20 225 INFO    53 
+2020.03.13 12:12:20 225 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:12:20 225 INFO    53  
+2020.03.13 12:12:20 225 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:20 225 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:12:20 225 INFO    53 00000010:80000015:00000000:00000004:
+2020.03.13 12:12:20 225 INFO    53 
+2020.03.13 12:12:20 225 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:12:20 225 INFO    53  
+2020.03.13 12:12:20 230 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:12:20 230 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:12:20 230 INFO    54 00000010:00000015:00000000:00000004:
+2020.03.13 12:12:20 230 INFO    54 
+2020.03.13 12:12:20 230 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:12:20 230 INFO    54  
+2020.03.13 12:12:20 230 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:20 230 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:12:20 230 INFO    54 00000010:80000015:00000000:00000004:
+2020.03.13 12:12:20 230 INFO    54 
+2020.03.13 12:12:20 230 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:12:20 230 INFO    54  
+2020.03.13 12:12:27 633 INFO    69 addressIsServicedByReceiver(5321)
+2020.03.13 12:12:27 633 INFO    69 DELIVER_SM:
+2020.03.13 12:12:27 633 INFO    69 Hex dump (59) bytes:
+2020.03.13 12:12:27 633 INFO    69 0000003B:00000005:00000000:00000002:
+2020.03.13 12:12:27 633 INFO    69 00010130:30303030:30303030:30000101:
+2020.03.13 12:12:27 634 INFO    69 35333231:00000000:00000000:00000654:
+2020.03.13 12:12:27 634 INFO    69 6573745F:32020A00:020001
+2020.03.13 12:12:27 634 INFO    69 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=2,service_type=,source_addr_ton=1
+2020.03.13 12:12:27 634 INFO    69 source_addr_npi=1,source_addr=0000000000,dest_addr_ton=1,dest_addr_npi=1
+2020.03.13 12:12:27 634 INFO    69 destination_addr=5321,esm_class=0,protocol_ID=0,priority_flag=0
+2020.03.13 12:12:27 634 INFO    69 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2020.03.13 12:12:27 634 INFO    69 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=6
+2020.03.13 12:12:27 634 INFO    69 short_message=Test_2
+2020.03.13 12:12:27 634 INFO    69  
+2020.03.13 12:12:27 634 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:12:28 73  INFO    53 : DELIVER_SM_RESP:
+2020.03.13 12:12:28 74  INFO    53 Hex dump (17) bytes:
+2020.03.13 12:12:28 74  INFO    53 00000011:80000005:00000000:00000002:
+2020.03.13 12:12:28 74  INFO    53 00
+2020.03.13 12:12:28 74  INFO    53 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=2,system_id= 
+2020.03.13 12:12:28 74  INFO    53  
+2020.03.13 12:12:37 156 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:12:37 156 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:12:37 156 INFO    49 00000010:00000015:00000000:00000004:
+2020.03.13 12:12:37 157 INFO    49 
+2020.03.13 12:12:37 157 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:12:37 157 INFO    49  
+2020.03.13 12:12:37 157 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:37 157 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:12:37 157 INFO    49 00000010:80000015:00000000:00000004:
+2020.03.13 12:12:37 157 INFO    49 
+2020.03.13 12:12:37 157 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:12:37 157 INFO    49  
+2020.03.13 12:12:50 176 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:12:50 176 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:12:50 177 INFO    55 00000010:00000015:00000000:00000005:
+2020.03.13 12:12:50 177 INFO    55 
+2020.03.13 12:12:50 177 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:12:50 177 INFO    55  
+2020.03.13 12:12:50 177 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:50 177 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:12:50 177 INFO    55 00000010:80000015:00000000:00000005:
+2020.03.13 12:12:50 177 INFO    55 
+2020.03.13 12:12:50 177 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:12:50 177 INFO    55  
+2020.03.13 12:12:50 262 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:12:50 262 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:12:50 262 INFO    54 00000010:00000015:00000000:00000005:
+2020.03.13 12:12:50 262 INFO    54 
+2020.03.13 12:12:50 262 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:12:50 262 INFO    54  
+2020.03.13 12:12:50 262 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:50 262 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:12:50 262 INFO    54 00000010:80000015:00000000:00000005:
+2020.03.13 12:12:50 262 INFO    54 
+2020.03.13 12:12:50 263 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:12:50 263 INFO    54  
+2020.03.13 12:12:57 659 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:12:57 659 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:12:57 659 INFO    53 00000010:00000015:00000000:00000005:
+2020.03.13 12:12:57 659 INFO    53 
+2020.03.13 12:12:57 659 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:12:57 660 INFO    53  
+2020.03.13 12:12:57 660 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:12:57 660 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:12:57 660 INFO    53 00000010:80000015:00000000:00000005:
+2020.03.13 12:12:57 660 INFO    53 
+2020.03.13 12:12:57 660 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:12:57 661 INFO    53  
+2020.03.13 12:13:07 190 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:13:07 190 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:13:07 190 INFO    49 00000010:00000015:00000000:00000005:
+2020.03.13 12:13:07 191 INFO    49 
+2020.03.13 12:13:07 191 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:13:07 191 INFO    49  
+2020.03.13 12:13:07 191 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:07 191 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:13:07 191 INFO    49 00000010:80000015:00000000:00000005:
+2020.03.13 12:13:07 191 INFO    49 
+2020.03.13 12:13:07 191 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:13:07 191 INFO    49  
+2020.03.13 12:13:18 977 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:13:20 208 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:13:20 208 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:13:20 208 INFO    55 00000010:00000015:00000000:00000006:
+2020.03.13 12:13:20 208 INFO    55 
+2020.03.13 12:13:20 209 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:13:20 209 INFO    55  
+2020.03.13 12:13:20 209 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:20 209 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:13:20 209 INFO    55 00000010:80000015:00000000:00000006:
+2020.03.13 12:13:20 209 INFO    55 
+2020.03.13 12:13:20 209 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:13:20 209 INFO    55  
+2020.03.13 12:13:20 292 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:13:20 292 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:13:20 292 INFO    54 00000010:00000015:00000000:00000006:
+2020.03.13 12:13:20 292 INFO    54 
+2020.03.13 12:13:20 292 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:13:20 292 INFO    54  
+2020.03.13 12:13:20 292 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:20 292 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:13:20 292 INFO    54 00000010:80000015:00000000:00000006:
+2020.03.13 12:13:20 292 INFO    54 
+2020.03.13 12:13:20 293 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:13:20 293 INFO    54  
+2020.03.13 12:13:27 694 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:13:27 694 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:13:27 694 INFO    53 00000010:00000015:00000000:00000006:
+2020.03.13 12:13:27 694 INFO    53 
+2020.03.13 12:13:27 694 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:13:27 695 INFO    53  
+2020.03.13 12:13:27 695 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:27 695 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:13:27 695 INFO    53 00000010:80000015:00000000:00000006:
+2020.03.13 12:13:27 695 INFO    53 
+2020.03.13 12:13:27 695 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:13:27 695 INFO    53  
+2020.03.13 12:13:37 220 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:13:37 220 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:13:37 220 INFO    49 00000010:00000015:00000000:00000006:
+2020.03.13 12:13:37 220 INFO    49 
+2020.03.13 12:13:37 220 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:13:37 220 INFO    49  
+2020.03.13 12:13:37 220 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:37 220 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:13:37 220 INFO    49 00000010:80000015:00000000:00000006:
+2020.03.13 12:13:37 220 INFO    49 
+2020.03.13 12:13:37 220 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:13:37 220 INFO    49  
+2020.03.13 12:13:50 240 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:13:50 240 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:13:50 240 INFO    55 00000010:00000015:00000000:00000007:
+2020.03.13 12:13:50 240 INFO    55 
+2020.03.13 12:13:50 240 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:13:50 240 INFO    55  
+2020.03.13 12:13:50 240 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:50 241 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:13:50 241 INFO    55 00000010:80000015:00000000:00000007:
+2020.03.13 12:13:50 241 INFO    55 
+2020.03.13 12:13:50 241 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:13:50 241 INFO    55  
+2020.03.13 12:13:50 324 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:13:50 324 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:13:50 324 INFO    54 00000010:00000015:00000000:00000007:
+2020.03.13 12:13:50 324 INFO    54 
+2020.03.13 12:13:50 324 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:13:50 324 INFO    54  
+2020.03.13 12:13:50 324 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:50 325 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:13:50 325 INFO    54 00000010:80000015:00000000:00000007:
+2020.03.13 12:13:50 325 INFO    54 
+2020.03.13 12:13:50 325 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:13:50 325 INFO    54  
+2020.03.13 12:13:57 726 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:13:57 726 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:13:57 726 INFO    53 00000010:00000015:00000000:00000007:
+2020.03.13 12:13:57 726 INFO    53 
+2020.03.13 12:13:57 726 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:13:57 726 INFO    53  
+2020.03.13 12:13:57 726 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:13:57 726 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:13:57 726 INFO    53 00000010:80000015:00000000:00000007:
+2020.03.13 12:13:57 726 INFO    53 
+2020.03.13 12:13:57 726 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:13:57 726 INFO    53  
+2020.03.13 12:14:07 253 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:14:07 253 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:14:07 253 INFO    49 00000010:00000015:00000000:00000007:
+2020.03.13 12:14:07 253 INFO    49 
+2020.03.13 12:14:07 254 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:14:07 254 INFO    49  
+2020.03.13 12:14:07 254 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:07 254 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:14:07 254 INFO    49 00000010:80000015:00000000:00000007:
+2020.03.13 12:14:07 254 INFO    49 
+2020.03.13 12:14:07 254 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:14:07 254 INFO    49  
+2020.03.13 12:14:18 978 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:14:20 273 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:14:20 274 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:14:20 274 INFO    55 00000010:00000015:00000000:00000008:
+2020.03.13 12:14:20 274 INFO    55 
+2020.03.13 12:14:20 274 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:14:20 274 INFO    55  
+2020.03.13 12:14:20 274 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:20 274 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:14:20 275 INFO    55 00000010:80000015:00000000:00000008:
+2020.03.13 12:14:20 275 INFO    55 
+2020.03.13 12:14:20 275 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:14:20 275 INFO    55  
+2020.03.13 12:14:20 350 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:14:20 351 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:14:20 351 INFO    54 00000010:00000015:00000000:00000008:
+2020.03.13 12:14:20 351 INFO    54 
+2020.03.13 12:14:20 351 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:14:20 351 INFO    54  
+2020.03.13 12:14:20 351 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:20 351 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:14:20 351 INFO    54 00000010:80000015:00000000:00000008:
+2020.03.13 12:14:20 351 INFO    54 
+2020.03.13 12:14:20 351 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:14:20 351 INFO    54  
+2020.03.13 12:14:27 751 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:14:27 752 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:14:27 752 INFO    53 00000010:00000015:00000000:00000008:
+2020.03.13 12:14:27 752 INFO    53 
+2020.03.13 12:14:27 752 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:14:27 752 INFO    53  
+2020.03.13 12:14:27 752 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:27 752 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:14:27 752 INFO    53 00000010:80000015:00000000:00000008:
+2020.03.13 12:14:27 752 INFO    53 
+2020.03.13 12:14:27 752 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:14:27 752 INFO    53  
+2020.03.13 12:14:37 283 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:14:37 283 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:14:37 283 INFO    49 00000010:00000015:00000000:00000008:
+2020.03.13 12:14:37 283 INFO    49 
+2020.03.13 12:14:37 284 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:14:37 284 INFO    49  
+2020.03.13 12:14:37 284 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:37 284 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:14:37 284 INFO    49 00000010:80000015:00000000:00000008:
+2020.03.13 12:14:37 285 INFO    49 
+2020.03.13 12:14:37 285 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:14:37 285 INFO    49  
+2020.03.13 12:14:50 304 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:14:50 304 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:14:50 304 INFO    55 00000010:00000015:00000000:00000009:
+2020.03.13 12:14:50 304 INFO    55 
+2020.03.13 12:14:50 304 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:14:50 304 INFO    55  
+2020.03.13 12:14:50 304 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:50 304 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:14:50 304 INFO    55 00000010:80000015:00000000:00000009:
+2020.03.13 12:14:50 304 INFO    55 
+2020.03.13 12:14:50 304 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:14:50 304 INFO    55  
+2020.03.13 12:14:50 380 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:14:50 381 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:14:50 381 INFO    54 00000010:00000015:00000000:00000009:
+2020.03.13 12:14:50 381 INFO    54 
+2020.03.13 12:14:50 381 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:14:50 381 INFO    54  
+2020.03.13 12:14:50 381 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:50 381 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:14:50 381 INFO    54 00000010:80000015:00000000:00000009:
+2020.03.13 12:14:50 381 INFO    54 
+2020.03.13 12:14:50 381 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:14:50 381 INFO    54  
+2020.03.13 12:14:57 771 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:14:57 771 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:14:57 771 INFO    53 00000010:00000015:00000000:00000009:
+2020.03.13 12:14:57 771 INFO    53 
+2020.03.13 12:14:57 771 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:14:57 772 INFO    53  
+2020.03.13 12:14:57 772 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:14:57 772 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:14:57 772 INFO    53 00000010:80000015:00000000:00000009:
+2020.03.13 12:14:57 772 INFO    53 
+2020.03.13 12:14:57 772 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:14:57 772 INFO    53  
+2020.03.13 12:15:07 319 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:15:07 319 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:15:07 319 INFO    49 00000010:00000015:00000000:00000009:
+2020.03.13 12:15:07 319 INFO    49 
+2020.03.13 12:15:07 320 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:15:07 320 INFO    49  
+2020.03.13 12:15:07 320 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:07 320 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:15:07 320 INFO    49 00000010:80000015:00000000:00000009:
+2020.03.13 12:15:07 320 INFO    49 
+2020.03.13 12:15:07 320 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:15:07 320 INFO    49  
+2020.03.13 12:15:18 979 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:15:20 336 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:15:20 336 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:15:20 336 INFO    55 00000010:00000015:00000000:0000000A:
+2020.03.13 12:15:20 336 INFO    55 
+2020.03.13 12:15:20 336 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:15:20 337 INFO    55  
+2020.03.13 12:15:20 337 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:20 337 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:15:20 337 INFO    55 00000010:80000015:00000000:0000000A:
+2020.03.13 12:15:20 337 INFO    55 
+2020.03.13 12:15:20 337 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:15:20 337 INFO    55  
+2020.03.13 12:15:20 413 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:15:20 413 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:15:20 413 INFO    54 00000010:00000015:00000000:0000000A:
+2020.03.13 12:15:20 413 INFO    54 
+2020.03.13 12:15:20 413 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:15:20 413 INFO    54  
+2020.03.13 12:15:20 413 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:20 413 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:15:20 413 INFO    54 00000010:80000015:00000000:0000000A:
+2020.03.13 12:15:20 413 INFO    54 
+2020.03.13 12:15:20 413 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:15:20 414 INFO    54  
+2020.03.13 12:15:27 788 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:15:27 788 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:15:27 788 INFO    53 00000010:00000015:00000000:0000000A:
+2020.03.13 12:15:27 788 INFO    53 
+2020.03.13 12:15:27 789 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:15:27 789 INFO    53  
+2020.03.13 12:15:27 803 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:27 803 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:15:27 803 INFO    53 00000010:80000015:00000000:0000000A:
+2020.03.13 12:15:27 803 INFO    53 
+2020.03.13 12:15:27 803 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:15:27 803 INFO    53  
+2020.03.13 12:15:37 332 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:15:37 333 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:15:37 333 INFO    49 00000010:00000015:00000000:0000000A:
+2020.03.13 12:15:37 333 INFO    49 
+2020.03.13 12:15:37 333 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:15:37 333 INFO    49  
+2020.03.13 12:15:37 333 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:37 333 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:15:37 333 INFO    49 00000010:80000015:00000000:0000000A:
+2020.03.13 12:15:37 333 INFO    49 
+2020.03.13 12:15:37 333 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:15:37 334 INFO    49  
+2020.03.13 12:15:50 370 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:15:50 370 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:15:50 370 INFO    55 00000010:00000015:00000000:0000000B:
+2020.03.13 12:15:50 370 INFO    55 
+2020.03.13 12:15:50 370 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:15:50 370 INFO    55  
+2020.03.13 12:15:50 370 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:50 370 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:15:50 370 INFO    55 00000010:80000015:00000000:0000000B:
+2020.03.13 12:15:50 370 INFO    55 
+2020.03.13 12:15:50 370 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:15:50 370 INFO    55  
+2020.03.13 12:15:50 438 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:15:50 438 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:15:50 438 INFO    54 00000010:00000015:00000000:0000000B:
+2020.03.13 12:15:50 438 INFO    54 
+2020.03.13 12:15:50 438 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:15:50 438 INFO    54  
+2020.03.13 12:15:50 439 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:50 439 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:15:50 439 INFO    54 00000010:80000015:00000000:0000000B:
+2020.03.13 12:15:50 439 INFO    54 
+2020.03.13 12:15:50 439 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:15:50 439 INFO    54  
+2020.03.13 12:15:57 836 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:15:57 837 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:15:57 837 INFO    53 00000010:00000015:00000000:0000000B:
+2020.03.13 12:15:57 837 INFO    53 
+2020.03.13 12:15:57 837 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:15:57 837 INFO    53  
+2020.03.13 12:15:57 837 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:15:57 837 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:15:57 837 INFO    53 00000010:80000015:00000000:0000000B:
+2020.03.13 12:15:57 837 INFO    53 
+2020.03.13 12:15:57 837 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:15:57 838 INFO    53  
+2020.03.13 12:16:07 363 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:16:07 363 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:16:07 364 INFO    49 00000010:00000015:00000000:0000000B:
+2020.03.13 12:16:07 364 INFO    49 
+2020.03.13 12:16:07 364 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:16:07 364 INFO    49  
+2020.03.13 12:16:07 364 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:07 364 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:16:07 365 INFO    49 00000010:80000015:00000000:0000000B:
+2020.03.13 12:16:07 365 INFO    49 
+2020.03.13 12:16:07 365 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:16:07 365 INFO    49  
+2020.03.13 12:16:18 981 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:16:20 403 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:16:20 403 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:16:20 403 INFO    55 00000010:00000015:00000000:0000000C:
+2020.03.13 12:16:20 403 INFO    55 
+2020.03.13 12:16:20 403 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:16:20 403 INFO    55  
+2020.03.13 12:16:20 403 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:20 403 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:16:20 403 INFO    55 00000010:80000015:00000000:0000000C:
+2020.03.13 12:16:20 403 INFO    55 
+2020.03.13 12:16:20 404 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:16:20 404 INFO    55  
+2020.03.13 12:16:20 472 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:16:20 472 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:16:20 472 INFO    54 00000010:00000015:00000000:0000000C:
+2020.03.13 12:16:20 472 INFO    54 
+2020.03.13 12:16:20 472 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:16:20 472 INFO    54  
+2020.03.13 12:16:20 472 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:20 472 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:16:20 473 INFO    54 00000010:80000015:00000000:0000000C:
+2020.03.13 12:16:20 473 INFO    54 
+2020.03.13 12:16:20 473 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:16:20 473 INFO    54  
+2020.03.13 12:16:27 868 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:16:27 868 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:16:27 868 INFO    53 00000010:00000015:00000000:0000000C:
+2020.03.13 12:16:27 868 INFO    53 
+2020.03.13 12:16:27 869 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:16:27 869 INFO    53  
+2020.03.13 12:16:27 869 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:27 869 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:16:27 869 INFO    53 00000010:80000015:00000000:0000000C:
+2020.03.13 12:16:27 869 INFO    53 
+2020.03.13 12:16:27 869 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:16:27 869 INFO    53  
+2020.03.13 12:16:37 396 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:16:37 397 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:16:37 397 INFO    49 00000010:00000015:00000000:0000000C:
+2020.03.13 12:16:37 397 INFO    49 
+2020.03.13 12:16:37 397 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2020.03.13 12:16:37 397 INFO    49  
+2020.03.13 12:16:37 397 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:37 397 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:16:37 397 INFO    49 00000010:80000015:00000000:0000000C:
+2020.03.13 12:16:37 397 INFO    49 
+2020.03.13 12:16:37 397 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2020.03.13 12:16:37 397 INFO    49  
+2020.03.13 12:16:50 426 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:16:50 426 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:16:50 426 INFO    55 00000010:00000015:00000000:0000000D:
+2020.03.13 12:16:50 426 INFO    55 
+2020.03.13 12:16:50 426 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:16:50 426 INFO    55  
+2020.03.13 12:16:50 428 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:50 428 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:16:50 428 INFO    55 00000010:80000015:00000000:0000000D:
+2020.03.13 12:16:50 428 INFO    55 
+2020.03.13 12:16:50 428 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:16:50 428 INFO    55  
+2020.03.13 12:16:50 504 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:16:50 504 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:16:50 504 INFO    54 00000010:00000015:00000000:0000000D:
+2020.03.13 12:16:50 504 INFO    54 
+2020.03.13 12:16:50 504 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:16:50 504 INFO    54  
+2020.03.13 12:16:50 504 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:50 504 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:16:50 504 INFO    54 00000010:80000015:00000000:0000000D:
+2020.03.13 12:16:50 504 INFO    54 
+2020.03.13 12:16:50 504 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:16:50 504 INFO    54  
+2020.03.13 12:16:57 900 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:16:57 900 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:16:57 900 INFO    53 00000010:00000015:00000000:0000000D:
+2020.03.13 12:16:57 900 INFO    53 
+2020.03.13 12:16:57 900 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:16:57 900 INFO    53  
+2020.03.13 12:16:57 900 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:16:57 900 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:16:57 900 INFO    53 00000010:80000015:00000000:0000000D:
+2020.03.13 12:16:57 901 INFO    53 
+2020.03.13 12:16:57 901 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:16:57 901 INFO    53  
+2020.03.13 12:17:07 429 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:17:07 429 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:17:07 429 INFO    49 00000010:00000015:00000000:0000000D:
+2020.03.13 12:17:07 429 INFO    49 
+2020.03.13 12:17:07 430 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2020.03.13 12:17:07 430 INFO    49  
+2020.03.13 12:17:07 430 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:07 430 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:17:07 430 INFO    49 00000010:80000015:00000000:0000000D:
+2020.03.13 12:17:07 430 INFO    49 
+2020.03.13 12:17:07 430 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2020.03.13 12:17:07 430 INFO    49  
+2020.03.13 12:17:18 983 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:17:20 436 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:17:20 436 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:17:20 436 INFO    55 00000010:00000015:00000000:0000000E:
+2020.03.13 12:17:20 436 INFO    55 
+2020.03.13 12:17:20 436 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:17:20 436 INFO    55  
+2020.03.13 12:17:20 436 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:20 436 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:17:20 436 INFO    55 00000010:80000015:00000000:0000000E:
+2020.03.13 12:17:20 436 INFO    55 
+2020.03.13 12:17:20 436 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:17:20 436 INFO    55  
+2020.03.13 12:17:20 533 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:17:20 533 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:17:20 533 INFO    54 00000010:00000015:00000000:0000000E:
+2020.03.13 12:17:20 533 INFO    54 
+2020.03.13 12:17:20 533 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:17:20 533 INFO    54  
+2020.03.13 12:17:20 533 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:20 533 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:17:20 533 INFO    54 00000010:80000015:00000000:0000000E:
+2020.03.13 12:17:20 533 INFO    54 
+2020.03.13 12:17:20 533 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:17:20 533 INFO    54  
+2020.03.13 12:17:27 932 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:17:27 932 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:17:27 933 INFO    53 00000010:00000015:00000000:0000000E:
+2020.03.13 12:17:27 933 INFO    53 
+2020.03.13 12:17:27 933 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:17:27 933 INFO    53  
+2020.03.13 12:17:27 933 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:27 933 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:17:27 933 INFO    53 00000010:80000015:00000000:0000000E:
+2020.03.13 12:17:27 933 INFO    53 
+2020.03.13 12:17:27 933 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:17:27 933 INFO    53  
+2020.03.13 12:17:37 462 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:17:37 462 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:17:37 462 INFO    49 00000010:00000015:00000000:0000000E:
+2020.03.13 12:17:37 462 INFO    49 
+2020.03.13 12:17:37 462 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2020.03.13 12:17:37 463 INFO    49  
+2020.03.13 12:17:37 463 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:37 463 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:17:37 463 INFO    49 00000010:80000015:00000000:0000000E:
+2020.03.13 12:17:37 463 INFO    49 
+2020.03.13 12:17:37 463 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2020.03.13 12:17:37 463 INFO    49  
+2020.03.13 12:17:50 469 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:17:50 469 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:17:50 469 INFO    55 00000010:00000015:00000000:0000000F:
+2020.03.13 12:17:50 469 INFO    55 
+2020.03.13 12:17:50 469 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:17:50 469 INFO    55  
+2020.03.13 12:17:50 469 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:50 469 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:17:50 469 INFO    55 00000010:80000015:00000000:0000000F:
+2020.03.13 12:17:50 469 INFO    55 
+2020.03.13 12:17:50 470 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:17:50 470 INFO    55  
+2020.03.13 12:17:50 542 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:17:50 542 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:17:50 542 INFO    54 00000010:00000015:00000000:0000000F:
+2020.03.13 12:17:50 542 INFO    54 
+2020.03.13 12:17:50 542 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:17:50 542 INFO    54  
+2020.03.13 12:17:50 542 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:50 542 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:17:50 542 INFO    54 00000010:80000015:00000000:0000000F:
+2020.03.13 12:17:50 542 INFO    54 
+2020.03.13 12:17:50 542 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:17:50 542 INFO    54  
+2020.03.13 12:17:57 955 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:17:57 955 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:17:57 955 INFO    53 00000010:00000015:00000000:0000000F:
+2020.03.13 12:17:57 956 INFO    53 
+2020.03.13 12:17:57 956 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:17:57 956 INFO    53  
+2020.03.13 12:17:57 956 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:17:57 956 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:17:57 956 INFO    53 00000010:80000015:00000000:0000000F:
+2020.03.13 12:17:57 956 INFO    53 
+2020.03.13 12:17:57 956 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:17:57 956 INFO    53  
+2020.03.13 12:18:07 496 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:18:07 496 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:18:07 496 INFO    49 00000010:00000015:00000000:0000000F:
+2020.03.13 12:18:07 496 INFO    49 
+2020.03.13 12:18:07 497 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2020.03.13 12:18:07 497 INFO    49  
+2020.03.13 12:18:07 497 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:07 497 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:18:07 497 INFO    49 00000010:80000015:00000000:0000000F:
+2020.03.13 12:18:07 497 INFO    49 
+2020.03.13 12:18:07 497 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2020.03.13 12:18:07 497 INFO    49  
+2020.03.13 12:18:18 983 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:18:20 492 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:18:20 492 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:18:20 492 INFO    55 00000010:00000015:00000000:00000010:
+2020.03.13 12:18:20 492 INFO    55 
+2020.03.13 12:18:20 492 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=16
+2020.03.13 12:18:20 492 INFO    55  
+2020.03.13 12:18:20 493 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:20 493 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:18:20 493 INFO    55 00000010:80000015:00000000:00000010:
+2020.03.13 12:18:20 493 INFO    55 
+2020.03.13 12:18:20 493 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=16
+2020.03.13 12:18:20 493 INFO    55  
+2020.03.13 12:18:20 560 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:18:20 560 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:18:20 560 INFO    54 00000010:00000015:00000000:00000010:
+2020.03.13 12:18:20 560 INFO    54 
+2020.03.13 12:18:20 560 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=16
+2020.03.13 12:18:20 560 INFO    54  
+2020.03.13 12:18:20 560 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:20 560 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:18:20 560 INFO    54 00000010:80000015:00000000:00000010:
+2020.03.13 12:18:20 560 INFO    54 
+2020.03.13 12:18:20 560 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=16
+2020.03.13 12:18:20 560 INFO    54  
+2020.03.13 12:18:27 984 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:18:27 984 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:18:27 984 INFO    53 00000010:00000015:00000000:00000010:
+2020.03.13 12:18:27 984 INFO    53 
+2020.03.13 12:18:27 985 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=16
+2020.03.13 12:18:27 985 INFO    53  
+2020.03.13 12:18:27 985 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:27 985 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:18:27 985 INFO    53 00000010:80000015:00000000:00000010:
+2020.03.13 12:18:27 985 INFO    53 
+2020.03.13 12:18:27 985 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=16
+2020.03.13 12:18:27 985 INFO    53  
+2020.03.13 12:18:37 512 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:18:37 513 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:18:37 513 INFO    49 00000010:00000015:00000000:00000010:
+2020.03.13 12:18:37 513 INFO    49 
+2020.03.13 12:18:37 513 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=16
+2020.03.13 12:18:37 513 INFO    49  
+2020.03.13 12:18:37 513 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:37 513 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:18:37 513 INFO    49 00000010:80000015:00000000:00000010:
+2020.03.13 12:18:37 513 INFO    49 
+2020.03.13 12:18:37 513 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=16
+2020.03.13 12:18:37 514 INFO    49  
+2020.03.13 12:18:50 523 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:18:50 523 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:18:50 523 INFO    55 00000010:00000015:00000000:00000011:
+2020.03.13 12:18:50 523 INFO    55 
+2020.03.13 12:18:50 523 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=17
+2020.03.13 12:18:50 523 INFO    55  
+2020.03.13 12:18:50 523 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:50 523 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:18:50 523 INFO    55 00000010:80000015:00000000:00000011:
+2020.03.13 12:18:50 523 INFO    55 
+2020.03.13 12:18:50 523 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=17
+2020.03.13 12:18:50 523 INFO    55  
+2020.03.13 12:18:50 593 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:18:50 593 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:18:50 593 INFO    54 00000010:00000015:00000000:00000011:
+2020.03.13 12:18:50 593 INFO    54 
+2020.03.13 12:18:50 593 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=17
+2020.03.13 12:18:50 593 INFO    54  
+2020.03.13 12:18:50 593 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:50 593 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:18:50 593 INFO    54 00000010:80000015:00000000:00000011:
+2020.03.13 12:18:50 593 INFO    54 
+2020.03.13 12:18:50 593 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=17
+2020.03.13 12:18:50 594 INFO    54  
+2020.03.13 12:18:58 0   INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:18:58 0   INFO    53 Hex dump (16) bytes:
+2020.03.13 12:18:58 0   INFO    53 00000010:00000015:00000000:00000011:
+2020.03.13 12:18:58 0   INFO    53 
+2020.03.13 12:18:58 1   INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=17
+2020.03.13 12:18:58 1   INFO    53  
+2020.03.13 12:18:58 1   INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:18:58 1   INFO    53 Hex dump (16) bytes:
+2020.03.13 12:18:58 1   INFO    53 00000010:80000015:00000000:00000011:
+2020.03.13 12:18:58 1   INFO    53 
+2020.03.13 12:18:58 1   INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=17
+2020.03.13 12:18:58 1   INFO    53  
+2020.03.13 12:19:07 539 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:19:07 539 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:19:07 539 INFO    49 00000010:00000015:00000000:00000011:
+2020.03.13 12:19:07 539 INFO    49 
+2020.03.13 12:19:07 539 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=17
+2020.03.13 12:19:07 540 INFO    49  
+2020.03.13 12:19:07 540 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:07 540 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:19:07 540 INFO    49 00000010:80000015:00000000:00000011:
+2020.03.13 12:19:07 540 INFO    49 
+2020.03.13 12:19:07 540 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=17
+2020.03.13 12:19:07 540 INFO    49  
+2020.03.13 12:19:09 402 INFO    69 addressIsServicedByReceiver(5321)
+2020.03.13 12:19:09 402 INFO    69 DELIVER_SM:
+2020.03.13 12:19:09 402 INFO    69 Hex dump (81) bytes:
+2020.03.13 12:19:09 403 INFO    69 00000051:00000005:00000000:00000003:
+2020.03.13 12:19:09 403 INFO    69 00010130:30303030:30303030:30000101:
+2020.03.13 12:19:09 403 INFO    69 35333231:00000000:00000000:00000654:
+2020.03.13 12:19:09 403 INFO    69 6573745F:32020A00:02000102:03000480:
+2020.03.13 12:19:09 403 INFO    69 32320050:02000353:4D535003:00033130:
+2020.03.13 12:19:09 403 INFO    69 30
+2020.03.13 12:19:09 403 INFO    69 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=3,service_type=,source_addr_ton=1
+2020.03.13 12:19:09 403 INFO    69 source_addr_npi=1,source_addr=0000000000,dest_addr_ton=1,dest_addr_npi=1
+2020.03.13 12:19:09 403 INFO    69 destination_addr=5321,esm_class=0,protocol_ID=0,priority_flag=0
+2020.03.13 12:19:09 403 INFO    69 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2020.03.13 12:19:09 403 INFO    69 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=6
+2020.03.13 12:19:09 403 INFO    69 short_message=Test_2
+2020.03.13 12:19:09 403 INFO    69  
+2020.03.13 12:19:09 403 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:19:09 816 INFO    54 : DELIVER_SM_RESP:
+2020.03.13 12:19:09 816 INFO    54 Hex dump (17) bytes:
+2020.03.13 12:19:09 816 INFO    54 00000011:80000005:00000000:00000003:
+2020.03.13 12:19:09 816 INFO    54 00
+2020.03.13 12:19:09 817 INFO    54 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=3,system_id= 
+2020.03.13 12:19:09 817 INFO    54  
+2020.03.13 12:19:18 983 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:19:20 553 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:19:20 553 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:19:20 553 INFO    55 00000010:00000015:00000000:00000012:
+2020.03.13 12:19:20 553 INFO    55 
+2020.03.13 12:19:20 553 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=18
+2020.03.13 12:19:20 553 INFO    55  
+2020.03.13 12:19:20 553 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:20 553 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:19:20 553 INFO    55 00000010:80000015:00000000:00000012:
+2020.03.13 12:19:20 553 INFO    55 
+2020.03.13 12:19:20 553 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=18
+2020.03.13 12:19:20 553 INFO    55  
+2020.03.13 12:19:28 30  INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:19:28 30  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:19:28 31  INFO    53 00000010:00000015:00000000:00000012:
+2020.03.13 12:19:28 31  INFO    53 
+2020.03.13 12:19:28 31  INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=18
+2020.03.13 12:19:28 31  INFO    53  
+2020.03.13 12:19:28 31  INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:28 31  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:19:28 31  INFO    53 00000010:80000015:00000000:00000012:
+2020.03.13 12:19:28 31  INFO    53 
+2020.03.13 12:19:28 31  INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=18
+2020.03.13 12:19:28 31  INFO    53  
+2020.03.13 12:19:37 560 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:19:37 560 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:19:37 561 INFO    49 00000010:00000015:00000000:00000012:
+2020.03.13 12:19:37 561 INFO    49 
+2020.03.13 12:19:37 561 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=18
+2020.03.13 12:19:37 561 INFO    49  
+2020.03.13 12:19:37 561 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:37 561 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:19:37 561 INFO    49 00000010:80000015:00000000:00000012:
+2020.03.13 12:19:37 561 INFO    49 
+2020.03.13 12:19:37 561 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=18
+2020.03.13 12:19:37 561 INFO    49  
+2020.03.13 12:19:39 435 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:19:39 435 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:19:39 436 INFO    54 00000010:00000015:00000000:00000012:
+2020.03.13 12:19:39 436 INFO    54 
+2020.03.13 12:19:39 436 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=18
+2020.03.13 12:19:39 436 INFO    54  
+2020.03.13 12:19:39 436 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:39 436 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:19:39 436 INFO    54 00000010:80000015:00000000:00000012:
+2020.03.13 12:19:39 436 INFO    54 
+2020.03.13 12:19:39 436 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=18
+2020.03.13 12:19:39 436 INFO    54  
+2020.03.13 12:19:50 575 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:19:50 575 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:19:50 576 INFO    55 00000010:00000015:00000000:00000013:
+2020.03.13 12:19:50 576 INFO    55 
+2020.03.13 12:19:50 576 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=19
+2020.03.13 12:19:50 576 INFO    55  
+2020.03.13 12:19:50 576 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:50 576 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:19:50 576 INFO    55 00000010:80000015:00000000:00000013:
+2020.03.13 12:19:50 576 INFO    55 
+2020.03.13 12:19:50 577 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=19
+2020.03.13 12:19:50 577 INFO    55  
+2020.03.13 12:19:58 62  INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:19:58 62  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:19:58 62  INFO    53 00000010:00000015:00000000:00000013:
+2020.03.13 12:19:58 62  INFO    53 
+2020.03.13 12:19:58 62  INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=19
+2020.03.13 12:19:58 62  INFO    53  
+2020.03.13 12:19:58 62  INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:19:58 62  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:19:58 62  INFO    53 00000010:80000015:00000000:00000013:
+2020.03.13 12:19:58 62  INFO    53 
+2020.03.13 12:19:58 62  INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=19
+2020.03.13 12:19:58 63  INFO    53  
+2020.03.13 12:20:07 620 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:20:07 620 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:20:07 620 INFO    49 00000010:00000015:00000000:00000013:
+2020.03.13 12:20:07 621 INFO    49 
+2020.03.13 12:20:07 621 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=19
+2020.03.13 12:20:07 621 INFO    49  
+2020.03.13 12:20:07 621 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:07 621 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:20:07 621 INFO    49 00000010:80000015:00000000:00000013:
+2020.03.13 12:20:07 621 INFO    49 
+2020.03.13 12:20:07 622 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=19
+2020.03.13 12:20:07 622 INFO    49  
+2020.03.13 12:20:09 468 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:20:09 468 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:20:09 468 INFO    54 00000010:00000015:00000000:00000013:
+2020.03.13 12:20:09 468 INFO    54 
+2020.03.13 12:20:09 468 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=19
+2020.03.13 12:20:09 468 INFO    54  
+2020.03.13 12:20:09 468 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:09 468 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:20:09 468 INFO    54 00000010:80000015:00000000:00000013:
+2020.03.13 12:20:09 468 INFO    54 
+2020.03.13 12:20:09 468 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=19
+2020.03.13 12:20:09 468 INFO    54  
+2020.03.13 12:20:18 984 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:20:20 610 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:20:20 610 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:20:20 610 INFO    55 00000010:00000015:00000000:00000014:
+2020.03.13 12:20:20 610 INFO    55 
+2020.03.13 12:20:20 610 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=20
+2020.03.13 12:20:20 610 INFO    55  
+2020.03.13 12:20:20 610 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:20 610 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:20:20 610 INFO    55 00000010:80000015:00000000:00000014:
+2020.03.13 12:20:20 611 INFO    55 
+2020.03.13 12:20:20 611 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=20
+2020.03.13 12:20:20 611 INFO    55  
+2020.03.13 12:20:28 95  INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:20:28 95  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:20:28 95  INFO    53 00000010:00000015:00000000:00000014:
+2020.03.13 12:20:28 95  INFO    53 
+2020.03.13 12:20:28 95  INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=20
+2020.03.13 12:20:28 95  INFO    53  
+2020.03.13 12:20:28 95  INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:28 95  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:20:28 95  INFO    53 00000010:80000015:00000000:00000014:
+2020.03.13 12:20:28 95  INFO    53 
+2020.03.13 12:20:28 96  INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=20
+2020.03.13 12:20:28 96  INFO    53  
+2020.03.13 12:20:37 643 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:20:37 643 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:20:37 643 INFO    49 00000010:00000015:00000000:00000014:
+2020.03.13 12:20:37 643 INFO    49 
+2020.03.13 12:20:37 643 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=20
+2020.03.13 12:20:37 643 INFO    49  
+2020.03.13 12:20:37 643 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:37 643 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:20:37 643 INFO    49 00000010:80000015:00000000:00000014:
+2020.03.13 12:20:37 644 INFO    49 
+2020.03.13 12:20:37 644 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=20
+2020.03.13 12:20:37 644 INFO    49  
+2020.03.13 12:20:39 498 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:20:39 498 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:20:39 498 INFO    54 00000010:00000015:00000000:00000014:
+2020.03.13 12:20:39 498 INFO    54 
+2020.03.13 12:20:39 498 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=20
+2020.03.13 12:20:39 498 INFO    54  
+2020.03.13 12:20:39 498 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:39 498 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:20:39 498 INFO    54 00000010:80000015:00000000:00000014:
+2020.03.13 12:20:39 498 INFO    54 
+2020.03.13 12:20:39 498 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=20
+2020.03.13 12:20:39 498 INFO    54  
+2020.03.13 12:20:50 625 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:20:50 625 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:20:50 625 INFO    55 00000010:00000015:00000000:00000015:
+2020.03.13 12:20:50 625 INFO    55 
+2020.03.13 12:20:50 625 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=21
+2020.03.13 12:20:50 625 INFO    55  
+2020.03.13 12:20:50 625 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:50 625 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:20:50 625 INFO    55 00000010:80000015:00000000:00000015:
+2020.03.13 12:20:50 625 INFO    55 
+2020.03.13 12:20:50 625 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=21
+2020.03.13 12:20:50 626 INFO    55  
+2020.03.13 12:20:58 122 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:20:58 122 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:20:58 122 INFO    53 00000010:00000015:00000000:00000015:
+2020.03.13 12:20:58 122 INFO    53 
+2020.03.13 12:20:58 122 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=21
+2020.03.13 12:20:58 123 INFO    53  
+2020.03.13 12:20:58 123 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:20:58 123 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:20:58 123 INFO    53 00000010:80000015:00000000:00000015:
+2020.03.13 12:20:58 123 INFO    53 
+2020.03.13 12:20:58 123 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=21
+2020.03.13 12:20:58 123 INFO    53  
+2020.03.13 12:21:07 670 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:21:07 670 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:21:07 671 INFO    49 00000010:00000015:00000000:00000015:
+2020.03.13 12:21:07 671 INFO    49 
+2020.03.13 12:21:07 671 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=21
+2020.03.13 12:21:07 671 INFO    49  
+2020.03.13 12:21:07 671 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:07 671 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:21:07 671 INFO    49 00000010:80000015:00000000:00000015:
+2020.03.13 12:21:07 671 INFO    49 
+2020.03.13 12:21:07 672 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=21
+2020.03.13 12:21:07 672 INFO    49  
+2020.03.13 12:21:09 529 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:21:09 529 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:21:09 529 INFO    54 00000010:00000015:00000000:00000015:
+2020.03.13 12:21:09 529 INFO    54 
+2020.03.13 12:21:09 529 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=21
+2020.03.13 12:21:09 529 INFO    54  
+2020.03.13 12:21:09 529 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:09 529 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:21:09 529 INFO    54 00000010:80000015:00000000:00000015:
+2020.03.13 12:21:09 529 INFO    54 
+2020.03.13 12:21:09 529 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=21
+2020.03.13 12:21:09 529 INFO    54  
+2020.03.13 12:21:18 985 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:21:20 653 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:21:20 653 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:21:20 653 INFO    55 00000010:00000015:00000000:00000016:
+2020.03.13 12:21:20 653 INFO    55 
+2020.03.13 12:21:20 654 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=22
+2020.03.13 12:21:20 654 INFO    55  
+2020.03.13 12:21:20 654 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:20 654 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:21:20 654 INFO    55 00000010:80000015:00000000:00000016:
+2020.03.13 12:21:20 654 INFO    55 
+2020.03.13 12:21:20 654 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=22
+2020.03.13 12:21:20 654 INFO    55  
+2020.03.13 12:21:28 154 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:21:28 155 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:21:28 155 INFO    53 00000010:00000015:00000000:00000016:
+2020.03.13 12:21:28 155 INFO    53 
+2020.03.13 12:21:28 155 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=22
+2020.03.13 12:21:28 155 INFO    53  
+2020.03.13 12:21:28 155 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:28 155 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:21:28 155 INFO    53 00000010:80000015:00000000:00000016:
+2020.03.13 12:21:28 155 INFO    53 
+2020.03.13 12:21:28 155 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=22
+2020.03.13 12:21:28 155 INFO    53  
+2020.03.13 12:21:37 696 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:21:37 696 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:21:37 696 INFO    49 00000010:00000015:00000000:00000016:
+2020.03.13 12:21:37 696 INFO    49 
+2020.03.13 12:21:37 696 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=22
+2020.03.13 12:21:37 696 INFO    49  
+2020.03.13 12:21:37 696 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:37 696 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:21:37 696 INFO    49 00000010:80000015:00000000:00000016:
+2020.03.13 12:21:37 696 INFO    49 
+2020.03.13 12:21:37 696 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=22
+2020.03.13 12:21:37 696 INFO    49  
+2020.03.13 12:21:39 558 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:21:39 558 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:21:39 558 INFO    54 00000010:00000015:00000000:00000016:
+2020.03.13 12:21:39 558 INFO    54 
+2020.03.13 12:21:39 558 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=22
+2020.03.13 12:21:39 558 INFO    54  
+2020.03.13 12:21:39 558 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:39 558 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:21:39 558 INFO    54 00000010:80000015:00000000:00000016:
+2020.03.13 12:21:39 558 INFO    54 
+2020.03.13 12:21:39 558 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=22
+2020.03.13 12:21:39 558 INFO    54  
+2020.03.13 12:21:50 686 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:21:50 686 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:21:50 686 INFO    55 00000010:00000015:00000000:00000017:
+2020.03.13 12:21:50 686 INFO    55 
+2020.03.13 12:21:50 686 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=23
+2020.03.13 12:21:50 686 INFO    55  
+2020.03.13 12:21:50 686 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:50 686 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:21:50 686 INFO    55 00000010:80000015:00000000:00000017:
+2020.03.13 12:21:50 686 INFO    55 
+2020.03.13 12:21:50 686 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=23
+2020.03.13 12:21:50 686 INFO    55  
+2020.03.13 12:21:58 175 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:21:58 175 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:21:58 175 INFO    53 00000010:00000015:00000000:00000017:
+2020.03.13 12:21:58 175 INFO    53 
+2020.03.13 12:21:58 175 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=23
+2020.03.13 12:21:58 175 INFO    53  
+2020.03.13 12:21:58 175 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:21:58 175 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:21:58 175 INFO    53 00000010:80000015:00000000:00000017:
+2020.03.13 12:21:58 175 INFO    53 
+2020.03.13 12:21:58 175 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=23
+2020.03.13 12:21:58 175 INFO    53  
+2020.03.13 12:22:07 728 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:22:07 728 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:22:07 728 INFO    49 00000010:00000015:00000000:00000017:
+2020.03.13 12:22:07 728 INFO    49 
+2020.03.13 12:22:07 728 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=23
+2020.03.13 12:22:07 728 INFO    49  
+2020.03.13 12:22:07 729 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:07 729 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:22:07 729 INFO    49 00000010:80000015:00000000:00000017:
+2020.03.13 12:22:07 729 INFO    49 
+2020.03.13 12:22:07 729 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=23
+2020.03.13 12:22:07 729 INFO    49  
+2020.03.13 12:22:09 584 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:22:09 584 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:22:09 584 INFO    54 00000010:00000015:00000000:00000017:
+2020.03.13 12:22:09 584 INFO    54 
+2020.03.13 12:22:09 584 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=23
+2020.03.13 12:22:09 584 INFO    54  
+2020.03.13 12:22:09 584 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:09 584 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:22:09 585 INFO    54 00000010:80000015:00000000:00000017:
+2020.03.13 12:22:09 585 INFO    54 
+2020.03.13 12:22:09 585 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=23
+2020.03.13 12:22:09 585 INFO    54  
+2020.03.13 12:22:18 985 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:22:20 717 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:22:20 717 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:22:20 717 INFO    55 00000010:00000015:00000000:00000018:
+2020.03.13 12:22:20 718 INFO    55 
+2020.03.13 12:22:20 718 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=24
+2020.03.13 12:22:20 718 INFO    55  
+2020.03.13 12:22:20 718 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:20 718 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:22:20 718 INFO    55 00000010:80000015:00000000:00000018:
+2020.03.13 12:22:20 718 INFO    55 
+2020.03.13 12:22:20 718 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=24
+2020.03.13 12:22:20 718 INFO    55  
+2020.03.13 12:22:28 196 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:22:28 196 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:22:28 196 INFO    53 00000010:00000015:00000000:00000018:
+2020.03.13 12:22:28 196 INFO    53 
+2020.03.13 12:22:28 196 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=24
+2020.03.13 12:22:28 196 INFO    53  
+2020.03.13 12:22:28 196 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:28 196 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:22:28 196 INFO    53 00000010:80000015:00000000:00000018:
+2020.03.13 12:22:28 196 INFO    53 
+2020.03.13 12:22:28 196 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=24
+2020.03.13 12:22:28 196 INFO    53  
+2020.03.13 12:22:37 761 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:22:37 761 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:22:37 762 INFO    49 00000010:00000015:00000000:00000018:
+2020.03.13 12:22:37 762 INFO    49 
+2020.03.13 12:22:37 762 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=24
+2020.03.13 12:22:37 762 INFO    49  
+2020.03.13 12:22:37 762 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:37 762 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:22:37 762 INFO    49 00000010:80000015:00000000:00000018:
+2020.03.13 12:22:37 763 INFO    49 
+2020.03.13 12:22:37 763 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=24
+2020.03.13 12:22:37 763 INFO    49  
+2020.03.13 12:22:39 613 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:22:39 613 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:22:39 613 INFO    54 00000010:00000015:00000000:00000018:
+2020.03.13 12:22:39 614 INFO    54 
+2020.03.13 12:22:39 614 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=24
+2020.03.13 12:22:39 614 INFO    54  
+2020.03.13 12:22:39 614 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:39 614 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:22:39 614 INFO    54 00000010:80000015:00000000:00000018:
+2020.03.13 12:22:39 614 INFO    54 
+2020.03.13 12:22:39 614 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=24
+2020.03.13 12:22:39 614 INFO    54  
+2020.03.13 12:22:50 750 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:22:50 750 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:22:50 750 INFO    55 00000010:00000015:00000000:00000019:
+2020.03.13 12:22:50 751 INFO    55 
+2020.03.13 12:22:50 751 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=25
+2020.03.13 12:22:50 751 INFO    55  
+2020.03.13 12:22:50 752 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:50 753 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:22:50 753 INFO    55 00000010:80000015:00000000:00000019:
+2020.03.13 12:22:50 754 INFO    55 
+2020.03.13 12:22:50 754 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=25
+2020.03.13 12:22:50 754 INFO    55  
+2020.03.13 12:22:58 224 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:22:58 224 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:22:58 224 INFO    53 00000010:00000015:00000000:00000019:
+2020.03.13 12:22:58 224 INFO    53 
+2020.03.13 12:22:58 224 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=25
+2020.03.13 12:22:58 224 INFO    53  
+2020.03.13 12:22:58 224 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:22:58 224 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:22:58 224 INFO    53 00000010:80000015:00000000:00000019:
+2020.03.13 12:22:58 224 INFO    53 
+2020.03.13 12:22:58 224 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=25
+2020.03.13 12:22:58 224 INFO    53  
+2020.03.13 12:23:07 774 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:23:07 774 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:23:07 774 INFO    49 00000010:00000015:00000000:00000019:
+2020.03.13 12:23:07 774 INFO    49 
+2020.03.13 12:23:07 774 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=25
+2020.03.13 12:23:07 774 INFO    49  
+2020.03.13 12:23:07 774 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:07 774 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:23:07 774 INFO    49 00000010:80000015:00000000:00000019:
+2020.03.13 12:23:07 774 INFO    49 
+2020.03.13 12:23:07 774 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=25
+2020.03.13 12:23:07 774 INFO    49  
+2020.03.13 12:23:09 647 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:23:09 647 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:23:09 647 INFO    54 00000010:00000015:00000000:00000019:
+2020.03.13 12:23:09 647 INFO    54 
+2020.03.13 12:23:09 647 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=25
+2020.03.13 12:23:09 647 INFO    54  
+2020.03.13 12:23:09 647 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:09 647 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:23:09 647 INFO    54 00000010:80000015:00000000:00000019:
+2020.03.13 12:23:09 647 INFO    54 
+2020.03.13 12:23:09 648 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=25
+2020.03.13 12:23:09 648 INFO    54  
+2020.03.13 12:23:18 985 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:23:20 780 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:23:20 780 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:23:20 780 INFO    55 00000010:00000015:00000000:0000001A:
+2020.03.13 12:23:20 781 INFO    55 
+2020.03.13 12:23:20 781 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=26
+2020.03.13 12:23:20 781 INFO    55  
+2020.03.13 12:23:20 781 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:20 781 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:23:20 781 INFO    55 00000010:80000015:00000000:0000001A:
+2020.03.13 12:23:20 781 INFO    55 
+2020.03.13 12:23:20 781 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=26
+2020.03.13 12:23:20 781 INFO    55  
+2020.03.13 12:23:28 244 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:23:28 244 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:23:28 244 INFO    53 00000010:00000015:00000000:0000001A:
+2020.03.13 12:23:28 244 INFO    53 
+2020.03.13 12:23:28 244 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=26
+2020.03.13 12:23:28 244 INFO    53  
+2020.03.13 12:23:28 245 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:28 245 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:23:28 245 INFO    53 00000010:80000015:00000000:0000001A:
+2020.03.13 12:23:28 245 INFO    53 
+2020.03.13 12:23:28 245 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=26
+2020.03.13 12:23:28 245 INFO    53  
+2020.03.13 12:23:37 805 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:23:37 805 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:23:37 806 INFO    49 00000010:00000015:00000000:0000001A:
+2020.03.13 12:23:37 806 INFO    49 
+2020.03.13 12:23:37 806 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=26
+2020.03.13 12:23:37 806 INFO    49  
+2020.03.13 12:23:37 806 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:37 806 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:23:37 806 INFO    49 00000010:80000015:00000000:0000001A:
+2020.03.13 12:23:37 806 INFO    49 
+2020.03.13 12:23:37 806 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=26
+2020.03.13 12:23:37 806 INFO    49  
+2020.03.13 12:23:39 666 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:23:39 666 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:23:39 666 INFO    54 00000010:00000015:00000000:0000001A:
+2020.03.13 12:23:39 666 INFO    54 
+2020.03.13 12:23:39 667 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=26
+2020.03.13 12:23:39 667 INFO    54  
+2020.03.13 12:23:39 667 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:39 667 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:23:39 667 INFO    54 00000010:80000015:00000000:0000001A:
+2020.03.13 12:23:39 667 INFO    54 
+2020.03.13 12:23:39 667 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=26
+2020.03.13 12:23:39 667 INFO    54  
+2020.03.13 12:23:50 798 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:23:50 798 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:23:50 798 INFO    55 00000010:00000015:00000000:0000001B:
+2020.03.13 12:23:50 799 INFO    55 
+2020.03.13 12:23:50 799 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=27
+2020.03.13 12:23:50 799 INFO    55  
+2020.03.13 12:23:50 799 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:50 799 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:23:50 799 INFO    55 00000010:80000015:00000000:0000001B:
+2020.03.13 12:23:50 799 INFO    55 
+2020.03.13 12:23:50 799 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=27
+2020.03.13 12:23:50 799 INFO    55  
+2020.03.13 12:23:58 254 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:23:58 254 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:23:58 255 INFO    53 00000010:00000015:00000000:0000001B:
+2020.03.13 12:23:58 255 INFO    53 
+2020.03.13 12:23:58 255 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=27
+2020.03.13 12:23:58 255 INFO    53  
+2020.03.13 12:23:58 255 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:23:58 255 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:23:58 255 INFO    53 00000010:80000015:00000000:0000001B:
+2020.03.13 12:23:58 255 INFO    53 
+2020.03.13 12:23:58 255 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=27
+2020.03.13 12:23:58 255 INFO    53  
+2020.03.13 12:24:07 835 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:24:07 835 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:24:07 835 INFO    49 00000010:00000015:00000000:0000001B:
+2020.03.13 12:24:07 835 INFO    49 
+2020.03.13 12:24:07 836 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=27
+2020.03.13 12:24:07 836 INFO    49  
+2020.03.13 12:24:07 836 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:07 836 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:24:07 836 INFO    49 00000010:80000015:00000000:0000001B:
+2020.03.13 12:24:07 836 INFO    49 
+2020.03.13 12:24:07 836 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=27
+2020.03.13 12:24:07 836 INFO    49  
+2020.03.13 12:24:09 700 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:24:09 700 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:24:09 700 INFO    54 00000010:00000015:00000000:0000001B:
+2020.03.13 12:24:09 700 INFO    54 
+2020.03.13 12:24:09 700 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=27
+2020.03.13 12:24:09 700 INFO    54  
+2020.03.13 12:24:09 701 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:09 701 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:24:09 701 INFO    54 00000010:80000015:00000000:0000001B:
+2020.03.13 12:24:09 701 INFO    54 
+2020.03.13 12:24:09 701 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=27
+2020.03.13 12:24:09 701 INFO    54  
+2020.03.13 12:24:18 985 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:24:20 826 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:24:20 826 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:24:20 826 INFO    55 00000010:00000015:00000000:0000001C:
+2020.03.13 12:24:20 826 INFO    55 
+2020.03.13 12:24:20 826 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=28
+2020.03.13 12:24:20 826 INFO    55  
+2020.03.13 12:24:20 826 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:20 826 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:24:20 826 INFO    55 00000010:80000015:00000000:0000001C:
+2020.03.13 12:24:20 826 INFO    55 
+2020.03.13 12:24:20 827 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=28
+2020.03.13 12:24:20 827 INFO    55  
+2020.03.13 12:24:28 285 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:24:28 285 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:24:28 285 INFO    53 00000010:00000015:00000000:0000001C:
+2020.03.13 12:24:28 285 INFO    53 
+2020.03.13 12:24:28 285 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=28
+2020.03.13 12:24:28 285 INFO    53  
+2020.03.13 12:24:28 285 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:28 285 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:24:28 285 INFO    53 00000010:80000015:00000000:0000001C:
+2020.03.13 12:24:28 285 INFO    53 
+2020.03.13 12:24:28 285 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=28
+2020.03.13 12:24:28 286 INFO    53  
+2020.03.13 12:24:37 855 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:24:37 855 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:24:37 856 INFO    49 00000010:00000015:00000000:0000001C:
+2020.03.13 12:24:37 856 INFO    49 
+2020.03.13 12:24:37 856 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=28
+2020.03.13 12:24:37 856 INFO    49  
+2020.03.13 12:24:37 856 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:37 856 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:24:37 856 INFO    49 00000010:80000015:00000000:0000001C:
+2020.03.13 12:24:37 856 INFO    49 
+2020.03.13 12:24:37 856 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=28
+2020.03.13 12:24:37 856 INFO    49  
+2020.03.13 12:24:39 735 INFO    54 : ENQUIRE_LINK:
+2020.03.13 12:24:39 735 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:24:39 736 INFO    54 00000010:00000015:00000000:0000001C:
+2020.03.13 12:24:39 736 INFO    54 
+2020.03.13 12:24:39 736 INFO    54 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=28
+2020.03.13 12:24:39 740 INFO    54  
+2020.03.13 12:24:39 742 INFO    54 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:39 743 INFO    54 Hex dump (16) bytes:
+2020.03.13 12:24:39 743 INFO    54 00000010:80000015:00000000:0000001C:
+2020.03.13 12:24:39 743 INFO    54 
+2020.03.13 12:24:39 743 INFO    54 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=28
+2020.03.13 12:24:39 743 INFO    54  
+2020.03.13 12:24:50 855 INFO    55 : ENQUIRE_LINK:
+2020.03.13 12:24:50 855 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:24:50 855 INFO    55 00000010:00000015:00000000:0000001D:
+2020.03.13 12:24:50 855 INFO    55 
+2020.03.13 12:24:50 855 INFO    55 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=29
+2020.03.13 12:24:50 855 INFO    55  
+2020.03.13 12:24:50 855 INFO    55 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:50 855 INFO    55 Hex dump (16) bytes:
+2020.03.13 12:24:50 855 INFO    55 00000010:80000015:00000000:0000001D:
+2020.03.13 12:24:50 855 INFO    55 
+2020.03.13 12:24:50 855 INFO    55 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=29
+2020.03.13 12:24:50 855 INFO    55  
+2020.03.13 12:24:58 318 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:24:58 318 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:24:58 318 INFO    53 00000010:00000015:00000000:0000001D:
+2020.03.13 12:24:58 318 INFO    53 
+2020.03.13 12:24:58 318 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=29
+2020.03.13 12:24:58 318 INFO    53  
+2020.03.13 12:24:58 318 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:24:58 319 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:24:58 319 INFO    53 00000010:80000015:00000000:0000001D:
+2020.03.13 12:24:58 319 INFO    53 
+2020.03.13 12:24:58 319 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=29
+2020.03.13 12:24:58 319 INFO    53  
+2020.03.13 12:24:59 1   INFO    54 : UNBIND:
+2020.03.13 12:24:59 1   INFO    54 Hex dump (16) bytes:
+2020.03.13 12:24:59 1   INFO    54 00000010:00000006:00000000:0000001D:
+2020.03.13 12:24:59 2   INFO    54 
+2020.03.13 12:24:59 2   INFO    54 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=29
+2020.03.13 12:24:59 2   INFO    54  
+2020.03.13 12:24:59 2   INFO    54 3 receivers connected and bound
+2020.03.13 12:24:59 2   INFO    54 : UNBIND_RESP
+2020.03.13 12:24:59 2   INFO    54 Hex dump (16) bytes:
+2020.03.13 12:24:59 2   INFO    54 00000010:80000006:00000000:0000001D:
+2020.03.13 12:24:59 2   INFO    54 
+2020.03.13 12:24:59 2   INFO    54 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=29
+2020.03.13 12:24:59 2   INFO    54  
+2020.03.13 12:24:59 2   INFO    54 StandardConnectionHandler waiting for connection
+2020.03.13 12:24:59 22  INFO    55 : UNBIND:
+2020.03.13 12:24:59 22  INFO    55 Hex dump (16) bytes:
+2020.03.13 12:24:59 22  INFO    55 00000010:00000006:00000000:0000001E:
+2020.03.13 12:24:59 22  INFO    55 
+2020.03.13 12:24:59 22  INFO    55 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=30
+2020.03.13 12:24:59 22  INFO    55  
+2020.03.13 12:24:59 22  INFO    55 2 receivers connected and bound
+2020.03.13 12:24:59 22  INFO    55 : UNBIND_RESP
+2020.03.13 12:24:59 22  INFO    55 Hex dump (16) bytes:
+2020.03.13 12:24:59 22  INFO    55 00000010:80000006:00000000:0000001E:
+2020.03.13 12:24:59 22  INFO    55 
+2020.03.13 12:24:59 22  INFO    55 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=30
+2020.03.13 12:24:59 22  INFO    55  
+2020.03.13 12:24:59 23  INFO    55 StandardConnectionHandler waiting for connection
+2020.03.13 12:25:07 885 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:25:07 885 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:25:07 885 INFO    49 00000010:00000015:00000000:0000001D:
+2020.03.13 12:25:07 885 INFO    49 
+2020.03.13 12:25:07 885 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=29
+2020.03.13 12:25:07 885 INFO    49  
+2020.03.13 12:25:07 885 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:25:07 885 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:25:07 885 INFO    49 00000010:80000015:00000000:0000001D:
+2020.03.13 12:25:07 885 INFO    49 
+2020.03.13 12:25:07 885 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=29
+2020.03.13 12:25:07 885 INFO    49  
+2020.03.13 12:25:18 988 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:25:28 351 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:25:28 351 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:25:28 351 INFO    53 00000010:00000015:00000000:0000001E:
+2020.03.13 12:25:28 352 INFO    53 
+2020.03.13 12:25:28 352 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=30
+2020.03.13 12:25:28 352 INFO    53  
+2020.03.13 12:25:28 352 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:25:28 352 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:25:28 352 INFO    53 00000010:80000015:00000000:0000001E:
+2020.03.13 12:25:28 352 INFO    53 
+2020.03.13 12:25:28 352 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=30
+2020.03.13 12:25:28 352 INFO    53  
+2020.03.13 12:25:37 915 INFO    49 : ENQUIRE_LINK:
+2020.03.13 12:25:37 915 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:25:37 915 INFO    49 00000010:00000015:00000000:0000001E:
+2020.03.13 12:25:37 915 INFO    49 
+2020.03.13 12:25:37 915 INFO    49 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=30
+2020.03.13 12:25:37 915 INFO    49  
+2020.03.13 12:25:37 915 INFO    49 :ENQUIRE_LINK_RESP:
+2020.03.13 12:25:37 916 INFO    49 Hex dump (16) bytes:
+2020.03.13 12:25:37 916 INFO    49 00000010:80000015:00000000:0000001E:
+2020.03.13 12:25:37 916 INFO    49 
+2020.03.13 12:25:37 916 INFO    49 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=30
+2020.03.13 12:25:37 916 INFO    49  
+2020.03.13 12:25:58 385 INFO    53 : ENQUIRE_LINK:
+2020.03.13 12:25:58 386 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:25:58 386 INFO    53 00000010:00000015:00000000:0000001F:
+2020.03.13 12:25:58 386 INFO    53 
+2020.03.13 12:25:58 386 INFO    53 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=31
+2020.03.13 12:25:58 386 INFO    53  
+2020.03.13 12:25:58 386 INFO    53 :ENQUIRE_LINK_RESP:
+2020.03.13 12:25:58 386 INFO    53 Hex dump (16) bytes:
+2020.03.13 12:25:58 386 INFO    53 00000010:80000015:00000000:0000001F:
+2020.03.13 12:25:58 386 INFO    53 
+2020.03.13 12:25:58 387 INFO    53 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=31
+2020.03.13 12:25:58 387 INFO    53  
+2020.03.13 12:25:59 26  INFO    49 : UNBIND:
+2020.03.13 12:25:59 26  INFO    49 Hex dump (16) bytes:
+2020.03.13 12:25:59 26  INFO    49 00000010:00000006:00000000:0000001F:
+2020.03.13 12:25:59 26  INFO    49 
+2020.03.13 12:25:59 26  INFO    49 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=31
+2020.03.13 12:25:59 26  INFO    49  
+2020.03.13 12:25:59 26  INFO    49 1 receivers connected and bound
+2020.03.13 12:25:59 26  INFO    49 : UNBIND_RESP
+2020.03.13 12:25:59 26  INFO    49 Hex dump (16) bytes:
+2020.03.13 12:25:59 26  INFO    49 00000010:80000006:00000000:0000001F:
+2020.03.13 12:25:59 26  INFO    49 
+2020.03.13 12:25:59 26  INFO    49 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=31
+2020.03.13 12:25:59 26  INFO    49  
+2020.03.13 12:25:59 27  INFO    49 StandardConnectionHandler waiting for connection
+2020.03.13 12:25:59 40  INFO    53 : UNBIND:
+2020.03.13 12:25:59 40  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:25:59 40  INFO    53 00000010:00000006:00000000:00000020:
+2020.03.13 12:25:59 40  INFO    53 
+2020.03.13 12:25:59 40  INFO    53 cmd_len=16,cmd_id=6,cmd_status=0,seq_no=32
+2020.03.13 12:25:59 40  INFO    53  
+2020.03.13 12:25:59 40  INFO    53 0 receivers connected and bound
+2020.03.13 12:25:59 40  INFO    53 : UNBIND_RESP
+2020.03.13 12:25:59 40  INFO    53 Hex dump (16) bytes:
+2020.03.13 12:25:59 40  INFO    53 00000010:80000006:00000000:00000020:
+2020.03.13 12:25:59 40  INFO    53 
+2020.03.13 12:25:59 40  INFO    53 cmd_len=0,cmd_id=-2147483642,cmd_status=0,seq_no=32
+2020.03.13 12:25:59 40  INFO    53  
+2020.03.13 12:25:59 41  INFO    53 StandardConnectionHandler waiting for connection
+2020.03.13 12:26:15 860 INFO    52 StandardConnectionHandler accepted a connection
+2020.03.13 12:26:15 860 INFO    52 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:26:15 878 INFO    52 : BIND_TRANSCEIVER:
+2020.03.13 12:26:15 878 INFO    52 Hex dump (35) bytes:
+2020.03.13 12:26:15 878 INFO    52 00000023:00000009:00000000:00000001:
+2020.03.13 12:26:15 878 INFO    52 55504652:45450055:50465245:45000034:
+2020.03.13 12:26:15 878 INFO    52 030000
+2020.03.13 12:26:15 878 INFO    52 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:26:15 878 INFO    52 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:26:15 878 INFO    52  
+2020.03.13 12:26:15 878 INFO    52 StandardProtocolHandler: setting address range to 
+2020.03.13 12:26:15 879 INFO    52 New transceiver session bound to SMPPSim
+2020.03.13 12:26:15 879 INFO    52 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:26:15 879 INFO    52 Hex dump (24) bytes:
+2020.03.13 12:26:15 879 INFO    52 00000018:80000009:00000000:00000001:
+2020.03.13 12:26:15 879 INFO    52 534D5050:53696D00:
+2020.03.13 12:26:15 879 INFO    52 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:26:15 879 INFO    52  
+2020.03.13 12:26:15 879 INFO    52 1 receivers connected and bound
+2020.03.13 12:26:15 880 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:26:15 913 INFO    51 StandardConnectionHandler accepted a connection
+2020.03.13 12:26:15 913 INFO    51 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:26:15 914 INFO    51 : BIND_TRANSCEIVER:
+2020.03.13 12:26:15 914 INFO    51 Hex dump (35) bytes:
+2020.03.13 12:26:15 914 INFO    51 00000023:00000009:00000000:00000001:
+2020.03.13 12:26:15 914 INFO    51 55504652:45450055:50465245:45000034:
+2020.03.13 12:26:15 914 INFO    51 030000
+2020.03.13 12:26:15 914 INFO    51 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:26:15 914 INFO    51 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:26:15 914 INFO    51  
+2020.03.13 12:26:15 914 INFO    51 StandardProtocolHandler: setting address range to 
+2020.03.13 12:26:15 914 INFO    51 New transceiver session bound to SMPPSim
+2020.03.13 12:26:15 914 INFO    51 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:26:15 914 INFO    51 Hex dump (24) bytes:
+2020.03.13 12:26:15 915 INFO    51 00000018:80000009:00000000:00000001:
+2020.03.13 12:26:15 915 INFO    51 534D5050:53696D00:
+2020.03.13 12:26:15 915 INFO    51 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:26:15 915 INFO    51  
+2020.03.13 12:26:15 915 INFO    51 2 receivers connected and bound
+2020.03.13 12:26:15 915 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:26:15 920 INFO    50 StandardConnectionHandler accepted a connection
+2020.03.13 12:26:15 920 INFO    50 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:26:15 924 INFO    50 : BIND_TRANSCEIVER:
+2020.03.13 12:26:15 924 INFO    50 Hex dump (35) bytes:
+2020.03.13 12:26:15 924 INFO    50 00000023:00000009:00000000:00000001:
+2020.03.13 12:26:15 924 INFO    50 55504652:45450055:50465245:45000034:
+2020.03.13 12:26:15 924 INFO    50 030000
+2020.03.13 12:26:15 924 INFO    50 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:26:15 924 INFO    50 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:26:15 924 INFO    50  
+2020.03.13 12:26:15 924 INFO    50 StandardProtocolHandler: setting address range to 
+2020.03.13 12:26:15 924 INFO    50 New transceiver session bound to SMPPSim
+2020.03.13 12:26:15 924 INFO    50 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:26:15 924 INFO    50 Hex dump (24) bytes:
+2020.03.13 12:26:15 924 INFO    50 00000018:80000009:00000000:00000001:
+2020.03.13 12:26:15 925 INFO    50 534D5050:53696D00:
+2020.03.13 12:26:15 925 INFO    50 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:26:15 925 INFO    50  
+2020.03.13 12:26:15 925 INFO    50 3 receivers connected and bound
+2020.03.13 12:26:15 925 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:26:15 933 INFO    48 StandardConnectionHandler accepted a connection
+2020.03.13 12:26:15 933 INFO    48 Protocol handler is of type StandardProtocolHandler
+2020.03.13 12:26:15 934 INFO    48 : BIND_TRANSCEIVER:
+2020.03.13 12:26:15 935 INFO    48 Hex dump (35) bytes:
+2020.03.13 12:26:15 935 INFO    48 00000023:00000009:00000000:00000001:
+2020.03.13 12:26:15 935 INFO    48 55504652:45450055:50465245:45000034:
+2020.03.13 12:26:15 935 INFO    48 030000
+2020.03.13 12:26:15 935 INFO    48 cmd_len=35,cmd_id=9,cmd_status=0,seq_no=1,system_id=UPFREE,password=UPFREE
+2020.03.13 12:26:15 935 INFO    48 system_type=,interface_version=52,addr_ton=3,addr_npi=0,address_range=
+2020.03.13 12:26:15 935 INFO    48  
+2020.03.13 12:26:15 935 INFO    48 StandardProtocolHandler: setting address range to 
+2020.03.13 12:26:15 935 INFO    48 New transceiver session bound to SMPPSim
+2020.03.13 12:26:15 935 INFO    48 : BIND_TRANSCEIVER_RESP:
+2020.03.13 12:26:15 935 INFO    48 Hex dump (24) bytes:
+2020.03.13 12:26:15 935 INFO    48 00000018:80000009:00000000:00000001:
+2020.03.13 12:26:15 935 INFO    48 534D5050:53696D00:
+2020.03.13 12:26:15 935 INFO    48 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2020.03.13 12:26:15 935 INFO    48  
+2020.03.13 12:26:15 935 INFO    48 4 receivers connected and bound
+2020.03.13 12:26:15 935 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:26:18 991 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:26:45 937 INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:26:45 938 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:26:45 938 INFO    52 00000010:00000015:00000000:00000002:
+2020.03.13 12:26:45 938 INFO    52 
+2020.03.13 12:26:45 938 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 938 INFO    52  
+2020.03.13 12:26:45 938 INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:26:45 938 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:26:45 938 INFO    52 00000010:80000015:00000000:00000002:
+2020.03.13 12:26:45 938 INFO    52 
+2020.03.13 12:26:45 938 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 938 INFO    52  
+2020.03.13 12:26:45 992 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:26:45 992 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:26:45 992 INFO    51 00000010:00000015:00000000:00000002:
+2020.03.13 12:26:45 992 INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:26:45 992 INFO    51 
+2020.03.13 12:26:45 992 INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:26:45 992 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:26:45 992 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:26:45 992 INFO    48 00000010:00000015:00000000:00000002:
+2020.03.13 12:26:45 992 INFO    48 
+2020.03.13 12:26:45 992 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 992 INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 992 INFO    50 00000010:00000015:00000000:00000002:
+2020.03.13 12:26:45 992 INFO    48  
+2020.03.13 12:26:45 992 INFO    51  
+2020.03.13 12:26:45 993 INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:26:45 993 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:26:45 993 INFO    50 
+2020.03.13 12:26:45 993 INFO    48 00000010:80000015:00000000:00000002:
+2020.03.13 12:26:45 993 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:26:45 993 INFO    48 
+2020.03.13 12:26:45 993 INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 993 INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 993 INFO    48  
+2020.03.13 12:26:45 993 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:26:45 993 INFO    50  
+2020.03.13 12:26:45 993 INFO    51 00000010:80000015:00000000:00000002:
+2020.03.13 12:26:45 993 INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:26:45 993 INFO    51 
+2020.03.13 12:26:45 993 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:26:45 993 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 993 INFO    50 00000010:80000015:00000000:00000002:
+2020.03.13 12:26:45 993 INFO    51  
+2020.03.13 12:26:45 994 INFO    50 
+2020.03.13 12:26:45 994 INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=2
+2020.03.13 12:26:45 994 INFO    50  
+2020.03.13 12:27:15 954 INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:27:15 954 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:27:15 954 INFO    52 00000010:00000015:00000000:00000003:
+2020.03.13 12:27:15 954 INFO    52 
+2020.03.13 12:27:15 954 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:27:15 954 INFO    52  
+2020.03.13 12:27:15 955 INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:15 955 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:27:15 955 INFO    52 00000010:80000015:00000000:00000003:
+2020.03.13 12:27:15 955 INFO    52 
+2020.03.13 12:27:15 955 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:27:15 955 INFO    52  
+2020.03.13 12:27:16 24  INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:27:16 24  INFO    48 Hex dump (16) bytes:
+2020.03.13 12:27:16 24  INFO    48 00000010:00000015:00000000:00000003:
+2020.03.13 12:27:16 24  INFO    48 
+2020.03.13 12:27:16 24  INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:27:16 24  INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:27:16 24  INFO    48  
+2020.03.13 12:27:16 24  INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:16 24  INFO    48 Hex dump (16) bytes:
+2020.03.13 12:27:16 24  INFO    48 00000010:80000015:00000000:00000003:
+2020.03.13 12:27:16 24  INFO    51 Hex dump (16) bytes:
+2020.03.13 12:27:16 24  INFO    48 
+2020.03.13 12:27:16 24  INFO    51 00000010:00000015:00000000:00000003:
+2020.03.13 12:27:16 25  INFO    51 
+2020.03.13 12:27:16 25  INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:27:16 25  INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:27:16 25  INFO    48  
+2020.03.13 12:27:16 25  INFO    51  
+2020.03.13 12:27:16 25  INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:16 25  INFO    51 Hex dump (16) bytes:
+2020.03.13 12:27:16 25  INFO    51 00000010:80000015:00000000:00000003:
+2020.03.13 12:27:16 25  INFO    51 
+2020.03.13 12:27:16 25  INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:27:16 25  INFO    51  
+2020.03.13 12:27:16 28  INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:27:16 28  INFO    50 Hex dump (16) bytes:
+2020.03.13 12:27:16 28  INFO    50 00000010:00000015:00000000:00000003:
+2020.03.13 12:27:16 28  INFO    50 
+2020.03.13 12:27:16 28  INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2020.03.13 12:27:16 28  INFO    50  
+2020.03.13 12:27:16 28  INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:16 28  INFO    50 Hex dump (16) bytes:
+2020.03.13 12:27:16 28  INFO    50 00000010:80000015:00000000:00000003:
+2020.03.13 12:27:16 28  INFO    50 
+2020.03.13 12:27:16 28  INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2020.03.13 12:27:16 28  INFO    50  
+2020.03.13 12:27:18 994 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:27:45 967 INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:27:45 967 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:27:45 967 INFO    52 00000010:00000015:00000000:00000004:
+2020.03.13 12:27:45 967 INFO    52 
+2020.03.13 12:27:45 967 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:27:45 967 INFO    52  
+2020.03.13 12:27:45 967 INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:45 967 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:27:45 967 INFO    52 00000010:80000015:00000000:00000004:
+2020.03.13 12:27:45 967 INFO    52 
+2020.03.13 12:27:45 967 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:27:45 967 INFO    52  
+2020.03.13 12:27:46 56  INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:27:46 56  INFO    51 Hex dump (16) bytes:
+2020.03.13 12:27:46 56  INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:27:46 56  INFO    48 Hex dump (16) bytes:
+2020.03.13 12:27:46 56  INFO    51 00000010:00000015:00000000:00000004:
+2020.03.13 12:27:46 56  INFO    48 00000010:00000015:00000000:00000004:
+2020.03.13 12:27:46 56  INFO    51 
+2020.03.13 12:27:46 57  INFO    48 
+2020.03.13 12:27:46 57  INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:27:46 57  INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:27:46 57  INFO    48  
+2020.03.13 12:27:46 57  INFO    51  
+2020.03.13 12:27:46 57  INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:46 57  INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:46 57  INFO    48 Hex dump (16) bytes:
+2020.03.13 12:27:46 57  INFO    51 Hex dump (16) bytes:
+2020.03.13 12:27:46 57  INFO    48 00000010:80000015:00000000:00000004:
+2020.03.13 12:27:46 57  INFO    51 00000010:80000015:00000000:00000004:
+2020.03.13 12:27:46 57  INFO    51 
+2020.03.13 12:27:46 57  INFO    48 
+2020.03.13 12:27:46 57  INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:27:46 57  INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:27:46 57  INFO    51  
+2020.03.13 12:27:46 57  INFO    48  
+2020.03.13 12:27:46 60  INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:27:46 60  INFO    50 Hex dump (16) bytes:
+2020.03.13 12:27:46 60  INFO    50 00000010:00000015:00000000:00000004:
+2020.03.13 12:27:46 60  INFO    50 
+2020.03.13 12:27:46 60  INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2020.03.13 12:27:46 60  INFO    50  
+2020.03.13 12:27:46 60  INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:27:46 60  INFO    50 Hex dump (16) bytes:
+2020.03.13 12:27:46 60  INFO    50 00000010:80000015:00000000:00000004:
+2020.03.13 12:27:46 60  INFO    50 
+2020.03.13 12:27:46 60  INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2020.03.13 12:27:46 60  INFO    50  
+2020.03.13 12:28:07 824 INFO    69 addressIsServicedByReceiver(5321)
+2020.03.13 12:28:07 825 INFO    69 DELIVER_SM:
+2020.03.13 12:28:07 825 INFO    69 Hex dump (79) bytes:
+2020.03.13 12:28:07 825 INFO    69 0000004F:00000005:00000000:00000004:
+2020.03.13 12:28:07 825 INFO    69 00010130:30303030:30303030:30000101:
+2020.03.13 12:28:07 825 INFO    69 35333231:00000000:00000000:00000654:
+2020.03.13 12:28:07 825 INFO    69 6573745F:32020A00:02000102:03000480:
+2020.03.13 12:28:07 825 INFO    69 32320050:02000353:4D535003:000164
+2020.03.13 12:28:07 826 INFO    69 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=4,service_type=,source_addr_ton=1
+2020.03.13 12:28:07 826 INFO    69 source_addr_npi=1,source_addr=0000000000,dest_addr_ton=1,dest_addr_npi=1
+2020.03.13 12:28:07 826 INFO    69 destination_addr=5321,esm_class=0,protocol_ID=0,priority_flag=0
+2020.03.13 12:28:07 826 INFO    69 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2020.03.13 12:28:07 826 INFO    69 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=6
+2020.03.13 12:28:07 826 INFO    69 short_message=Test_2
+2020.03.13 12:28:07 826 INFO    69  
+2020.03.13 12:28:07 826 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:28:08 407 INFO    48 : DELIVER_SM_RESP:
+2020.03.13 12:28:08 407 INFO    48 Hex dump (17) bytes:
+2020.03.13 12:28:08 408 INFO    48 00000011:80000005:00000000:00000004:
+2020.03.13 12:28:08 408 INFO    48 00
+2020.03.13 12:28:08 408 INFO    48 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=4,system_id= 
+2020.03.13 12:28:08 408 INFO    48  
+2020.03.13 12:28:16 3   INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:28:16 3   INFO    52 Hex dump (16) bytes:
+2020.03.13 12:28:16 3   INFO    52 00000010:00000015:00000000:00000005:
+2020.03.13 12:28:16 3   INFO    52 
+2020.03.13 12:28:16 3   INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:28:16 3   INFO    52  
+2020.03.13 12:28:16 4   INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:16 4   INFO    52 Hex dump (16) bytes:
+2020.03.13 12:28:16 4   INFO    52 00000010:80000015:00000000:00000005:
+2020.03.13 12:28:16 4   INFO    52 
+2020.03.13 12:28:16 4   INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:28:16 4   INFO    52  
+2020.03.13 12:28:16 83  INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:28:16 83  INFO    51 Hex dump (16) bytes:
+2020.03.13 12:28:16 83  INFO    51 00000010:00000015:00000000:00000005:
+2020.03.13 12:28:16 83  INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:28:16 83  INFO    50 Hex dump (16) bytes:
+2020.03.13 12:28:16 83  INFO    50 00000010:00000015:00000000:00000005:
+2020.03.13 12:28:16 83  INFO    51 
+2020.03.13 12:28:16 84  INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:28:16 84  INFO    50 
+2020.03.13 12:28:16 84  INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:28:16 84  INFO    50  
+2020.03.13 12:28:16 84  INFO    51  
+2020.03.13 12:28:16 84  INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:16 84  INFO    50 Hex dump (16) bytes:
+2020.03.13 12:28:16 84  INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:16 84  INFO    50 00000010:80000015:00000000:00000005:
+2020.03.13 12:28:16 84  INFO    50 
+2020.03.13 12:28:16 84  INFO    51 Hex dump (16) bytes:
+2020.03.13 12:28:16 84  INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:28:16 84  INFO    50  
+2020.03.13 12:28:16 84  INFO    51 00000010:80000015:00000000:00000005:
+2020.03.13 12:28:16 84  INFO    51 
+2020.03.13 12:28:16 84  INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:28:16 84  INFO    51  
+2020.03.13 12:28:18 997 INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:28:37 859 INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:28:37 859 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:28:37 859 INFO    48 00000010:00000015:00000000:00000005:
+2020.03.13 12:28:37 859 INFO    48 
+2020.03.13 12:28:37 859 INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2020.03.13 12:28:37 859 INFO    48  
+2020.03.13 12:28:37 860 INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:37 860 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:28:37 860 INFO    48 00000010:80000015:00000000:00000005:
+2020.03.13 12:28:37 860 INFO    48 
+2020.03.13 12:28:37 860 INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2020.03.13 12:28:37 860 INFO    48  
+2020.03.13 12:28:46 31  INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:28:46 31  INFO    52 Hex dump (16) bytes:
+2020.03.13 12:28:46 31  INFO    52 00000010:00000015:00000000:00000006:
+2020.03.13 12:28:46 31  INFO    52 
+2020.03.13 12:28:46 32  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:28:46 32  INFO    52  
+2020.03.13 12:28:46 32  INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:46 32  INFO    52 Hex dump (16) bytes:
+2020.03.13 12:28:46 32  INFO    52 00000010:80000015:00000000:00000006:
+2020.03.13 12:28:46 32  INFO    52 
+2020.03.13 12:28:46 32  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:28:46 32  INFO    52  
+2020.03.13 12:28:46 104 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:28:46 104 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:28:46 104 INFO    51 00000010:00000015:00000000:00000006:
+2020.03.13 12:28:46 104 INFO    51 
+2020.03.13 12:28:46 104 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:28:46 104 INFO    51  
+2020.03.13 12:28:46 104 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:46 104 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:28:46 104 INFO    51 00000010:80000015:00000000:00000006:
+2020.03.13 12:28:46 104 INFO    51 
+2020.03.13 12:28:46 104 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:28:46 105 INFO    51  
+2020.03.13 12:28:46 117 INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:28:46 117 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:28:46 117 INFO    50 00000010:00000015:00000000:00000006:
+2020.03.13 12:28:46 117 INFO    50 
+2020.03.13 12:28:46 117 INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:28:46 117 INFO    50  
+2020.03.13 12:28:46 117 INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:28:46 117 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:28:46 118 INFO    50 00000010:80000015:00000000:00000006:
+2020.03.13 12:28:46 118 INFO    50 
+2020.03.13 12:28:46 118 INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:28:46 118 INFO    50  
+2020.03.13 12:29:07 891 INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:29:07 891 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:29:07 891 INFO    48 00000010:00000015:00000000:00000006:
+2020.03.13 12:29:07 891 INFO    48 
+2020.03.13 12:29:07 892 INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2020.03.13 12:29:07 892 INFO    48  
+2020.03.13 12:29:07 892 INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:07 892 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:29:07 892 INFO    48 00000010:80000015:00000000:00000006:
+2020.03.13 12:29:07 892 INFO    48 
+2020.03.13 12:29:07 892 INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2020.03.13 12:29:07 892 INFO    48  
+2020.03.13 12:29:16 64  INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:29:16 64  INFO    52 Hex dump (16) bytes:
+2020.03.13 12:29:16 64  INFO    52 00000010:00000015:00000000:00000007:
+2020.03.13 12:29:16 64  INFO    52 
+2020.03.13 12:29:16 64  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:29:16 64  INFO    52  
+2020.03.13 12:29:16 64  INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:16 64  INFO    52 Hex dump (16) bytes:
+2020.03.13 12:29:16 64  INFO    52 00000010:80000015:00000000:00000007:
+2020.03.13 12:29:16 65  INFO    52 
+2020.03.13 12:29:16 65  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:29:16 65  INFO    52  
+2020.03.13 12:29:16 129 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:29:16 129 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:29:16 129 INFO    51 00000010:00000015:00000000:00000007:
+2020.03.13 12:29:16 129 INFO    51 
+2020.03.13 12:29:16 129 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:29:16 129 INFO    51  
+2020.03.13 12:29:16 129 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:16 129 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:29:16 129 INFO    51 00000010:80000015:00000000:00000007:
+2020.03.13 12:29:16 129 INFO    51 
+2020.03.13 12:29:16 129 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:29:16 129 INFO    51  
+2020.03.13 12:29:16 152 INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:29:16 152 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:29:16 152 INFO    50 00000010:00000015:00000000:00000007:
+2020.03.13 12:29:16 152 INFO    50 
+2020.03.13 12:29:16 152 INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:29:16 152 INFO    50  
+2020.03.13 12:29:16 152 INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:16 152 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:29:16 152 INFO    50 00000010:80000015:00000000:00000007:
+2020.03.13 12:29:16 152 INFO    50 
+2020.03.13 12:29:16 152 INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:29:16 152 INFO    50  
+2020.03.13 12:29:19 0   INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:29:37 919 INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:29:37 919 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:29:37 919 INFO    48 00000010:00000015:00000000:00000007:
+2020.03.13 12:29:37 919 INFO    48 
+2020.03.13 12:29:37 919 INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2020.03.13 12:29:37 920 INFO    48  
+2020.03.13 12:29:37 920 INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:37 920 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:29:37 920 INFO    48 00000010:80000015:00000000:00000007:
+2020.03.13 12:29:37 920 INFO    48 
+2020.03.13 12:29:37 920 INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2020.03.13 12:29:37 920 INFO    48  
+2020.03.13 12:29:46 79  INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:29:46 79  INFO    52 Hex dump (16) bytes:
+2020.03.13 12:29:46 79  INFO    52 00000010:00000015:00000000:00000008:
+2020.03.13 12:29:46 79  INFO    52 
+2020.03.13 12:29:46 79  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:29:46 80  INFO    52  
+2020.03.13 12:29:46 80  INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:46 80  INFO    52 Hex dump (16) bytes:
+2020.03.13 12:29:46 80  INFO    52 00000010:80000015:00000000:00000008:
+2020.03.13 12:29:46 80  INFO    52 
+2020.03.13 12:29:46 80  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:29:46 80  INFO    52  
+2020.03.13 12:29:46 156 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:29:46 156 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:29:46 156 INFO    51 00000010:00000015:00000000:00000008:
+2020.03.13 12:29:46 156 INFO    51 
+2020.03.13 12:29:46 156 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:29:46 156 INFO    51  
+2020.03.13 12:29:46 156 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:46 156 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:29:46 156 INFO    51 00000010:80000015:00000000:00000008:
+2020.03.13 12:29:46 156 INFO    51 
+2020.03.13 12:29:46 156 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:29:46 156 INFO    51  
+2020.03.13 12:29:46 184 INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:29:46 184 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:29:46 184 INFO    50 00000010:00000015:00000000:00000008:
+2020.03.13 12:29:46 184 INFO    50 
+2020.03.13 12:29:46 185 INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:29:46 185 INFO    50  
+2020.03.13 12:29:46 185 INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:29:46 185 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:29:46 185 INFO    50 00000010:80000015:00000000:00000008:
+2020.03.13 12:29:46 185 INFO    50 
+2020.03.13 12:29:46 185 INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:29:46 185 INFO    50  
+2020.03.13 12:30:07 953 INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:30:07 953 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:30:07 953 INFO    48 00000010:00000015:00000000:00000008:
+2020.03.13 12:30:07 953 INFO    48 
+2020.03.13 12:30:07 953 INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2020.03.13 12:30:07 953 INFO    48  
+2020.03.13 12:30:07 953 INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:07 953 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:30:07 953 INFO    48 00000010:80000015:00000000:00000008:
+2020.03.13 12:30:07 953 INFO    48 
+2020.03.13 12:30:07 954 INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2020.03.13 12:30:07 954 INFO    48  
+2020.03.13 12:30:16 111 INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:30:16 111 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:30:16 111 INFO    52 00000010:00000015:00000000:00000009:
+2020.03.13 12:30:16 111 INFO    52 
+2020.03.13 12:30:16 111 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:30:16 113 INFO    52  
+2020.03.13 12:30:16 113 INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:16 113 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:30:16 113 INFO    52 00000010:80000015:00000000:00000009:
+2020.03.13 12:30:16 113 INFO    52 
+2020.03.13 12:30:16 113 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:30:16 113 INFO    52  
+2020.03.13 12:30:16 183 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:30:16 183 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:30:16 183 INFO    51 00000010:00000015:00000000:00000009:
+2020.03.13 12:30:16 183 INFO    51 
+2020.03.13 12:30:16 183 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:30:16 183 INFO    51  
+2020.03.13 12:30:16 183 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:16 184 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:30:16 184 INFO    51 00000010:80000015:00000000:00000009:
+2020.03.13 12:30:16 184 INFO    51 
+2020.03.13 12:30:16 184 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:30:16 184 INFO    51  
+2020.03.13 12:30:16 216 INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:30:16 216 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:30:16 216 INFO    50 00000010:00000015:00000000:00000009:
+2020.03.13 12:30:16 216 INFO    50 
+2020.03.13 12:30:16 216 INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:30:16 216 INFO    50  
+2020.03.13 12:30:16 216 INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:16 216 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:30:16 216 INFO    50 00000010:80000015:00000000:00000009:
+2020.03.13 12:30:16 216 INFO    50 
+2020.03.13 12:30:16 216 INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:30:16 216 INFO    50  
+2020.03.13 12:30:19 1   INFO    72 Processing 0 messages in the delayed inbound queue
+2020.03.13 12:30:24 218 INFO    69 addressIsServicedByReceiver(5321)
+2020.03.13 12:30:24 218 INFO    69 DELIVER_SM:
+2020.03.13 12:30:24 218 INFO    69 Hex dump (79) bytes:
+2020.03.13 12:30:24 218 INFO    69 0000004F:00000005:00000000:00000005:
+2020.03.13 12:30:24 218 INFO    69 00010130:30303030:30303030:30000101:
+2020.03.13 12:30:24 218 INFO    69 35333231:00000000:00000000:00000654:
+2020.03.13 12:30:24 218 INFO    69 6573745F:32020A00:02000102:03000480:
+2020.03.13 12:30:24 218 INFO    69 31360050:02000353:4D535003:000164
+2020.03.13 12:30:24 218 INFO    69 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=5,service_type=,source_addr_ton=1
+2020.03.13 12:30:24 218 INFO    69 source_addr_npi=1,source_addr=0000000000,dest_addr_ton=1,dest_addr_npi=1
+2020.03.13 12:30:24 218 INFO    69 destination_addr=5321,esm_class=0,protocol_ID=0,priority_flag=0
+2020.03.13 12:30:24 218 INFO    69 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2020.03.13 12:30:24 218 INFO    69 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=6
+2020.03.13 12:30:24 218 INFO    69 short_message=Test_2
+2020.03.13 12:30:24 218 INFO    69  
+2020.03.13 12:30:24 218 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:30:24 691 INFO    50 : DELIVER_SM_RESP:
+2020.03.13 12:30:24 691 INFO    50 Hex dump (17) bytes:
+2020.03.13 12:30:24 691 INFO    50 00000011:80000005:00000000:00000005:
+2020.03.13 12:30:24 691 INFO    50 00
+2020.03.13 12:30:24 692 INFO    50 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=5,system_id= 
+2020.03.13 12:30:24 692 INFO    50  
+2020.03.13 12:30:37 987 INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:30:37 987 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:30:37 987 INFO    48 00000010:00000015:00000000:00000009:
+2020.03.13 12:30:37 987 INFO    48 
+2020.03.13 12:30:37 987 INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2020.03.13 12:30:37 987 INFO    48  
+2020.03.13 12:30:37 987 INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:37 987 INFO    48 Hex dump (16) bytes:
+2020.03.13 12:30:37 987 INFO    48 00000010:80000015:00000000:00000009:
+2020.03.13 12:30:37 987 INFO    48 
+2020.03.13 12:30:37 987 INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2020.03.13 12:30:37 987 INFO    48  
+2020.03.13 12:30:46 147 INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:30:46 147 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:30:46 147 INFO    52 00000010:00000015:00000000:0000000A:
+2020.03.13 12:30:46 147 INFO    52 
+2020.03.13 12:30:46 147 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:30:46 147 INFO    52  
+2020.03.13 12:30:46 147 INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:46 147 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:30:46 147 INFO    52 00000010:80000015:00000000:0000000A:
+2020.03.13 12:30:46 147 INFO    52 
+2020.03.13 12:30:46 147 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:30:46 147 INFO    52  
+2020.03.13 12:30:46 217 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:30:46 217 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:30:46 217 INFO    51 00000010:00000015:00000000:0000000A:
+2020.03.13 12:30:46 217 INFO    51 
+2020.03.13 12:30:46 217 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:30:46 217 INFO    51  
+2020.03.13 12:30:46 217 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:46 217 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:30:46 217 INFO    51 00000010:80000015:00000000:0000000A:
+2020.03.13 12:30:46 217 INFO    51 
+2020.03.13 12:30:46 217 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:30:46 218 INFO    51  
+2020.03.13 12:30:54 249 INFO    50 : ENQUIRE_LINK:
+2020.03.13 12:30:54 250 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:30:54 250 INFO    50 00000010:00000015:00000000:0000000A:
+2020.03.13 12:30:54 250 INFO    50 
+2020.03.13 12:30:54 250 INFO    50 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:30:54 250 INFO    50  
+2020.03.13 12:30:54 250 INFO    50 :ENQUIRE_LINK_RESP:
+2020.03.13 12:30:54 250 INFO    50 Hex dump (16) bytes:
+2020.03.13 12:30:54 250 INFO    50 00000010:80000015:00000000:0000000A:
+2020.03.13 12:30:54 250 INFO    50 
+2020.03.13 12:30:54 250 INFO    50 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:30:54 250 INFO    50  
+2020.03.13 12:31:08 16  INFO    48 : ENQUIRE_LINK:
+2020.03.13 12:31:08 17  INFO    48 Hex dump (16) bytes:
+2020.03.13 12:31:08 17  INFO    48 00000010:00000015:00000000:0000000A:
+2020.03.13 12:31:08 17  INFO    48 
+2020.03.13 12:31:08 17  INFO    48 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2020.03.13 12:31:08 17  INFO    48  
+2020.03.13 12:31:08 17  INFO    48 :ENQUIRE_LINK_RESP:
+2020.03.13 12:31:08 17  INFO    48 Hex dump (16) bytes:
+2020.03.13 12:31:08 17  INFO    48 00000010:80000015:00000000:0000000A:
+2020.03.13 12:31:08 17  INFO    48 
+2020.03.13 12:31:08 17  INFO    48 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2020.03.13 12:31:08 17  INFO    48  
+2020.03.13 12:31:16 180 INFO    52 : ENQUIRE_LINK:
+2020.03.13 12:31:16 180 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:31:16 180 INFO    52 00000010:00000015:00000000:0000000B:
+2020.03.13 12:31:16 180 INFO    52 
+2020.03.13 12:31:16 180 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:31:16 180 INFO    52  
+2020.03.13 12:31:16 180 INFO    52 :ENQUIRE_LINK_RESP:
+2020.03.13 12:31:16 180 INFO    52 Hex dump (16) bytes:
+2020.03.13 12:31:16 180 INFO    52 00000010:80000015:00000000:0000000B:
+2020.03.13 12:31:16 180 INFO    52 
+2020.03.13 12:31:16 180 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:31:16 180 INFO    52  
+2020.03.13 12:31:16 251 INFO    51 : ENQUIRE_LINK:
+2020.03.13 12:31:16 251 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:31:16 251 INFO    51 00000010:00000015:00000000:0000000B:
+2020.03.13 12:31:16 251 INFO    51 
+2020.03.13 12:31:16 251 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2020.03.13 12:31:16 251 INFO    51  
+2020.03.13 12:31:16 251 INFO    51 :ENQUIRE_LINK_RESP:
+2020.03.13 12:31:16 251 INFO    51 Hex dump (16) bytes:
+2020.03.13 12:31:16 251 INFO    51 00000010:80000015:00000000:0000000B:
+2020.03.13 12:31:16 251 INFO    51 
+2020.03.13 12:31:16 252 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2020.03.13 12:31:16 252 INFO    51  
+2020.03.13 12:31:18 472 INFO    69 addressIsServicedByReceiver(5321)
+2020.03.13 12:31:18 472 INFO    69 DELIVER_SM:
+2020.03.13 12:31:18 472 INFO    69 Hex dump (79) bytes:
+2020.03.13 12:31:18 472 INFO    69 0000004F:00000005:00000000:00000006:
+2020.03.13 12:31:18 472 INFO    69 00010130:30303030:30303030:30000101:
+2020.03.13 12:31:18 472 INFO    69 35333231:00000000:00000000:00000654:
+2020.03.13 12:31:18 472 INFO    69 6573745F:32020A00:02000102:03000480:
+2020.03.13 12:31:18 472 INFO    69 31360050:02000353:4D535003:000164
+2020.03.13 12:31:18 472 INFO    69 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=6,service_type=,source_addr_ton=1
+2020.03.13 12:31:18 472 INFO    69 source_addr_npi=1,source_addr=0000000000,dest_addr_ton=1,dest_addr_npi=1
+2020.03.13 12:31:18 472 INFO    69 destination_addr=5321,esm_class=0,protocol_ID=0,priority_flag=0
+2020.03.13 12:31:18 472 INFO    69 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2020.03.13 12:31:18 473 INFO    69 replace_if_present_flag=0,data_coding=0,sm_default_msg_id=0,sm_length=6
+2020.03.13 12:31:18 473 INFO    69 short_message=Test_2
+2020.03.13 12:31:18 473 INFO    69  
+2020.03.13 12:31:18 473 INFO    69 InboundQueue: empty  - waiting
+2020.03.13 12:31:18 809 INFO    51 : DELIVER_SM_RESP:
+2020.03.13 12:31:18 809 INFO    51 Hex dump (17) bytes:
+2020.03.13 12:31:18 809 INFO    51 00000011:80000005:00000000:00000006:
+2020.03.13 12:31:18 809 INFO    51 00
+2020.03.13 12:31:18 810 INFO    51 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=6,system_id= 
+2020.03.13 12:31:18 810 INFO    51  
+2020.03.13 12:31:19 3   INFO    72 Processing 0 messages in the delayed inbound queue

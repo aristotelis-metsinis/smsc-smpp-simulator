@@ -1,0 +1,862 @@
+2021.02.24 16:19:31 333 INFO    1 ==============================================================
+2021.02.24 16:19:31 395 INFO    1 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2021.02.24 16:19:31 395 INFO    1 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2021.02.24 16:19:31 395 INFO    1 =  read the license.txt file that was included in the SMPPSim distribution
+2021.02.24 16:19:31 396 INFO    1 =  This is free software, and you are welcome to redistribute it under
+2021.02.24 16:19:31 396 INFO    1 =  certain conditions; Again, see license.txt for details or read the GNU
+2021.02.24 16:19:31 396 INFO    1 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2021.02.24 16:19:31 398 INFO    1 =  ...... end of legal stuff ......
+2021.02.24 16:19:31 398 INFO    1 ==============================================================
+2021.02.24 16:19:31 398 INFO    1 =  
+2021.02.24 16:19:31 398 INFO    1 =  com.seleniumsoftware.SMPPSim 2.6.11
+2021.02.24 16:19:31 398 INFO    1 =  by Martin Woolley (martin@seleniumsoftware.com)
+2021.02.24 16:19:31 398 INFO    1 =  http://www.seleniumsoftware.com
+2021.02.24 16:19:31 399 INFO    1 =  Running with the following parameters:
+2021.02.24 16:19:31 399 INFO    1 =  SMPP_PORT                               :2775
+2021.02.24 16:19:31 399 INFO    1 =  SMPP_CONNECTION_HANDLERS                :50
+2021.02.24 16:19:31 399 INFO    1 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2021.02.24 16:19:31 399 INFO    1 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.StandardProtocolHandler
+2021.02.24 16:19:31 400 INFO    1 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2021.02.24 16:19:31 400 INFO    1 =  SMPP_CONNECTION_HANDLERS                :50
+2021.02.24 16:19:31 400 INFO    1 =  INBOUND_QUEUE_CAPACITY                  :1000
+2021.02.24 16:19:31 400 INFO    1 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2021.02.24 16:19:31 400 INFO    1 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2021.02.24 16:19:31 400 INFO    1 =  MAX_TIME_ENROUTE                        :10000
+2021.02.24 16:19:31 401 INFO    1 =  PERCENTAGE_THAT_TRANSITION              :75
+2021.02.24 16:19:31 401 INFO    1 =  PERCENTAGE_DELIVERED                    :25
+2021.02.24 16:19:31 401 INFO    1 =  PERCENTAGE_UNDELIVERABLE                :25
+2021.02.24 16:19:31 401 INFO    1 =  PERCENTAGE_ACCEPTED                     :25
+2021.02.24 16:19:31 401 INFO    1 =  PERCENTAGE_REJECTED                     :25
+2021.02.24 16:19:31 401 INFO    1 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2021.02.24 16:19:31 401 INFO    1 =  OUTBIND_ENABLED                         :false
+2021.02.24 16:19:31 402 INFO    1 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2021.02.24 16:19:31 402 INFO    1 =  OUTBIND_ESME_PORT		                :0
+2021.02.24 16:19:31 402 INFO    1 =  OUTBIND_ESME_PASSWORD                   :password
+2021.02.24 16:19:31 402 INFO    1 =  HTTP_PORT                               :8080
+2021.02.24 16:19:31 402 INFO    1 =  HTTP_THREADS                            :10
+2021.02.24 16:19:31 402 INFO    1 =  DOCROOT                                 :www
+2021.02.24 16:19:31 402 INFO    1 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2021.02.24 16:19:31 402 INFO    1 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2021.02.24 16:19:31 403 INFO    1 =  SMSCID                                  :SMPPSim
+2021.02.24 16:19:31 403 INFO    1 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2021.02.24 16:19:31 403 INFO    1 =  DELIVER_MESSAGES_FILE                   :N/A
+2021.02.24 16:19:31 403 INFO    1 =  LOOPBACK                                :false
+2021.02.24 16:19:31 403 INFO    1 =  CAPTURE_REQUESTS_BINARY                 :false
+2021.02.24 16:19:31 403 INFO    1 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2021.02.24 16:19:31 403 INFO    1 =  CAPTURE_RESPONSES_BINARY                :false
+2021.02.24 16:19:31 403 INFO    1 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2021.02.24 16:19:31 404 INFO    1 =  CAPTURE_REQUESTS_DECODED                :false
+2021.02.24 16:19:31 404 INFO    1 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2021.02.24 16:19:31 404 INFO    1 =  CAPTURE_RESPONSES_DECODED               :false
+2021.02.24 16:19:31 404 INFO    1 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2021.02.24 16:19:31 404 INFO    1 =  CALLBACK                                :false
+2021.02.24 16:19:31 405 INFO    1 = Delivery receipts will always have optional parameter with TLV=5123/10/34343132333435363738
+2021.02.24 16:19:31 405 INFO    1 = Delivery receipts will include standard optional parameters if client supports 3.4 or later
+2021.02.24 16:19:31 405 INFO    1 =  
+2021.02.24 16:19:31 405 INFO    1 ==============================================================
+2021.02.24 16:19:31 411 INFO    12 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 411 INFO    15 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 411 INFO    14 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 411 INFO    13 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    18 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    17 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    16 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    22 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    21 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    20 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    19 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    25 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    26 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    24 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 412 INFO    23 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    27 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    28 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    30 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    29 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    31 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    32 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    33 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    35 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    34 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    36 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    38 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    37 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    41 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    39 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    42 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    40 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    44 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    43 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    47 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    46 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 414 INFO    45 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    50 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    48 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    49 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    56 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    57 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 416 INFO    59 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    55 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    54 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    53 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    52 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 415 INFO    51 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 416 INFO    60 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 416 INFO    61 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 416 INFO    58 StandardConnectionHandler waiting for connection
+2021.02.24 16:19:31 418 INFO    62 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 418 INFO    63 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 418 INFO    64 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 418 INFO    65 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 418 INFO    66 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 419 INFO    67 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 419 INFO    68 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 419 INFO    69 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 419 INFO    70 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 419 INFO    71 Starting HttpHandler thread. Listening on port 8080 for connections
+2021.02.24 16:19:31 419 INFO    72 Starting InboundQueue service....
+2021.02.24 16:19:31 419 INFO    73 Starting Lifecycle Service (OutboundQueue)
+2021.02.24 16:19:31 419 INFO    73 Lifecycle Service: OutboundQueue is empty  - waiting
+2021.02.24 16:19:31 420 INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:19:31 420 INFO    75 Starting DelayedInboundQueue service....
+2021.02.24 16:20:04 490 INFO    12 StandardConnectionHandler accepted a connection
+2021.02.24 16:20:04 497 INFO    12 Protocol handler is of type StandardProtocolHandler
+2021.02.24 16:20:04 537 INFO    12 : BIND_TRANSCEIVER:
+2021.02.24 16:20:04 538 INFO    12 Hex dump (39) bytes:
+2021.02.24 16:20:04 538 INFO    12 00000027:00000009:00000000:00000001:
+2021.02.24 16:20:04 538 INFO    12 75707374:7265616D:00757073:74726561:
+2021.02.24 16:20:04 538 INFO    12 6D000034:000000
+2021.02.24 16:20:04 538 INFO    12 cmd_len=39,cmd_id=9,cmd_status=0,seq_no=1,system_id=upstream,password=upstream
+2021.02.24 16:20:04 539 INFO    12 system_type=,interface_version=52,addr_ton=0,addr_npi=0,address_range=
+2021.02.24 16:20:04 539 INFO    12  
+2021.02.24 16:20:04 539 INFO    12 StandardProtocolHandler: setting address range to 
+2021.02.24 16:20:04 540 INFO    12 New transceiver session bound to SMPPSim
+2021.02.24 16:20:04 540 INFO    12 : BIND_TRANSCEIVER_RESP:
+2021.02.24 16:20:04 540 INFO    12 Hex dump (24) bytes:
+2021.02.24 16:20:04 540 INFO    12 00000018:80000009:00000000:00000001:
+2021.02.24 16:20:04 540 INFO    12 534D5050:53696D00:
+2021.02.24 16:20:04 541 INFO    12 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2021.02.24 16:20:04 541 INFO    12  
+2021.02.24 16:20:04 541 INFO    12 1 receivers connected and bound
+2021.02.24 16:20:04 541 INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:20:04 613 INFO    12 : Standard SUBMIT_SM:
+2021.02.24 16:20:04 614 INFO    12 Hex dump (110) bytes:
+2021.02.24 16:20:04 614 INFO    12 0000006E:00000004:00000000:00000002:
+2021.02.24 16:20:04 614 INFO    12 434D5400:01003132:33343500:01003330:
+2021.02.24 16:20:04 614 INFO    12 36393434:33303031:37330040:00000030:
+2021.02.24 16:20:04 614 INFO    12 30303030:30303830:30303030:30305200:
+2021.02.24 16:20:04 614 INFO    12 0100F500:29060504:0B8423F0:000601AE:
+2021.02.24 16:20:04 615 INFO    12 02056A00:45C60D03:676F6F67:6C650085:
+2021.02.24 16:20:04 615 INFO    12 08010343:6C69636B:204D6500:0101
+2021.02.24 16:20:04 615 INFO    12 cmd_len=110,cmd_id=4,cmd_status=0,seq_no=2,service_type=CMT,source_addr_ton=1
+2021.02.24 16:20:04 615 INFO    12 source_addr_npi=0,source_addr=12345,dest_addr_ton=1,dest_addr_npi=0
+2021.02.24 16:20:04 615 INFO    12 dest_addr=306944300173,esm_class=64,protocol_ID=0,priority_flag=0
+2021.02.24 16:20:04 616 INFO    12 schedule_delivery_time=,validity_period=000000080000000R
+2021.02.24 16:20:04 616 INFO    12 registered_delivery_flag=1,replace_if_present_flag=0,data_coding=245
+2021.02.24 16:20:04 616 INFO    12 sm_default_msg_id=0,sm_length=41
+2021.02.24 16:20:04 616 INFO    12 short_message=„#ð ®j EÆgoogle …Click Me 
+2021.02.24 16:20:04 616 INFO    12  
+2021.02.24 16:20:04 617 WARNING 12 SMPPSim currently only supports time component p=+. Value replaced with +
+2021.02.24 16:20:04 618 INFO    12 :SUBMIT_SM_RESP:
+2021.02.24 16:20:04 618 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:04 618 INFO    12 Hex dump (18) bytes:
+2021.02.24 16:20:04 619 INFO    12 00000012:80000004:00000000:00000002:
+2021.02.24 16:20:04 619 INFO    12 3000
+2021.02.24 16:20:04 619 INFO    12 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=0
+2021.02.24 16:20:04 619 INFO    12  
+2021.02.24 16:20:04 619 INFO    12 SubmitSM processing - response written to connection
+2021.02.24 16:20:09 623 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:09 627 INFO    73 Message:2 state=ACCEPTED
+2021.02.24 16:20:09 628 INFO    73 Delivery Receipt requested
+2021.02.24 16:20:09 634 INFO    72 addressIsServicedByReceiver(12345)
+2021.02.24 16:20:09 634 INFO    72 DELIVER_SM (receipt):
+2021.02.24 16:20:09 635 INFO    72 Hex dump (191) bytes:
+2021.02.24 16:20:09 635 INFO    72 000000BF:00000005:00000000:00000001:
+2021.02.24 16:20:09 635 INFO    72 434D5400:01003330:36393434:33303031:
+2021.02.24 16:20:09 635 INFO    72 37330001:00313233:34350004:00000000:
+2021.02.24 16:20:09 635 INFO    72 0000F500:7169643A:30207375:623A3030:
+2021.02.24 16:20:09 636 INFO    72 3120646C:7672643A:30303120:7375626D:
+2021.02.24 16:20:09 636 INFO    72 69742064:6174653A:32313032:32343136:
+2021.02.24 16:20:09 636 INFO    72 32302064:6F6E6520:64617465:3A323130:
+2021.02.24 16:20:09 636 INFO    72 32323431:36323020:73746174:3A414343:
+2021.02.24 16:20:09 637 INFO    72 45505444:20657272:3A303030:20546578:
+2021.02.24 16:20:09 637 INFO    72 743A0605:040B8423:F0000601:AE02056A:
+2021.02.24 16:20:09 637 INFO    72 0045C60D:0367001E:00023000:04270001:
+2021.02.24 16:20:09 637 INFO    72 06140300:0A343431:32333435:363738
+2021.02.24 16:20:09 637 INFO    72 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=1,service_type=CMT,source_addr_ton=1
+2021.02.24 16:20:09 638 INFO    72 source_addr_npi=0,source_addr=306944300173,dest_addr_ton=1,dest_addr_npi=0
+2021.02.24 16:20:09 638 INFO    72 destination_addr=12345,esm_class=4,protocol_ID=0,priority_flag=0
+2021.02.24 16:20:09 638 INFO    72 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2021.02.24 16:20:09 638 INFO    72 replace_if_present_flag=0,data_coding=245,sm_default_msg_id=0,sm_length=113
+2021.02.24 16:20:09 638 INFO    72 short_message=id:0 sub:001 dlvrd:001 submit date:2102241620 done date:2102241620 stat:ACCEPTD err:000 Text:„#ð ®j EÆg
+2021.02.24 16:20:09 639 INFO    72 TLV=30/2/3000,TLV=1063/1/06,TLV=5123/10/34343132333435363738
+2021.02.24 16:20:09 639 INFO    72  
+2021.02.24 16:20:09 639 INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:20:09 650 INFO    12 : DELIVER_SM_RESP:
+2021.02.24 16:20:09 651 INFO    12 Hex dump (17) bytes:
+2021.02.24 16:20:09 651 INFO    12 00000011:80000005:00000000:00000001:
+2021.02.24 16:20:09 651 INFO    12 00
+2021.02.24 16:20:09 651 INFO    12 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=1,system_id= 
+2021.02.24 16:20:09 652 INFO    12  
+2021.02.24 16:20:14 623 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:19 637 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:24 637 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:29 637 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:31 424 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:20:34 607 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:20:34 607 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:20:34 608 INFO    12 00000010:00000015:00000000:00000003:
+2021.02.24 16:20:34 608 INFO    12 
+2021.02.24 16:20:34 608 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2021.02.24 16:20:34 608 INFO    12  
+2021.02.24 16:20:34 608 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:20:34 609 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:20:34 609 INFO    12 00000010:80000015:00000000:00000003:
+2021.02.24 16:20:34 609 INFO    12 
+2021.02.24 16:20:34 609 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2021.02.24 16:20:34 609 INFO    12  
+2021.02.24 16:20:34 638 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:39 647 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:44 647 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:49 648 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:54 662 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:20:59 666 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:21:04 619 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:21:04 619 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:21:04 619 INFO    12 00000010:00000015:00000000:00000004:
+2021.02.24 16:21:04 620 INFO    12 
+2021.02.24 16:21:04 620 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2021.02.24 16:21:04 620 INFO    12  
+2021.02.24 16:21:04 620 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:21:04 621 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:21:04 621 INFO    12 00000010:80000015:00000000:00000004:
+2021.02.24 16:21:04 621 INFO    12 
+2021.02.24 16:21:04 621 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2021.02.24 16:21:04 622 INFO    12  
+2021.02.24 16:21:04 666 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:21:09 669 INFO    73 Lifecycle Service: OutboundQueue is empty  - waiting
+2021.02.24 16:21:31 424 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:21:34 638 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:21:34 638 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:21:34 638 INFO    12 00000010:00000015:00000000:00000005:
+2021.02.24 16:21:34 639 INFO    12 
+2021.02.24 16:21:34 639 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2021.02.24 16:21:34 639 INFO    12  
+2021.02.24 16:21:34 640 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:21:34 640 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:21:34 640 INFO    12 00000010:80000015:00000000:00000005:
+2021.02.24 16:21:34 640 INFO    12 
+2021.02.24 16:21:34 640 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2021.02.24 16:21:34 641 INFO    12  
+2021.02.24 16:22:04 646 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:22:04 647 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:22:04 647 INFO    12 00000010:00000015:00000000:00000006:
+2021.02.24 16:22:04 647 INFO    12 
+2021.02.24 16:22:04 648 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2021.02.24 16:22:04 648 INFO    12  
+2021.02.24 16:22:04 648 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:22:04 648 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:22:04 648 INFO    12 00000010:80000015:00000000:00000006:
+2021.02.24 16:22:04 648 INFO    12 
+2021.02.24 16:22:04 648 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2021.02.24 16:22:04 649 INFO    12  
+2021.02.24 16:22:31 428 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:22:34 658 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:22:34 658 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:22:34 658 INFO    12 00000010:00000015:00000000:00000007:
+2021.02.24 16:22:34 659 INFO    12 
+2021.02.24 16:22:34 659 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2021.02.24 16:22:34 660 INFO    12  
+2021.02.24 16:22:34 660 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:22:34 660 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:22:34 660 INFO    12 00000010:80000015:00000000:00000007:
+2021.02.24 16:22:34 660 INFO    12 
+2021.02.24 16:22:34 660 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2021.02.24 16:22:34 660 INFO    12  
+2021.02.24 16:23:04 664 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:23:04 665 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:23:04 666 INFO    12 00000010:00000015:00000000:00000008:
+2021.02.24 16:23:04 667 INFO    12 
+2021.02.24 16:23:04 668 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2021.02.24 16:23:04 668 INFO    12  
+2021.02.24 16:23:04 668 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:23:04 668 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:23:04 668 INFO    12 00000010:80000015:00000000:00000008:
+2021.02.24 16:23:04 669 INFO    12 
+2021.02.24 16:23:04 669 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2021.02.24 16:23:04 669 INFO    12  
+2021.02.24 16:23:31 438 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:23:34 673 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:23:34 674 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:23:34 675 INFO    12 00000010:00000015:00000000:00000009:
+2021.02.24 16:23:34 676 INFO    12 
+2021.02.24 16:23:34 677 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2021.02.24 16:23:34 678 INFO    12  
+2021.02.24 16:23:34 679 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:23:34 680 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:23:34 680 INFO    12 00000010:80000015:00000000:00000009:
+2021.02.24 16:23:34 681 INFO    12 
+2021.02.24 16:23:34 682 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2021.02.24 16:23:34 683 INFO    12  
+2021.02.24 16:24:04 692 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:24:04 693 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:24:04 694 INFO    12 00000010:00000015:00000000:0000000A:
+2021.02.24 16:24:04 695 INFO    12 
+2021.02.24 16:24:04 696 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2021.02.24 16:24:04 697 INFO    12  
+2021.02.24 16:24:04 698 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:24:04 698 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:24:04 699 INFO    12 00000010:80000015:00000000:0000000A:
+2021.02.24 16:24:04 700 INFO    12 
+2021.02.24 16:24:04 701 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2021.02.24 16:24:04 701 INFO    12  
+2021.02.24 16:24:31 450 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:24:34 711 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:24:34 711 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:24:34 711 INFO    12 00000010:00000015:00000000:0000000B:
+2021.02.24 16:24:34 712 INFO    12 
+2021.02.24 16:24:34 712 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2021.02.24 16:24:34 712 INFO    12  
+2021.02.24 16:24:34 712 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:24:34 712 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:24:34 712 INFO    12 00000010:80000015:00000000:0000000B:
+2021.02.24 16:24:34 712 INFO    12 
+2021.02.24 16:24:34 713 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2021.02.24 16:24:34 713 INFO    12  
+2021.02.24 16:25:04 720 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:25:04 721 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:25:04 721 INFO    12 00000010:00000015:00000000:0000000C:
+2021.02.24 16:25:04 721 INFO    12 
+2021.02.24 16:25:04 721 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2021.02.24 16:25:04 722 INFO    12  
+2021.02.24 16:25:04 722 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:25:04 722 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:25:04 722 INFO    12 00000010:80000015:00000000:0000000C:
+2021.02.24 16:25:04 722 INFO    12 
+2021.02.24 16:25:04 723 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2021.02.24 16:25:04 723 INFO    12  
+2021.02.24 16:25:31 455 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:25:34 727 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:25:34 727 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:25:34 728 INFO    12 00000010:00000015:00000000:0000000D:
+2021.02.24 16:25:34 728 INFO    12 
+2021.02.24 16:25:34 728 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2021.02.24 16:25:34 728 INFO    12  
+2021.02.24 16:25:34 728 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:25:34 728 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:25:34 728 INFO    12 00000010:80000015:00000000:0000000D:
+2021.02.24 16:25:34 728 INFO    12 
+2021.02.24 16:25:34 728 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2021.02.24 16:25:34 729 INFO    12  
+2021.02.24 16:26:04 732 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:26:04 733 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:26:04 734 INFO    12 00000010:00000015:00000000:0000000E:
+2021.02.24 16:26:04 734 INFO    12 
+2021.02.24 16:26:04 735 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2021.02.24 16:26:04 735 INFO    12  
+2021.02.24 16:26:04 735 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:26:04 735 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:26:04 735 INFO    12 00000010:80000015:00000000:0000000E:
+2021.02.24 16:26:04 736 INFO    12 
+2021.02.24 16:26:04 736 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2021.02.24 16:26:04 736 INFO    12  
+2021.02.24 16:26:31 464 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:26:34 752 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:26:34 752 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:26:34 753 INFO    12 00000010:00000015:00000000:0000000F:
+2021.02.24 16:26:34 753 INFO    12 
+2021.02.24 16:26:34 754 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2021.02.24 16:26:34 754 INFO    12  
+2021.02.24 16:26:34 755 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:26:34 756 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:26:34 756 INFO    12 00000010:80000015:00000000:0000000F:
+2021.02.24 16:26:34 756 INFO    12 
+2021.02.24 16:26:34 756 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2021.02.24 16:26:34 756 INFO    12  
+2021.02.24 16:27:04 761 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:27:04 762 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:27:04 762 INFO    12 00000010:00000015:00000000:00000010:
+2021.02.24 16:27:04 763 INFO    12 
+2021.02.24 16:27:04 763 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=16
+2021.02.24 16:27:04 763 INFO    12  
+2021.02.24 16:27:04 763 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:27:04 763 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:27:04 763 INFO    12 00000010:80000015:00000000:00000010:
+2021.02.24 16:27:04 764 INFO    12 
+2021.02.24 16:27:04 764 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=16
+2021.02.24 16:27:04 764 INFO    12  
+2021.02.24 16:27:31 478 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:27:34 774 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:27:34 775 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:27:34 776 INFO    12 00000010:00000015:00000000:00000011:
+2021.02.24 16:27:34 776 INFO    12 
+2021.02.24 16:27:34 777 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=17
+2021.02.24 16:27:34 778 INFO    12  
+2021.02.24 16:27:34 778 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:27:34 779 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:27:34 780 INFO    12 00000010:80000015:00000000:00000011:
+2021.02.24 16:27:34 780 INFO    12 
+2021.02.24 16:27:34 780 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=17
+2021.02.24 16:27:34 781 INFO    12  
+2021.02.24 16:28:04 785 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:28:04 786 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:28:04 786 INFO    12 00000010:00000015:00000000:00000012:
+2021.02.24 16:28:04 786 INFO    12 
+2021.02.24 16:28:04 787 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=18
+2021.02.24 16:28:04 787 INFO    12  
+2021.02.24 16:28:04 787 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:28:04 787 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:28:04 787 INFO    12 00000010:80000015:00000000:00000012:
+2021.02.24 16:28:04 788 INFO    12 
+2021.02.24 16:28:04 788 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=18
+2021.02.24 16:28:04 788 INFO    12  
+2021.02.24 16:28:31 483 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:28:34 795 INFO    12 : ENQUIRE_LINK:
+2021.02.24 16:28:34 795 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:28:34 795 INFO    12 00000010:00000015:00000000:00000013:
+2021.02.24 16:28:34 795 INFO    12 
+2021.02.24 16:28:34 796 INFO    12 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=19
+2021.02.24 16:28:34 796 INFO    12  
+2021.02.24 16:28:34 796 INFO    12 :ENQUIRE_LINK_RESP:
+2021.02.24 16:28:34 796 INFO    12 Hex dump (16) bytes:
+2021.02.24 16:28:34 796 INFO    12 00000010:80000015:00000000:00000013:
+2021.02.24 16:28:34 796 INFO    12 
+2021.02.24 16:28:34 796 INFO    12 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=19
+2021.02.24 16:28:34 796 INFO    12  
+2021.02.24 16:28:47 126 INFO    12 Socket exception: probably connection closed by client without UNBIND
+2021.02.24 16:28:47 127 INFO    12 0 receivers connected and bound
+2021.02.24 16:28:47 127 INFO    12 StandardConnectionHandler waiting for connection
+2021.02.24 16:28:48 898 INFO    52 StandardConnectionHandler accepted a connection
+2021.02.24 16:28:48 898 INFO    52 Protocol handler is of type StandardProtocolHandler
+2021.02.24 16:28:48 949 INFO    52 : BIND_TRANSCEIVER:
+2021.02.24 16:28:48 949 INFO    52 Hex dump (39) bytes:
+2021.02.24 16:28:48 950 INFO    52 00000027:00000009:00000000:00000001:
+2021.02.24 16:28:48 950 INFO    52 75707374:7265616D:00757073:74726561:
+2021.02.24 16:28:48 950 INFO    52 6D000034:000000
+2021.02.24 16:28:48 950 INFO    52 cmd_len=39,cmd_id=9,cmd_status=0,seq_no=1,system_id=upstream,password=upstream
+2021.02.24 16:28:48 950 INFO    52 system_type=,interface_version=52,addr_ton=0,addr_npi=0,address_range=
+2021.02.24 16:28:48 950 INFO    52  
+2021.02.24 16:28:48 950 INFO    52 StandardProtocolHandler: setting address range to 
+2021.02.24 16:28:48 951 INFO    52 New transceiver session bound to SMPPSim
+2021.02.24 16:28:48 951 INFO    52 : BIND_TRANSCEIVER_RESP:
+2021.02.24 16:28:48 951 INFO    52 Hex dump (24) bytes:
+2021.02.24 16:28:48 951 INFO    52 00000018:80000009:00000000:00000001:
+2021.02.24 16:28:48 951 INFO    52 534D5050:53696D00:
+2021.02.24 16:28:48 951 INFO    52 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2021.02.24 16:28:48 951 INFO    52  
+2021.02.24 16:28:48 952 INFO    52 1 receivers connected and bound
+2021.02.24 16:28:48 952 INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:28:49 28  INFO    52 : Standard SUBMIT_SM:
+2021.02.24 16:28:49 28  INFO    52 Hex dump (112) bytes:
+2021.02.24 16:28:49 28  INFO    52 00000070:00000004:00000000:00000002:
+2021.02.24 16:28:49 29  INFO    52 434D5400:01003132:33343500:01003330:
+2021.02.24 16:28:49 29  INFO    52 36393434:33303031:37330040:00000030:
+2021.02.24 16:28:49 29  INFO    52 30303030:30303830:30303030:30305200:
+2021.02.24 16:28:49 29  INFO    52 0100F500:2B060504:0B8423F0:000601AE:
+2021.02.24 16:28:49 29  INFO    52 02056A00:45C60D03:676F6F67:6C650085:
+2021.02.24 16:28:49 29  INFO    52 03000801:03436C69:636B204D:65000101:
+2021.02.24 16:28:49 29  INFO    52 
+2021.02.24 16:28:49 30  INFO    52 cmd_len=112,cmd_id=4,cmd_status=0,seq_no=2,service_type=CMT,source_addr_ton=1
+2021.02.24 16:28:49 30  INFO    52 source_addr_npi=0,source_addr=12345,dest_addr_ton=1,dest_addr_npi=0
+2021.02.24 16:28:49 30  INFO    52 dest_addr=306944300173,esm_class=64,protocol_ID=0,priority_flag=0
+2021.02.24 16:28:49 30  INFO    52 schedule_delivery_time=,validity_period=000000080000000R
+2021.02.24 16:28:49 30  INFO    52 registered_delivery_flag=1,replace_if_present_flag=0,data_coding=245
+2021.02.24 16:28:49 30  INFO    52 sm_default_msg_id=0,sm_length=43
+2021.02.24 16:28:49 30  INFO    52 short_message=„#ð ®j EÆgoogle … Click Me 
+2021.02.24 16:28:49 30  INFO    52  
+2021.02.24 16:28:49 30  WARNING 52 SMPPSim currently only supports time component p=+. Value replaced with +
+2021.02.24 16:28:49 30  INFO    52 :SUBMIT_SM_RESP:
+2021.02.24 16:28:49 30  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:28:49 31  INFO    52 Hex dump (18) bytes:
+2021.02.24 16:28:49 31  INFO    52 00000012:80000004:00000000:00000002:
+2021.02.24 16:28:49 31  INFO    52 3100
+2021.02.24 16:28:49 31  INFO    52 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=1
+2021.02.24 16:28:49 31  INFO    52  
+2021.02.24 16:28:49 31  INFO    52 SubmitSM processing - response written to connection
+2021.02.24 16:28:54 30  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:28:54 32  INFO    73 Message:2 state=ACCEPTED
+2021.02.24 16:28:54 32  INFO    73 Delivery Receipt requested
+2021.02.24 16:28:54 33  INFO    72 addressIsServicedByReceiver(12345)
+2021.02.24 16:28:54 34  INFO    72 DELIVER_SM (receipt):
+2021.02.24 16:28:54 35  INFO    72 Hex dump (191) bytes:
+2021.02.24 16:28:54 36  INFO    72 000000BF:00000005:00000000:00000002:
+2021.02.24 16:28:54 36  INFO    72 434D5400:01003330:36393434:33303031:
+2021.02.24 16:28:54 37  INFO    72 37330001:00313233:34350004:00000000:
+2021.02.24 16:28:54 37  INFO    72 0000F500:7169643A:31207375:623A3030:
+2021.02.24 16:28:54 38  INFO    72 3120646C:7672643A:30303120:7375626D:
+2021.02.24 16:28:54 39  INFO    72 69742064:6174653A:32313032:32343136:
+2021.02.24 16:28:54 39  INFO    72 32382064:6F6E6520:64617465:3A323130:
+2021.02.24 16:28:54 40  INFO    72 32323431:36323820:73746174:3A414343:
+2021.02.24 16:28:54 40  INFO    72 45505444:20657272:3A303030:20546578:
+2021.02.24 16:28:54 41  INFO    72 743A0605:040B8423:F0000601:AE02056A:
+2021.02.24 16:28:54 42  INFO    72 0045C60D:0367001E:00023100:04270001:
+2021.02.24 16:28:54 42  INFO    72 06140300:0A343431:32333435:363738
+2021.02.24 16:28:54 43  INFO    72 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=2,service_type=CMT,source_addr_ton=1
+2021.02.24 16:28:54 44  INFO    72 source_addr_npi=0,source_addr=306944300173,dest_addr_ton=1,dest_addr_npi=0
+2021.02.24 16:28:54 44  INFO    72 destination_addr=12345,esm_class=4,protocol_ID=0,priority_flag=0
+2021.02.24 16:28:54 45  INFO    72 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2021.02.24 16:28:54 45  INFO    72 replace_if_present_flag=0,data_coding=245,sm_default_msg_id=0,sm_length=113
+2021.02.24 16:28:54 46  INFO    72 short_message=id:1 sub:001 dlvrd:001 submit date:2102241628 done date:2102241628 stat:ACCEPTD err:000 Text:„#ð ®j EÆg
+2021.02.24 16:28:54 47  INFO    72 TLV=30/2/3100,TLV=1063/1/06,TLV=5123/10/34343132333435363738
+2021.02.24 16:28:54 48  INFO    72  
+2021.02.24 16:28:54 49  INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:28:54 71  INFO    52 : DELIVER_SM_RESP:
+2021.02.24 16:28:54 71  INFO    52 Hex dump (17) bytes:
+2021.02.24 16:28:54 71  INFO    52 00000011:80000005:00000000:00000002:
+2021.02.24 16:28:54 71  INFO    52 00
+2021.02.24 16:28:54 71  INFO    52 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=2,system_id= 
+2021.02.24 16:28:54 72  INFO    52  
+2021.02.24 16:28:59 31  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:04 32  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:09 32  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:14 36  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:19 35  INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:29:19 36  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:19 36  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:29:19 36  INFO    52 00000010:00000015:00000000:00000003:
+2021.02.24 16:29:19 37  INFO    52 
+2021.02.24 16:29:19 37  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2021.02.24 16:29:19 37  INFO    52  
+2021.02.24 16:29:19 37  INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:29:19 37  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:29:19 37  INFO    52 00000010:80000015:00000000:00000003:
+2021.02.24 16:29:19 38  INFO    52 
+2021.02.24 16:29:19 38  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2021.02.24 16:29:19 38  INFO    52  
+2021.02.24 16:29:24 37  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:29 52  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:31 496 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:29:34 52  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:39 53  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:44 59  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:49 53  INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:29:49 53  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:29:49 53  INFO    52 00000010:00000015:00000000:00000004:
+2021.02.24 16:29:49 53  INFO    52 
+2021.02.24 16:29:49 54  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2021.02.24 16:29:49 54  INFO    52  
+2021.02.24 16:29:49 54  INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:29:49 54  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:29:49 54  INFO    52 00000010:80000015:00000000:00000004:
+2021.02.24 16:29:49 54  INFO    52 
+2021.02.24 16:29:49 54  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2021.02.24 16:29:49 54  INFO    52  
+2021.02.24 16:29:49 68  INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:29:54 77  INFO    73 Lifecycle Service: OutboundQueue is empty  - waiting
+2021.02.24 16:30:19 63  INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:30:19 63  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:30:19 63  INFO    52 00000010:00000015:00000000:00000005:
+2021.02.24 16:30:19 64  INFO    52 
+2021.02.24 16:30:19 64  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2021.02.24 16:30:19 64  INFO    52  
+2021.02.24 16:30:19 64  INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:30:19 64  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:30:19 64  INFO    52 00000010:80000015:00000000:00000005:
+2021.02.24 16:30:19 64  INFO    52 
+2021.02.24 16:30:19 65  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2021.02.24 16:30:19 65  INFO    52  
+2021.02.24 16:30:31 500 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:30:49 72  INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:30:49 72  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:30:49 73  INFO    52 00000010:00000015:00000000:00000006:
+2021.02.24 16:30:49 73  INFO    52 
+2021.02.24 16:30:49 74  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2021.02.24 16:30:49 75  INFO    52  
+2021.02.24 16:30:49 75  INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:30:49 76  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:30:49 76  INFO    52 00000010:80000015:00000000:00000006:
+2021.02.24 16:30:49 77  INFO    52 
+2021.02.24 16:30:49 78  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2021.02.24 16:30:49 78  INFO    52  
+2021.02.24 16:31:19 93  INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:31:19 93  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:31:19 94  INFO    52 00000010:00000015:00000000:00000007:
+2021.02.24 16:31:19 94  INFO    52 
+2021.02.24 16:31:19 94  INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=7
+2021.02.24 16:31:19 94  INFO    52  
+2021.02.24 16:31:19 94  INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:31:19 94  INFO    52 Hex dump (16) bytes:
+2021.02.24 16:31:19 94  INFO    52 00000010:80000015:00000000:00000007:
+2021.02.24 16:31:19 95  INFO    52 
+2021.02.24 16:31:19 95  INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=7
+2021.02.24 16:31:19 95  INFO    52  
+2021.02.24 16:31:31 503 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:31:49 101 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:31:49 102 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:31:49 102 INFO    52 00000010:00000015:00000000:00000008:
+2021.02.24 16:31:49 103 INFO    52 
+2021.02.24 16:31:49 104 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=8
+2021.02.24 16:31:49 104 INFO    52  
+2021.02.24 16:31:49 106 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:31:49 106 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:31:49 106 INFO    52 00000010:80000015:00000000:00000008:
+2021.02.24 16:31:49 106 INFO    52 
+2021.02.24 16:31:49 106 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=8
+2021.02.24 16:31:49 106 INFO    52  
+2021.02.24 16:32:19 123 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:32:19 123 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:32:19 123 INFO    52 00000010:00000015:00000000:00000009:
+2021.02.24 16:32:19 124 INFO    52 
+2021.02.24 16:32:19 124 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=9
+2021.02.24 16:32:19 124 INFO    52  
+2021.02.24 16:32:19 124 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:32:19 124 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:32:19 124 INFO    52 00000010:80000015:00000000:00000009:
+2021.02.24 16:32:19 125 INFO    52 
+2021.02.24 16:32:19 125 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=9
+2021.02.24 16:32:19 125 INFO    52  
+2021.02.24 16:32:31 514 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:32:49 142 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:32:49 143 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:32:49 143 INFO    52 00000010:00000015:00000000:0000000A:
+2021.02.24 16:32:49 144 INFO    52 
+2021.02.24 16:32:49 145 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=10
+2021.02.24 16:32:49 145 INFO    52  
+2021.02.24 16:32:49 146 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:32:49 147 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:32:49 147 INFO    52 00000010:80000015:00000000:0000000A:
+2021.02.24 16:32:49 148 INFO    52 
+2021.02.24 16:32:49 149 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=10
+2021.02.24 16:32:49 149 INFO    52  
+2021.02.24 16:33:19 162 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:33:19 163 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:33:19 164 INFO    52 00000010:00000015:00000000:0000000B:
+2021.02.24 16:33:19 164 INFO    52 
+2021.02.24 16:33:19 165 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=11
+2021.02.24 16:33:19 166 INFO    52  
+2021.02.24 16:33:19 167 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:33:19 167 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:33:19 168 INFO    52 00000010:80000015:00000000:0000000B:
+2021.02.24 16:33:19 169 INFO    52 
+2021.02.24 16:33:19 169 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=11
+2021.02.24 16:33:19 170 INFO    52  
+2021.02.24 16:33:31 526 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:33:49 187 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:33:49 188 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:33:49 189 INFO    52 00000010:00000015:00000000:0000000C:
+2021.02.24 16:33:49 190 INFO    52 
+2021.02.24 16:33:49 190 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=12
+2021.02.24 16:33:49 191 INFO    52  
+2021.02.24 16:33:49 191 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:33:49 191 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:33:49 192 INFO    52 00000010:80000015:00000000:0000000C:
+2021.02.24 16:33:49 192 INFO    52 
+2021.02.24 16:33:49 192 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=12
+2021.02.24 16:33:49 192 INFO    52  
+2021.02.24 16:34:19 205 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:34:19 206 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:34:19 206 INFO    52 00000010:00000015:00000000:0000000D:
+2021.02.24 16:34:19 206 INFO    52 
+2021.02.24 16:34:19 206 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=13
+2021.02.24 16:34:19 207 INFO    52  
+2021.02.24 16:34:19 207 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:34:19 207 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:34:19 207 INFO    52 00000010:80000015:00000000:0000000D:
+2021.02.24 16:34:19 208 INFO    52 
+2021.02.24 16:34:19 208 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=13
+2021.02.24 16:34:19 208 INFO    52  
+2021.02.24 16:34:31 531 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:34:49 220 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:34:49 221 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:34:49 221 INFO    52 00000010:00000015:00000000:0000000E:
+2021.02.24 16:34:49 222 INFO    52 
+2021.02.24 16:34:49 223 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=14
+2021.02.24 16:34:49 223 INFO    52  
+2021.02.24 16:34:49 224 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:34:49 225 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:34:49 225 INFO    52 00000010:80000015:00000000:0000000E:
+2021.02.24 16:34:49 226 INFO    52 
+2021.02.24 16:34:49 226 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=14
+2021.02.24 16:34:49 226 INFO    52  
+2021.02.24 16:35:19 243 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:35:19 243 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:35:19 244 INFO    52 00000010:00000015:00000000:0000000F:
+2021.02.24 16:35:19 244 INFO    52 
+2021.02.24 16:35:19 245 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=15
+2021.02.24 16:35:19 245 INFO    52  
+2021.02.24 16:35:19 245 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:35:19 246 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:35:19 248 INFO    52 00000010:80000015:00000000:0000000F:
+2021.02.24 16:35:19 248 INFO    52 
+2021.02.24 16:35:19 248 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=15
+2021.02.24 16:35:19 248 INFO    52  
+2021.02.24 16:35:31 532 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:35:49 267 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:35:49 268 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:35:49 268 INFO    52 00000010:00000015:00000000:00000010:
+2021.02.24 16:35:49 269 INFO    52 
+2021.02.24 16:35:49 269 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=16
+2021.02.24 16:35:49 270 INFO    52  
+2021.02.24 16:35:49 271 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:35:49 271 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:35:49 272 INFO    52 00000010:80000015:00000000:00000010:
+2021.02.24 16:35:49 272 INFO    52 
+2021.02.24 16:35:49 273 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=16
+2021.02.24 16:35:49 273 INFO    52  
+2021.02.24 16:36:19 284 INFO    52 : ENQUIRE_LINK:
+2021.02.24 16:36:19 285 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:36:19 286 INFO    52 00000010:00000015:00000000:00000011:
+2021.02.24 16:36:19 286 INFO    52 
+2021.02.24 16:36:19 287 INFO    52 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=17
+2021.02.24 16:36:19 287 INFO    52  
+2021.02.24 16:36:19 288 INFO    52 :ENQUIRE_LINK_RESP:
+2021.02.24 16:36:19 289 INFO    52 Hex dump (16) bytes:
+2021.02.24 16:36:19 289 INFO    52 00000010:80000015:00000000:00000011:
+2021.02.24 16:36:19 290 INFO    52 
+2021.02.24 16:36:19 290 INFO    52 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=17
+2021.02.24 16:36:19 291 INFO    52  
+2021.02.24 16:36:31 547 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:36:42 636 INFO    52 Socket exception: probably connection closed by client without UNBIND
+2021.02.24 16:36:42 638 INFO    52 0 receivers connected and bound
+2021.02.24 16:36:42 638 INFO    52 StandardConnectionHandler waiting for connection
+2021.02.24 16:36:45 758 INFO    51 StandardConnectionHandler accepted a connection
+2021.02.24 16:36:45 759 INFO    51 Protocol handler is of type StandardProtocolHandler
+2021.02.24 16:36:45 808 INFO    51 : BIND_TRANSCEIVER:
+2021.02.24 16:36:45 808 INFO    51 Hex dump (39) bytes:
+2021.02.24 16:36:45 808 INFO    51 00000027:00000009:00000000:00000001:
+2021.02.24 16:36:45 808 INFO    51 75707374:7265616D:00757073:74726561:
+2021.02.24 16:36:45 809 INFO    51 6D000034:000000
+2021.02.24 16:36:45 809 INFO    51 cmd_len=39,cmd_id=9,cmd_status=0,seq_no=1,system_id=upstream,password=upstream
+2021.02.24 16:36:45 809 INFO    51 system_type=,interface_version=52,addr_ton=0,addr_npi=0,address_range=
+2021.02.24 16:36:45 809 INFO    51  
+2021.02.24 16:36:45 809 INFO    51 StandardProtocolHandler: setting address range to 
+2021.02.24 16:36:45 809 INFO    51 New transceiver session bound to SMPPSim
+2021.02.24 16:36:45 809 INFO    51 : BIND_TRANSCEIVER_RESP:
+2021.02.24 16:36:45 809 INFO    51 Hex dump (24) bytes:
+2021.02.24 16:36:45 809 INFO    51 00000018:80000009:00000000:00000001:
+2021.02.24 16:36:45 809 INFO    51 534D5050:53696D00:
+2021.02.24 16:36:45 810 INFO    51 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2021.02.24 16:36:45 810 INFO    51  
+2021.02.24 16:36:45 810 INFO    51 1 receivers connected and bound
+2021.02.24 16:36:45 810 INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:36:45 892 INFO    51 : Standard SUBMIT_SM:
+2021.02.24 16:36:45 892 INFO    51 Hex dump (112) bytes:
+2021.02.24 16:36:45 893 INFO    51 00000070:00000004:00000000:00000002:
+2021.02.24 16:36:45 893 INFO    51 434D5400:00013132:33343500:01013330:
+2021.02.24 16:36:45 893 INFO    51 36393434:33303031:37330040:00000030:
+2021.02.24 16:36:45 893 INFO    51 30303030:30303830:30303030:30305200:
+2021.02.24 16:36:45 893 INFO    51 0100F500:2B060504:0B8423F0:000601AE:
+2021.02.24 16:36:45 893 INFO    51 02056A00:45C60D03:676F6F67:6C650085:
+2021.02.24 16:36:45 893 INFO    51 03000801:03436C69:636B204D:65000101:
+2021.02.24 16:36:45 893 INFO    51 
+2021.02.24 16:36:45 893 INFO    51 cmd_len=112,cmd_id=4,cmd_status=0,seq_no=2,service_type=CMT,source_addr_ton=0
+2021.02.24 16:36:45 894 INFO    51 source_addr_npi=1,source_addr=12345,dest_addr_ton=1,dest_addr_npi=1
+2021.02.24 16:36:45 894 INFO    51 dest_addr=306944300173,esm_class=64,protocol_ID=0,priority_flag=0
+2021.02.24 16:36:45 894 INFO    51 schedule_delivery_time=,validity_period=000000080000000R
+2021.02.24 16:36:45 894 INFO    51 registered_delivery_flag=1,replace_if_present_flag=0,data_coding=245
+2021.02.24 16:36:45 894 INFO    51 sm_default_msg_id=0,sm_length=43
+2021.02.24 16:36:45 894 INFO    51 short_message=„#ð ®j EÆgoogle … Click Me 
+2021.02.24 16:36:45 894 INFO    51  
+2021.02.24 16:36:45 894 WARNING 51 SMPPSim currently only supports time component p=+. Value replaced with +
+2021.02.24 16:36:45 894 INFO    51 :SUBMIT_SM_RESP:
+2021.02.24 16:36:45 894 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:36:45 895 INFO    51 Hex dump (18) bytes:
+2021.02.24 16:36:45 895 INFO    51 00000012:80000004:00000000:00000002:
+2021.02.24 16:36:45 895 INFO    51 3200
+2021.02.24 16:36:45 895 INFO    51 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=2,message_id=2
+2021.02.24 16:36:45 895 INFO    51  
+2021.02.24 16:36:45 895 INFO    51 SubmitSM processing - response written to connection
+2021.02.24 16:36:50 894 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:36:55 895 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:36:55 896 INFO    73 Message:2 state=ACCEPTED
+2021.02.24 16:36:55 896 INFO    73 Delivery Receipt requested
+2021.02.24 16:36:55 897 INFO    72 addressIsServicedByReceiver(12345)
+2021.02.24 16:36:55 897 INFO    72 DELIVER_SM (receipt):
+2021.02.24 16:36:55 897 INFO    72 Hex dump (198) bytes:
+2021.02.24 16:36:55 898 INFO    72 000000C6:00000005:00000000:00000003:
+2021.02.24 16:36:55 898 INFO    72 434D5400:01013330:36393434:33303031:
+2021.02.24 16:36:55 899 INFO    72 37330000:01313233:34350004:00000000:
+2021.02.24 16:36:55 899 INFO    72 0000F500:7169643A:32207375:623A3030:
+2021.02.24 16:36:55 899 INFO    72 3120646C:7672643A:30303120:7375626D:
+2021.02.24 16:36:55 899 INFO    72 69742064:6174653A:32313032:32343136:
+2021.02.24 16:36:55 900 INFO    72 33362064:6F6E6520:64617465:3A323130:
+2021.02.24 16:36:55 900 INFO    72 32323431:36333620:73746174:3A52454A:
+2021.02.24 16:36:55 900 INFO    72 45435444:20657272:3A303030:20546578:
+2021.02.24 16:36:55 901 INFO    72 743A0605:040B8423:F0000601:AE02056A:
+2021.02.24 16:36:55 902 INFO    72 0045C60D:0367001E:00023200:04270001:
+2021.02.24 16:36:55 902 INFO    72 08042300:03030002:1403000A:34343132:
+2021.02.24 16:36:55 902 INFO    72 33343536:3738
+2021.02.24 16:36:55 903 INFO    72 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=3,service_type=CMT,source_addr_ton=1
+2021.02.24 16:36:55 903 INFO    72 source_addr_npi=1,source_addr=306944300173,dest_addr_ton=0,dest_addr_npi=1
+2021.02.24 16:36:55 904 INFO    72 destination_addr=12345,esm_class=4,protocol_ID=0,priority_flag=0
+2021.02.24 16:36:55 904 INFO    72 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2021.02.24 16:36:55 904 INFO    72 replace_if_present_flag=0,data_coding=245,sm_default_msg_id=0,sm_length=113
+2021.02.24 16:36:55 904 INFO    72 short_message=id:2 sub:001 dlvrd:001 submit date:2102241636 done date:2102241636 stat:REJECTD err:000 Text:„#ð ®j EÆg
+2021.02.24 16:36:55 904 INFO    72 TLV=30/2/3200,TLV=1063/1/08,TLV=1059/3/030002,TLV=5123/10/34343132333435363738
+2021.02.24 16:36:55 905 INFO    72  
+2021.02.24 16:36:55 905 INFO    72 InboundQueue: empty  - waiting
+2021.02.24 16:36:55 915 INFO    51 : DELIVER_SM_RESP:
+2021.02.24 16:36:55 915 INFO    51 Hex dump (17) bytes:
+2021.02.24 16:36:55 915 INFO    51 00000011:80000005:00000000:00000003:
+2021.02.24 16:36:55 915 INFO    51 00
+2021.02.24 16:36:55 916 INFO    51 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=3,system_id= 
+2021.02.24 16:36:55 916 INFO    51  
+2021.02.24 16:37:00 895 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:05 896 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:10 896 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:15 890 INFO    51 : ENQUIRE_LINK:
+2021.02.24 16:37:15 891 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:37:15 891 INFO    51 00000010:00000015:00000000:00000003:
+2021.02.24 16:37:15 891 INFO    51 
+2021.02.24 16:37:15 891 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=3
+2021.02.24 16:37:15 892 INFO    51  
+2021.02.24 16:37:15 892 INFO    51 :ENQUIRE_LINK_RESP:
+2021.02.24 16:37:15 892 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:37:15 893 INFO    51 00000010:80000015:00000000:00000003:
+2021.02.24 16:37:15 893 INFO    51 
+2021.02.24 16:37:15 893 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=3
+2021.02.24 16:37:15 894 INFO    51  
+2021.02.24 16:37:15 897 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:20 907 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:25 907 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:30 913 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:31 555 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:37:35 919 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:40 922 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:45 908 INFO    51 : ENQUIRE_LINK:
+2021.02.24 16:37:45 908 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:37:45 909 INFO    51 00000010:00000015:00000000:00000004:
+2021.02.24 16:37:45 909 INFO    51 
+2021.02.24 16:37:45 910 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2021.02.24 16:37:45 911 INFO    51  
+2021.02.24 16:37:45 911 INFO    51 :ENQUIRE_LINK_RESP:
+2021.02.24 16:37:45 911 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:37:45 911 INFO    51 00000010:80000015:00000000:00000004:
+2021.02.24 16:37:45 912 INFO    51 
+2021.02.24 16:37:45 912 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2021.02.24 16:37:45 912 INFO    51  
+2021.02.24 16:37:45 922 INFO    73 Assessing state of 1 messages in the OutboundQueue
+2021.02.24 16:37:50 928 INFO    73 Lifecycle Service: OutboundQueue is empty  - waiting
+2021.02.24 16:38:15 922 INFO    51 : ENQUIRE_LINK:
+2021.02.24 16:38:15 922 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:38:15 923 INFO    51 00000010:00000015:00000000:00000005:
+2021.02.24 16:38:15 923 INFO    51 
+2021.02.24 16:38:15 923 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=5
+2021.02.24 16:38:15 923 INFO    51  
+2021.02.24 16:38:15 923 INFO    51 :ENQUIRE_LINK_RESP:
+2021.02.24 16:38:15 923 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:38:15 923 INFO    51 00000010:80000015:00000000:00000005:
+2021.02.24 16:38:15 924 INFO    51 
+2021.02.24 16:38:15 924 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=5
+2021.02.24 16:38:15 924 INFO    51  
+2021.02.24 16:38:31 567 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:38:45 930 INFO    51 : ENQUIRE_LINK:
+2021.02.24 16:38:45 931 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:38:45 931 INFO    51 00000010:00000015:00000000:00000006:
+2021.02.24 16:38:45 932 INFO    51 
+2021.02.24 16:38:45 932 INFO    51 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=6
+2021.02.24 16:38:45 933 INFO    51  
+2021.02.24 16:38:45 934 INFO    51 :ENQUIRE_LINK_RESP:
+2021.02.24 16:38:45 934 INFO    51 Hex dump (16) bytes:
+2021.02.24 16:38:45 935 INFO    51 00000010:80000015:00000000:00000006:
+2021.02.24 16:38:45 935 INFO    51 
+2021.02.24 16:38:45 936 INFO    51 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=6
+2021.02.24 16:38:45 937 INFO    51  
+2021.02.24 16:38:58 435 INFO    51 Socket exception: probably connection closed by client without UNBIND
+2021.02.24 16:38:58 436 INFO    51 0 receivers connected and bound
+2021.02.24 16:38:58 436 INFO    51 StandardConnectionHandler waiting for connection
+2021.02.24 16:39:31 579 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:40:31 594 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:41:31 597 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:42:31 600 INFO    75 Processing 0 messages in the delayed inbound queue
+2021.02.24 16:43:31 603 INFO    75 Processing 0 messages in the delayed inbound queue
