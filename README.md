@@ -16,5 +16,5 @@ You may just download and expand the SMPPSim archive : SMPPSim.zip
 
 ### quick start
 
-* configuration file : [conf/smppsim.props](https://github.com/aristotelis-metsinis/smsc-smpp-simulator/blob/main/SMPPSim/conf/smppsim.props "conf/smppsim.props")
-* start-up script : [./startsmppsim.sh](https://github.com/aristotelis-metsinis/smsc-smpp-simulator/blob/main/SMPPSim/startsmppsim.sh "./startsmppsim.sh")
+* configuration file : [conf/smppsim.props](https://github.com/aristotelis-metsinis/smsc-smpp-simulator/blob/main/conf/smppsim.props "conf/smppsim.props")
+* start-up script : [./startsmppsim.sh](https://github.com/aristotelis-metsinis/smsc-smpp-simulator/blob/main/startsmppsim.sh "./startsmppsim.sh")
