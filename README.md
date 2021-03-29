@@ -1,4 +1,4 @@
-# SMPPSim | SMSC SMPP simulator by Selenium Software Ltd
+## SMPPSim | SMSC SMPP simulator by Selenium Software Ltd
 
 SMPPSim is a testing utility developed by Selenium Software Ltd [ http://www.seleniumsoftware.com/ ], which mimics the behaviour of an SMPP based SMSC.
 
